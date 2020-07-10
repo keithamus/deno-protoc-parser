@@ -1,0 +1,252 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    54,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Package",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        21
+      ],
+      "name": "jspb.exttest"
+    },
+    {
+      "type": "Option",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        35,
+        51
+      ],
+      "key": "java_package",
+      "value": {
+        "type": "Constant",
+        "start": [
+          35,
+          23
+        ],
+        "end": [
+          35,
+          50
+        ],
+        "literalType": "string",
+        "raw": "\"com.google.apps.jspb.proto\"",
+        "value": "com.google.apps.jspb.proto"
+      }
+    },
+    {
+      "type": "Option",
+      "start": [
+        36,
+        1
+      ],
+      "end": [
+        36,
+        34
+      ],
+      "key": "java_multiple_files",
+      "value": {
+        "type": "Constant",
+        "start": [
+          36,
+          30
+        ],
+        "end": [
+          36,
+          33
+        ],
+        "literalType": "boolean",
+        "raw": "true",
+        "value": true
+      }
+    },
+    {
+      "type": "Message",
+      "start": [
+        38,
+        1
+      ],
+      "end": [
+        41,
+        1
+      ],
+      "name": "TestExtensionsMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            39,
+            12
+          ],
+          "end": [
+            39,
+            30
+          ],
+          "fieldType": "int32",
+          "name": "intfield",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            40,
+            3
+          ],
+          "end": [
+            40,
+            24
+          ],
+          "ranges": [
+            [
+              100,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        43,
+        1
+      ],
+      "end": [
+        48,
+        1
+      ],
+      "name": "ExtensionMessage",
+      "body": [
+        {
+          "type": "Extend",
+          "start": [
+            44,
+            3
+          ],
+          "end": [
+            46,
+            3
+          ],
+          "name": "TestExtensionsMessage",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                45,
+                5
+              ],
+              "end": [
+                45,
+                46
+              ],
+              "fieldType": "ExtensionMessage",
+              "name": "ext_field",
+              "id": 100,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            47,
+            12
+          ],
+          "end": [
+            47,
+            27
+          ],
+          "fieldType": "string",
+          "name": "ext1",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        50,
+        1
+      ],
+      "end": [
+        53,
+        1
+      ],
+      "name": "TestExtensionsMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            51,
+            3
+          ],
+          "end": [
+            51,
+            53
+          ],
+          "fieldType": "ExtensionMessage",
+          "name": "floating_msg_field",
+          "id": 101,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            52,
+            3
+          ],
+          "end": [
+            52,
+            43
+          ],
+          "fieldType": "string",
+          "name": "floating_str_field",
+          "id": 102,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    }
+  ]
+}

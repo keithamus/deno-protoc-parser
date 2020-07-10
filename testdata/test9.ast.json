@@ -1,0 +1,105 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    40,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Package",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        33
+      ],
+      "name": "jspb.exttest.strict.nine"
+    },
+    {
+      "type": "Message",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        39,
+        1
+      ],
+      "name": "Simple9",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            36,
+            12
+          ],
+          "end": [
+            36,
+            31
+          ],
+          "fieldType": "string",
+          "name": "a_string",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            37,
+            12
+          ],
+          "end": [
+            37,
+            40
+          ],
+          "fieldType": "string",
+          "name": "a_repeated_string",
+          "id": 2,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            38,
+            12
+          ],
+          "end": [
+            38,
+            30
+          ],
+          "fieldType": "bool",
+          "name": "a_boolean",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    }
+  ]
+}

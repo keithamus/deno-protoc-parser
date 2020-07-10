@@ -1,0 +1,83 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    40,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 3
+    },
+    {
+      "type": "Package",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        32
+      ],
+      "name": "jspb.exttest.strict.ten"
+    },
+    {
+      "type": "Import",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        35,
+        21
+      ],
+      "weak": false,
+      "public": false,
+      "source": "test9.proto"
+    },
+    {
+      "type": "Message",
+      "start": [
+        37,
+        1
+      ],
+      "end": [
+        39,
+        1
+      ],
+      "name": "Simple10",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            38,
+            5
+          ],
+          "end": [
+            38,
+            43
+          ],
+          "fieldType": "jspb.exttest.strict.nine.Simple9",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        }
+      ]
+    }
+  ]
+}

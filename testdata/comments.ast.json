@@ -1,0 +1,222 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    36,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        4,
+        1
+      ],
+      "end": [
+        4,
+        18
+      ],
+      "version": 3
+    },
+    {
+      "type": "Service",
+      "start": [
+        9,
+        1
+      ],
+      "end": [
+        15,
+        1
+      ],
+      "comments": [
+        {
+          "type": "Comment", 
+          "body": "/**\n * This is a comment for MyService\n */",
+          "start": [
+            6,
+            1
+          ],
+          "end": [
+            8,
+            3
+          ]
+        }
+      ],
+      "name": "MyService",
+      "body": [
+        {
+          "type": "RPC",
+          "start": [
+            14,
+            5
+          ],
+          "end": [
+            14,
+            50
+          ],
+          "name": "MyMethod",
+          "request": {
+            "name": "MyRequest",
+            "streaming": false
+          },
+          "response": {
+            "name": "MyResponse",
+            "streaming": false
+          },
+          "body": null,
+          "comments": [
+            {
+              "type": "Comment", 
+              "body": "/**\n * This is a comment for MyMethod\n */",
+              "start": [
+                11,
+                5
+              ],
+              "end": [
+                13,
+                7
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        20,
+        1
+      ],
+      "end": [
+        25,
+        1
+      ],
+      "name": "MyRequest",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            24,
+            5
+          ],
+          "end": [
+            24,
+            20
+          ],
+          "fieldType": "string",
+          "name": "path",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false,
+          "comments": [
+            {
+              "type": "Comment", 
+              "body": "/**\n * This is a comment for path\n */",
+              "start": [
+                21,
+                5
+              ],
+              "end": [
+                23,
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "comments": [
+        {
+          "type": "Comment", 
+          "body": "/**\n * This is a comment for MyRequest\n */",
+          "start": [
+            17,
+            1
+          ],
+          "end": [
+            19,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        30,
+        1
+      ],
+      "end": [
+        35,
+        1
+      ],
+      "name": "MyResponse",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            34,
+            5
+          ],
+          "end": [
+            34,
+            21
+          ],
+          "fieldType": "int32",
+          "name": "status",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false,
+          "comments": [
+            {
+              "type": "Comment", 
+              "body": "/**\n * This is a comment for status\n */",
+              "start": [
+                31,
+                5
+              ],
+              "end": [
+                33,
+                7
+              ]
+            }
+          ]
+        }
+      ],
+      "comments": [
+        {
+          "type": "Comment", 
+          "body": "/**\n * This is a comment for MyResponse\n */",
+          "start": [
+            27,
+            1
+          ],
+          "end": [
+            29,
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "type": "Comment",
+      "body": "/**\n * This is a generic file comment\n */",
+      "start": [
+        1,
+        1
+      ],
+      "end": [
+        3,
+        3
+      ]
+    }
+  ]
+}

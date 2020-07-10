@@ -1,0 +1,340 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    71,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Package",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        35
+      ],
+      "name": "jspb.filenametest.package1"
+    },
+    {
+      "type": "Message",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        37,
+        1
+      ],
+      "name": "TestMessage",
+      "body": [
+        {
+          "type": "Extensions",
+          "start": [
+            36,
+            3
+          ],
+          "end": [
+            36,
+            22
+          ],
+          "ranges": [
+            [
+              1,
+              100
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        39,
+        1
+      ],
+      "end": [
+        41,
+        1
+      ],
+      "name": "TestMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            40,
+            3
+          ],
+          "end": [
+            40,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Enum",
+      "start": [
+        43,
+        1
+      ],
+      "end": [
+        46,
+        1
+      ],
+      "name": "TestEnum",
+      "body": [
+        {
+          "type": "EnumField",
+          "start": [
+            44,
+            3
+          ],
+          "end": [
+            44,
+            14
+          ],
+          "name": "VALUE_0",
+          "id": 0
+        },
+        {
+          "type": "EnumField",
+          "start": [
+            45,
+            3
+          ],
+          "end": [
+            45,
+            14
+          ],
+          "name": "VALUE_1",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        48,
+        1
+      ],
+      "end": [
+        52,
+        1
+      ],
+      "name": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName1",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            49,
+            12
+          ],
+          "end": [
+            50,
+            12
+          ],
+          "fieldType": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName2",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            51,
+            12
+          ],
+          "end": [
+            51,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        54,
+        1
+      ],
+      "end": [
+        58,
+        1
+      ],
+      "name": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName2",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            55,
+            12
+          ],
+          "end": [
+            56,
+            12
+          ],
+          "fieldType": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName3",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            57,
+            12
+          ],
+          "end": [
+            57,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        60,
+        1
+      ],
+      "end": [
+        64,
+        1
+      ],
+      "name": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName3",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            61,
+            12
+          ],
+          "end": [
+            62,
+            12
+          ],
+          "fieldType": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName4",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            63,
+            12
+          ],
+          "end": [
+            63,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        66,
+        1
+      ],
+      "end": [
+        70,
+        1
+      ],
+      "name": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName4",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            67,
+            12
+          ],
+          "end": [
+            68,
+            12
+          ],
+          "fieldType": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName1",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            69,
+            12
+          ],
+          "end": [
+            69,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    }
+  ]
+}

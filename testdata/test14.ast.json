@@ -1,0 +1,122 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    44,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Package",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        35
+      ],
+      "name": "jspb.filenametest.package2"
+    },
+    {
+      "type": "Message",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        37,
+        1
+      ],
+      "name": "TestMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            36,
+            12
+          ],
+          "end": [
+            36,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Enum",
+      "start": [
+        39,
+        1
+      ],
+      "end": [
+        43,
+        1
+      ],
+      "name": "TestEnum",
+      "body": [
+        {
+          "type": "EnumField",
+          "start": [
+            40,
+            3
+          ],
+          "end": [
+            40,
+            14
+          ],
+          "name": "VALUE_0",
+          "id": 0
+        },
+        {
+          "type": "EnumField",
+          "start": [
+            41,
+            3
+          ],
+          "end": [
+            41,
+            14
+          ],
+          "name": "VALUE_1",
+          "id": 1
+        },
+        {
+          "type": "EnumField",
+          "start": [
+            42,
+            3
+          ],
+          "end": [
+            42,
+            14
+          ],
+          "name": "VALUE_2",
+          "id": 2
+        }
+      ]
+    }
+  ]
+}

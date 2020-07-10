@@ -1,0 +1,405 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    71,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        30,
+        1
+      ],
+      "end": [
+        30,
+        18
+      ],
+      "version": 3
+    },
+    {
+      "type": "Option",
+      "start": [
+        32,
+        1
+      ],
+      "end": [
+        32,
+        82
+      ],
+      "key": "go_package",
+      "value": {
+        "type": "Constant",
+        "start": [
+          32,
+          21
+        ],
+        "end": [
+          32,
+          81
+        ],
+        "literalType": "string",
+        "raw": "\"github.com/golang/protobuf/internal/testprotos/jsonpb_proto\"",
+        "value": "github.com/golang/protobuf/internal/testprotos/jsonpb_proto"
+      }
+    },
+    {
+      "type": "Package",
+      "start": [
+        34,
+        1
+      ],
+      "end": [
+        34,
+        20
+      ],
+      "name": "jsonpb_test"
+    },
+    {
+      "type": "Message",
+      "start": [
+        36,
+        1
+      ],
+      "end": [
+        38,
+        1
+      ],
+      "name": "Simple3",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            37,
+            3
+          ],
+          "end": [
+            37,
+            17
+          ],
+          "fieldType": "double",
+          "name": "dub",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        40,
+        1
+      ],
+      "end": [
+        42,
+        1
+      ],
+      "name": "SimpleSlice3",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            41,
+            12
+          ],
+          "end": [
+            41,
+            29
+          ],
+          "fieldType": "string",
+          "name": "slices",
+          "id": 1,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        44,
+        1
+      ],
+      "end": [
+        46,
+        1
+      ],
+      "name": "SimpleMap3",
+      "body": [
+        {
+          "type": "MapField",
+          "start": [
+            45,
+            3
+          ],
+          "end": [
+            45,
+            33
+          ],
+          "keyType": "string",
+          "valueType": "string",
+          "name": "stringy",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        48,
+        1
+      ],
+      "end": [
+        50,
+        1
+      ],
+      "name": "SimpleNull3",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            49,
+            3
+          ],
+          "end": [
+            49,
+            21
+          ],
+          "fieldType": "Simple3",
+          "name": "simple",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Enum",
+      "start": [
+        52,
+        1
+      ],
+      "end": [
+        56,
+        1
+      ],
+      "name": "Numeral",
+      "body": [
+        {
+          "type": "EnumField",
+          "start": [
+            53,
+            3
+          ],
+          "end": [
+            53,
+            14
+          ],
+          "name": "UNKNOWN",
+          "id": 0
+        },
+        {
+          "type": "EnumField",
+          "start": [
+            54,
+            3
+          ],
+          "end": [
+            54,
+            13
+          ],
+          "name": "ARABIC",
+          "id": 1
+        },
+        {
+          "type": "EnumField",
+          "start": [
+            55,
+            3
+          ],
+          "end": [
+            55,
+            12
+          ],
+          "name": "ROMAN",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        58,
+        1
+      ],
+      "end": [
+        69,
+        1
+      ],
+      "name": "Mappy",
+      "body": [
+        {
+          "type": "MapField",
+          "start": [
+            59,
+            3
+          ],
+          "end": [
+            59,
+            30
+          ],
+          "keyType": "int64",
+          "valueType": "int32",
+          "name": "nummy",
+          "id": 1
+        },
+        {
+          "type": "MapField",
+          "start": [
+            60,
+            3
+          ],
+          "end": [
+            60,
+            32
+          ],
+          "keyType": "string",
+          "valueType": "string",
+          "name": "strry",
+          "id": 2
+        },
+        {
+          "type": "MapField",
+          "start": [
+            61,
+            3
+          ],
+          "end": [
+            61,
+            32
+          ],
+          "keyType": "int32",
+          "valueType": "Simple3",
+          "name": "objjy",
+          "id": 3
+        },
+        {
+          "type": "MapField",
+          "start": [
+            62,
+            3
+          ],
+          "end": [
+            62,
+            31
+          ],
+          "keyType": "int64",
+          "valueType": "string",
+          "name": "buggy",
+          "id": 4
+        },
+        {
+          "type": "MapField",
+          "start": [
+            63,
+            3
+          ],
+          "end": [
+            63,
+            28
+          ],
+          "keyType": "bool",
+          "valueType": "bool",
+          "name": "booly",
+          "id": 5
+        },
+        {
+          "type": "MapField",
+          "start": [
+            64,
+            3
+          ],
+          "end": [
+            64,
+            33
+          ],
+          "keyType": "string",
+          "valueType": "Numeral",
+          "name": "enumy",
+          "id": 6
+        },
+        {
+          "type": "MapField",
+          "start": [
+            65,
+            3
+          ],
+          "end": [
+            65,
+            32
+          ],
+          "keyType": "int32",
+          "valueType": "bool",
+          "name": "s32booly",
+          "id": 7
+        },
+        {
+          "type": "MapField",
+          "start": [
+            66,
+            3
+          ],
+          "end": [
+            66,
+            32
+          ],
+          "keyType": "int64",
+          "valueType": "bool",
+          "name": "s64booly",
+          "id": 8
+        },
+        {
+          "type": "MapField",
+          "start": [
+            67,
+            3
+          ],
+          "end": [
+            67,
+            33
+          ],
+          "keyType": "uint32",
+          "valueType": "bool",
+          "name": "u32booly",
+          "id": 9
+        },
+        {
+          "type": "MapField",
+          "start": [
+            68,
+            3
+          ],
+          "end": [
+            68,
+            34
+          ],
+          "keyType": "uint64",
+          "valueType": "bool",
+          "name": "u64booly",
+          "id": 10
+        }
+      ]
+    }
+  ]
+}

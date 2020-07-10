@@ -1,0 +1,298 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    61,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Package",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        18
+      ],
+      "name": "jspb.test"
+    },
+    {
+      "type": "Import",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        35,
+        20
+      ],
+      "weak": false,
+      "public": false,
+      "source": "test.proto"
+    },
+    {
+      "type": "Option",
+      "start": [
+        37,
+        1
+      ],
+      "end": [
+        37,
+        51
+      ],
+      "key": "java_package",
+      "value": {
+        "type": "Constant",
+        "start": [
+          37,
+          23
+        ],
+        "end": [
+          37,
+          50
+        ],
+        "literalType": "string",
+        "raw": "\"com.google.apps.jspb.proto\"",
+        "value": "com.google.apps.jspb.proto"
+      }
+    },
+    {
+      "type": "Option",
+      "start": [
+        38,
+        1
+      ],
+      "end": [
+        38,
+        34
+      ],
+      "key": "java_multiple_files",
+      "value": {
+        "type": "Constant",
+        "start": [
+          38,
+          30
+        ],
+        "end": [
+          38,
+          33
+        ],
+        "literalType": "boolean",
+        "raw": "true",
+        "value": true
+      }
+    },
+    {
+      "type": "Message",
+      "start": [
+        40,
+        1
+      ],
+      "end": [
+        43,
+        1
+      ],
+      "name": "TestExtensionsMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            41,
+            12
+          ],
+          "end": [
+            41,
+            30
+          ],
+          "fieldType": "int32",
+          "name": "intfield",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            42,
+            3
+          ],
+          "end": [
+            42,
+            24
+          ],
+          "ranges": [
+            [
+              100,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        45,
+        1
+      ],
+      "end": [
+        50,
+        1
+      ],
+      "name": "ExtensionMessage",
+      "body": [
+        {
+          "type": "Extend",
+          "start": [
+            46,
+            3
+          ],
+          "end": [
+            48,
+            3
+          ],
+          "name": "TestExtensionsMessage",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                47,
+                5
+              ],
+              "end": [
+                47,
+                46
+              ],
+              "fieldType": "ExtensionMessage",
+              "name": "ext_field",
+              "id": 100,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            49,
+            12
+          ],
+          "end": [
+            49,
+            27
+          ],
+          "fieldType": "string",
+          "name": "ext1",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        53,
+        1
+      ],
+      "end": [
+        56,
+        1
+      ],
+      "name": "TestExtensionsMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            54,
+            3
+          ],
+          "end": [
+            54,
+            53
+          ],
+          "fieldType": "ExtensionMessage",
+          "name": "floating_msg_field",
+          "id": 101,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            55,
+            3
+          ],
+          "end": [
+            55,
+            43
+          ],
+          "fieldType": "string",
+          "name": "floating_str_field",
+          "id": 102,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        58,
+        1
+      ],
+      "end": [
+        60,
+        1
+      ],
+      "name": "ForeignNestedFieldMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            59,
+            12
+          ],
+          "end": [
+            59,
+            59
+          ],
+          "fieldType": "Deeply.Nested.Message",
+          "name": "deeply_nested_message",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    }
+  ]
+}

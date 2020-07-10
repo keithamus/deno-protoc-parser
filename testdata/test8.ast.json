@@ -1,0 +1,216 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    51,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Package",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        28
+      ],
+      "name": "jspb.exttest.nested"
+    },
+    {
+      "type": "Option",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        35,
+        51
+      ],
+      "key": "java_package",
+      "value": {
+        "type": "Constant",
+        "start": [
+          35,
+          23
+        ],
+        "end": [
+          35,
+          50
+        ],
+        "literalType": "string",
+        "raw": "\"com.google.apps.jspb.proto\"",
+        "value": "com.google.apps.jspb.proto"
+      }
+    },
+    {
+      "type": "Option",
+      "start": [
+        36,
+        1
+      ],
+      "end": [
+        36,
+        34
+      ],
+      "key": "java_multiple_files",
+      "value": {
+        "type": "Constant",
+        "start": [
+          36,
+          30
+        ],
+        "end": [
+          36,
+          33
+        ],
+        "literalType": "boolean",
+        "raw": "true",
+        "value": true
+      }
+    },
+    {
+      "type": "Message",
+      "start": [
+        38,
+        1
+      ],
+      "end": [
+        41,
+        1
+      ],
+      "name": "TestNestedExtensionsMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            39,
+            12
+          ],
+          "end": [
+            39,
+            30
+          ],
+          "fieldType": "int32",
+          "name": "intfield",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            40,
+            3
+          ],
+          "end": [
+            40,
+            24
+          ],
+          "ranges": [
+            [
+              100,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        43,
+        1
+      ],
+      "end": [
+        50,
+        1
+      ],
+      "name": "TestOuterMessage",
+      "body": [
+        {
+          "type": "Message",
+          "start": [
+            44,
+            3
+          ],
+          "end": [
+            46,
+            3
+          ],
+          "name": "NestedExtensionMessage",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                45,
+                14
+              ],
+              "end": [
+                45,
+                29
+              ],
+              "fieldType": "string",
+              "name": "ext1",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Extend",
+          "start": [
+            47,
+            3
+          ],
+          "end": [
+            49,
+            3
+          ],
+          "name": "TestNestedExtensionsMessage",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                48,
+                5
+              ],
+              "end": [
+                48,
+                58
+              ],
+              "fieldType": "NestedExtensionMessage",
+              "name": "inner_extension",
+              "id": 100,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

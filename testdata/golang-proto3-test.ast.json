@@ -1,0 +1,756 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    98,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        29,
+        1
+      ],
+      "end": [
+        29,
+        18
+      ],
+      "version": 3
+    },
+    {
+      "type": "Option",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        82
+      ],
+      "key": "go_package",
+      "value": {
+        "type": "Constant",
+        "start": [
+          31,
+          21
+        ],
+        "end": [
+          31,
+          81
+        ],
+        "literalType": "string",
+        "raw": "\"github.com/golang/protobuf/internal/testprotos/proto3_proto\"",
+        "value": "github.com/golang/protobuf/internal/testprotos/proto3_proto"
+      }
+    },
+    {
+      "type": "Import",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        35
+      ],
+      "weak": false,
+      "public": false,
+      "source": "google/protobuf/any.proto"
+    },
+    {
+      "type": "Import",
+      "start": [
+        34,
+        1
+      ],
+      "end": [
+        34,
+        33
+      ],
+      "weak": false,
+      "public": false,
+      "source": "proto2_proto/test.proto"
+    },
+    {
+      "type": "Package",
+      "start": [
+        36,
+        1
+      ],
+      "end": [
+        36,
+        20
+      ],
+      "name": "proto3_test"
+    },
+    {
+      "type": "Message",
+      "start": [
+        38,
+        1
+      ],
+      "end": [
+        70,
+        1
+      ],
+      "name": "Message",
+      "body": [
+        {
+          "type": "Enum",
+          "start": [
+            39,
+            3
+          ],
+          "end": [
+            44,
+            3
+          ],
+          "name": "Humour",
+          "body": [
+            {
+              "type": "EnumField",
+              "start": [
+                40,
+                5
+              ],
+              "end": [
+                40,
+                16
+              ],
+              "name": "UNKNOWN",
+              "id": 0
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                41,
+                5
+              ],
+              "end": [
+                41,
+                13
+              ],
+              "name": "PUNS",
+              "id": 1
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                42,
+                5
+              ],
+              "end": [
+                42,
+                18
+              ],
+              "name": "SLAPSTICK",
+              "id": 2
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                43,
+                5
+              ],
+              "end": [
+                43,
+                20
+              ],
+              "name": "BILL_BAILEY",
+              "id": 3
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            46,
+            3
+          ],
+          "end": [
+            46,
+            18
+          ],
+          "fieldType": "string",
+          "name": "name",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            47,
+            3
+          ],
+          "end": [
+            47,
+            22
+          ],
+          "fieldType": "Humour",
+          "name": "hilarity",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            48,
+            3
+          ],
+          "end": [
+            48,
+            26
+          ],
+          "fieldType": "uint32",
+          "name": "height_in_cm",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            49,
+            3
+          ],
+          "end": [
+            49,
+            17
+          ],
+          "fieldType": "bytes",
+          "name": "data",
+          "id": 4,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            50,
+            3
+          ],
+          "end": [
+            50,
+            25
+          ],
+          "fieldType": "int64",
+          "name": "result_count",
+          "id": 7,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            51,
+            3
+          ],
+          "end": [
+            51,
+            25
+          ],
+          "fieldType": "bool",
+          "name": "true_scotsman",
+          "id": 8,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            52,
+            3
+          ],
+          "end": [
+            52,
+            18
+          ],
+          "fieldType": "float",
+          "name": "score",
+          "id": 9,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            54,
+            12
+          ],
+          "end": [
+            54,
+            26
+          ],
+          "fieldType": "uint64",
+          "name": "key",
+          "id": 5,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            55,
+            12
+          ],
+          "end": [
+            55,
+            32
+          ],
+          "fieldType": "int32",
+          "name": "short_key",
+          "id": 19,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            56,
+            3
+          ],
+          "end": [
+            56,
+            20
+          ],
+          "fieldType": "Nested",
+          "name": "nested",
+          "id": 6,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            57,
+            12
+          ],
+          "end": [
+            57,
+            31
+          ],
+          "fieldType": "Humour",
+          "name": "r_funny",
+          "id": 16,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "MapField",
+          "start": [
+            59,
+            3
+          ],
+          "end": [
+            59,
+            35
+          ],
+          "keyType": "string",
+          "valueType": "Nested",
+          "name": "terrain",
+          "id": 10
+        },
+        {
+          "type": "Field",
+          "start": [
+            60,
+            3
+          ],
+          "end": [
+            60,
+            44
+          ],
+          "fieldType": "proto2_test.SubDefaults",
+          "name": "proto2_field",
+          "id": 11,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "MapField",
+          "start": [
+            61,
+            3
+          ],
+          "end": [
+            61,
+            57
+          ],
+          "keyType": "string",
+          "valueType": "proto2_test.SubDefaults",
+          "name": "proto2_value",
+          "id": 13
+        },
+        {
+          "type": "Field",
+          "start": [
+            63,
+            3
+          ],
+          "end": [
+            63,
+            36
+          ],
+          "fieldType": "google.protobuf.Any",
+          "name": "anything",
+          "id": 14,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            64,
+            12
+          ],
+          "end": [
+            64,
+            48
+          ],
+          "fieldType": "google.protobuf.Any",
+          "name": "many_things",
+          "id": 15,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            66,
+            3
+          ],
+          "end": [
+            66,
+            26
+          ],
+          "fieldType": "Message",
+          "name": "submessage",
+          "id": 17,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            67,
+            12
+          ],
+          "end": [
+            67,
+            33
+          ],
+          "fieldType": "Message",
+          "name": "children",
+          "id": 18,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "MapField",
+          "start": [
+            69,
+            3
+          ],
+          "end": [
+            69,
+            38
+          ],
+          "keyType": "string",
+          "valueType": "string",
+          "name": "string_map",
+          "id": 20
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        72,
+        1
+      ],
+      "end": [
+        75,
+        1
+      ],
+      "name": "Nested",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            73,
+            3
+          ],
+          "end": [
+            73,
+            19
+          ],
+          "fieldType": "string",
+          "name": "bunny",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            74,
+            3
+          ],
+          "end": [
+            74,
+            16
+          ],
+          "fieldType": "bool",
+          "name": "cute",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        77,
+        1
+      ],
+      "end": [
+        79,
+        1
+      ],
+      "name": "MessageWithMap",
+      "body": [
+        {
+          "type": "MapField",
+          "start": [
+            78,
+            3
+          ],
+          "end": [
+            78,
+            36
+          ],
+          "keyType": "bool",
+          "valueType": "bytes",
+          "name": "byte_mapping",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        82,
+        1
+      ],
+      "end": [
+        84,
+        1
+      ],
+      "name": "IntMap",
+      "body": [
+        {
+          "type": "MapField",
+          "start": [
+            83,
+            3
+          ],
+          "end": [
+            83,
+            28
+          ],
+          "keyType": "int32",
+          "valueType": "int32",
+          "name": "rtt",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        86,
+        1
+      ],
+      "end": [
+        88,
+        1
+      ],
+      "name": "IntMaps",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            87,
+            12
+          ],
+          "end": [
+            87,
+            27
+          ],
+          "fieldType": "IntMap",
+          "name": "maps",
+          "id": 1,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        90,
+        1
+      ],
+      "end": [
+        96,
+        1
+      ],
+      "name": "TestUTF8",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            91,
+            3
+          ],
+          "end": [
+            91,
+            20
+          ],
+          "fieldType": "string",
+          "name": "scalar",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            92,
+            12
+          ],
+          "end": [
+            92,
+            29
+          ],
+          "fieldType": "string",
+          "name": "vector",
+          "id": 2,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Oneof",
+          "start": [
+            93,
+            3
+          ],
+          "end": [
+            93,
+            35
+          ],
+          "name": "oneof",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                93,
+                17
+              ],
+              "end": [
+                93,
+                33
+              ],
+              "fieldType": "string",
+              "name": "field",
+              "id": 3,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "MapField",
+          "start": [
+            94,
+            3
+          ],
+          "end": [
+            94,
+            33
+          ],
+          "keyType": "string",
+          "valueType": "int64",
+          "name": "map_key",
+          "id": 4
+        },
+        {
+          "type": "MapField",
+          "start": [
+            95,
+            3
+          ],
+          "end": [
+            95,
+            35
+          ],
+          "keyType": "int64",
+          "valueType": "string",
+          "name": "map_value",
+          "id": 5
+        }
+      ]
+    }
+  ]
+}

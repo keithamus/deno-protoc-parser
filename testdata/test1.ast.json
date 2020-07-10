@@ -1,0 +1,3297 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    323,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        34,
+        1
+      ],
+      "end": [
+        34,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Option",
+      "start": [
+        36,
+        1
+      ],
+      "end": [
+        36,
+        51
+      ],
+      "key": "java_package",
+      "value": {
+        "type": "Constant",
+        "start": [
+          36,
+          23
+        ],
+        "end": [
+          36,
+          50
+        ],
+        "literalType": "string",
+        "raw": "\"com.google.apps.jspb.proto\"",
+        "value": "com.google.apps.jspb.proto"
+      }
+    },
+    {
+      "type": "Option",
+      "start": [
+        37,
+        1
+      ],
+      "end": [
+        37,
+        34
+      ],
+      "key": "java_multiple_files",
+      "value": {
+        "type": "Constant",
+        "start": [
+          37,
+          30
+        ],
+        "end": [
+          37,
+          33
+        ],
+        "literalType": "boolean",
+        "raw": "true",
+        "value": true
+      }
+    },
+    {
+      "type": "Import",
+      "start": [
+        39,
+        1
+      ],
+      "end": [
+        39,
+        42
+      ],
+      "weak": false,
+      "public": false,
+      "source": "google/protobuf/descriptor.proto"
+    },
+    {
+      "type": "Package",
+      "start": [
+        41,
+        1
+      ],
+      "end": [
+        41,
+        18
+      ],
+      "name": "jspb.test"
+    },
+    {
+      "type": "Message",
+      "start": [
+        43,
+        1
+      ],
+      "end": [
+        43,
+        16
+      ],
+      "name": "Empty",
+      "body": []
+    },
+    {
+      "type": "Enum",
+      "start": [
+        45,
+        1
+      ],
+      "end": [
+        48,
+        1
+      ],
+      "name": "OuterEnum",
+      "body": [
+        {
+          "type": "EnumField",
+          "start": [
+            46,
+            3
+          ],
+          "end": [
+            46,
+            10
+          ],
+          "name": "FOO",
+          "id": 1
+        },
+        {
+          "type": "EnumField",
+          "start": [
+            47,
+            3
+          ],
+          "end": [
+            47,
+            10
+          ],
+          "name": "BAR",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        50,
+        1
+      ],
+      "end": [
+        52,
+        1
+      ],
+      "name": "EnumContainer",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            51,
+            12
+          ],
+          "end": [
+            51,
+            36
+          ],
+          "fieldType": "OuterEnum",
+          "name": "outer_enum",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        54,
+        1
+      ],
+      "end": [
+        58,
+        1
+      ],
+      "name": "Simple1",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            55,
+            12
+          ],
+          "end": [
+            55,
+            31
+          ],
+          "fieldType": "string",
+          "name": "a_string",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            56,
+            12
+          ],
+          "end": [
+            56,
+            40
+          ],
+          "fieldType": "string",
+          "name": "a_repeated_string",
+          "id": 2,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            57,
+            12
+          ],
+          "end": [
+            57,
+            30
+          ],
+          "fieldType": "bool",
+          "name": "a_boolean",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        61,
+        1
+      ],
+      "end": [
+        64,
+        1
+      ],
+      "name": "Simple2",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            62,
+            12
+          ],
+          "end": [
+            62,
+            31
+          ],
+          "fieldType": "string",
+          "name": "a_string",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            63,
+            12
+          ],
+          "end": [
+            63,
+            40
+          ],
+          "fieldType": "string",
+          "name": "a_repeated_string",
+          "id": 2,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        66,
+        1
+      ],
+      "end": [
+        72,
+        1
+      ],
+      "name": "SpecialCases",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            67,
+            12
+          ],
+          "end": [
+            67,
+            29
+          ],
+          "fieldType": "string",
+          "name": "normal",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            69,
+            12
+          ],
+          "end": [
+            69,
+            30
+          ],
+          "fieldType": "string",
+          "name": "default",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            70,
+            12
+          ],
+          "end": [
+            70,
+            31
+          ],
+          "fieldType": "string",
+          "name": "function",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            71,
+            12
+          ],
+          "end": [
+            71,
+            26
+          ],
+          "fieldType": "string",
+          "name": "var",
+          "id": 4,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        74,
+        1
+      ],
+      "end": [
+        83,
+        1
+      ],
+      "name": "OptionalFields",
+      "body": [
+        {
+          "type": "Message",
+          "start": [
+            75,
+            3
+          ],
+          "end": [
+            77,
+            3
+          ],
+          "name": "Nested",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                76,
+                14
+              ],
+              "end": [
+                76,
+                30
+              ],
+              "fieldType": "int32",
+              "name": "an_int",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            78,
+            12
+          ],
+          "end": [
+            78,
+            31
+          ],
+          "fieldType": "string",
+          "name": "a_string",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            79,
+            12
+          ],
+          "end": [
+            79,
+            27
+          ],
+          "fieldType": "bool",
+          "name": "a_bool",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            80,
+            12
+          ],
+          "end": [
+            80,
+            39
+          ],
+          "fieldType": "Nested",
+          "name": "a_nested_message",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            81,
+            12
+          ],
+          "end": [
+            81,
+            41
+          ],
+          "fieldType": "Nested",
+          "name": "a_repeated_message",
+          "id": 4,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            82,
+            12
+          ],
+          "end": [
+            82,
+            40
+          ],
+          "fieldType": "string",
+          "name": "a_repeated_string",
+          "id": 5,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        85,
+        1
+      ],
+      "end": [
+        90,
+        1
+      ],
+      "name": "HasExtensions",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            86,
+            12
+          ],
+          "end": [
+            86,
+            27
+          ],
+          "fieldType": "string",
+          "name": "str1",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            87,
+            12
+          ],
+          "end": [
+            87,
+            27
+          ],
+          "fieldType": "string",
+          "name": "str2",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            88,
+            12
+          ],
+          "end": [
+            88,
+            27
+          ],
+          "fieldType": "string",
+          "name": "str3",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            89,
+            3
+          ],
+          "end": [
+            89,
+            23
+          ],
+          "ranges": [
+            [
+              10,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        92,
+        1
+      ],
+      "end": [
+        102,
+        1
+      ],
+      "name": "Complex",
+      "body": [
+        {
+          "type": "Message",
+          "start": [
+            93,
+            3
+          ],
+          "end": [
+            95,
+            3
+          ],
+          "name": "Nested",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                94,
+                14
+              ],
+              "end": [
+                94,
+                30
+              ],
+              "fieldType": "int32",
+              "name": "an_int",
+              "id": 2,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            96,
+            12
+          ],
+          "end": [
+            96,
+            31
+          ],
+          "fieldType": "string",
+          "name": "a_string",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            97,
+            12
+          ],
+          "end": [
+            97,
+            41
+          ],
+          "fieldType": "bool",
+          "name": "an_out_of_order_bool",
+          "id": 9,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            98,
+            12
+          ],
+          "end": [
+            98,
+            39
+          ],
+          "fieldType": "Nested",
+          "name": "a_nested_message",
+          "id": 4,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            99,
+            12
+          ],
+          "end": [
+            99,
+            41
+          ],
+          "fieldType": "Nested",
+          "name": "a_repeated_message",
+          "id": 5,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            100,
+            12
+          ],
+          "end": [
+            100,
+            40
+          ],
+          "fieldType": "string",
+          "name": "a_repeated_string",
+          "id": 7,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            101,
+            12
+          ],
+          "end": [
+            101,
+            46
+          ],
+          "fieldType": "double",
+          "name": "a_floating_point_field",
+          "id": 10,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        104,
+        1
+      ],
+      "end": [
+        109,
+        1
+      ],
+      "name": "OuterMessage",
+      "body": [
+        {
+          "type": "Message",
+          "start": [
+            106,
+            3
+          ],
+          "end": [
+            108,
+            3
+          ],
+          "name": "Complex",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                107,
+                14
+              ],
+              "end": [
+                107,
+                43
+              ],
+              "fieldType": "int32",
+              "name": "inner_complex_field",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        111,
+        1
+      ],
+      "end": [
+        116,
+        1
+      ],
+      "name": "MineField",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            115,
+            12
+          ],
+          "end": [
+            115,
+            29
+          ],
+          "fieldType": "string",
+          "name": "cookie",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        118,
+        1
+      ],
+      "end": [
+        128,
+        1
+      ],
+      "name": "IsExtension",
+      "body": [
+        {
+          "type": "Extend",
+          "start": [
+            119,
+            3
+          ],
+          "end": [
+            121,
+            3
+          ],
+          "name": "HasExtensions",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                120,
+                5
+              ],
+              "end": [
+                120,
+                41
+              ],
+              "fieldType": "IsExtension",
+              "name": "ext_field",
+              "id": 100,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            122,
+            12
+          ],
+          "end": [
+            122,
+            27
+          ],
+          "fieldType": "string",
+          "name": "ext1",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extend",
+          "start": [
+            125,
+            3
+          ],
+          "end": [
+            127,
+            3
+          ],
+          "name": "google.protobuf.EnumOptions",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                126,
+                5
+              ],
+              "end": [
+                126,
+                45
+              ],
+              "fieldType": "string",
+              "name": "simple_option",
+              "id": 42113038,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        130,
+        1
+      ],
+      "end": [
+        137,
+        1
+      ],
+      "name": "IndirectExtension",
+      "body": [
+        {
+          "type": "Extend",
+          "start": [
+            131,
+            3
+          ],
+          "end": [
+            136,
+            3
+          ],
+          "name": "HasExtensions",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                132,
+                5
+              ],
+              "end": [
+                132,
+                34
+              ],
+              "fieldType": "Simple1",
+              "name": "simple",
+              "id": 101,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                133,
+                5
+              ],
+              "end": [
+                133,
+                30
+              ],
+              "fieldType": "string",
+              "name": "str",
+              "id": 102,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                134,
+                5
+              ],
+              "end": [
+                134,
+                39
+              ],
+              "fieldType": "string",
+              "name": "repeated_str",
+              "id": 103,
+              "options": [],
+              "repeated": true,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                135,
+                5
+              ],
+              "end": [
+                135,
+                43
+              ],
+              "fieldType": "Simple1",
+              "name": "repeated_simple",
+              "id": 104,
+              "options": [],
+              "repeated": true,
+              "optional": false,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        139,
+        1
+      ],
+      "end": [
+        141,
+        1
+      ],
+      "name": "HasExtensions",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            140,
+            3
+          ],
+          "end": [
+            140,
+            33
+          ],
+          "fieldType": "Simple1",
+          "name": "simple1",
+          "id": 105,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        143,
+        1
+      ],
+      "end": [
+        155,
+        1
+      ],
+      "name": "DefaultValues",
+      "body": [
+        {
+          "type": "Enum",
+          "start": [
+            144,
+            3
+          ],
+          "end": [
+            147,
+            3
+          ],
+          "name": "Enum",
+          "body": [
+            {
+              "type": "EnumField",
+              "start": [
+                145,
+                5
+              ],
+              "end": [
+                145,
+                12
+              ],
+              "name": "E1",
+              "id": 13
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                146,
+                5
+              ],
+              "end": [
+                146,
+                12
+              ],
+              "name": "E2",
+              "id": 77
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            148,
+            12
+          ],
+          "end": [
+            148,
+            66
+          ],
+          "fieldType": "string",
+          "name": "string_field",
+          "id": 1,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                148,
+                37
+              ],
+              "end": [
+                148,
+                64
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  148,
+                  47
+                ],
+                "end": [
+                  148,
+                  64
+                ],
+                "literalType": "string",
+                "raw": "\"default<>\\'\\\"abc\"",
+                "value": "default<>\\'\\\"abc"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            149,
+            12
+          ],
+          "end": [
+            149,
+            48
+          ],
+          "fieldType": "bool",
+          "name": "bool_field",
+          "id": 2,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                149,
+                33
+              ],
+              "end": [
+                149,
+                46
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  149,
+                  43
+                ],
+                "end": [
+                  149,
+                  46
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            150,
+            12
+          ],
+          "end": [
+            150,
+            46
+          ],
+          "fieldType": "int64",
+          "name": "int_field",
+          "id": 3,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                150,
+                33
+              ],
+              "end": [
+                150,
+                44
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  150,
+                  43
+                ],
+                "end": [
+                  150,
+                  44
+                ],
+                "literalType": "int",
+                "raw": "11",
+                "value": 11
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            151,
+            12
+          ],
+          "end": [
+            151,
+            46
+          ],
+          "fieldType": "Enum",
+          "name": "enum_field",
+          "id": 4,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                151,
+                33
+              ],
+              "end": [
+                151,
+                44
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  151,
+                  43
+                ],
+                "end": [
+                  151,
+                  44
+                ],
+                "literalType": "identifier",
+                "raw": "E1",
+                "value": "E1"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            152,
+            12
+          ],
+          "end": [
+            152,
+            49
+          ],
+          "fieldType": "string",
+          "name": "empty_field",
+          "id": 6,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                152,
+                36
+              ],
+              "end": [
+                152,
+                47
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  152,
+                  46
+                ],
+                "end": [
+                  152,
+                  47
+                ],
+                "literalType": "string",
+                "raw": "\"\"",
+                "value": ""
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            153,
+            12
+          ],
+          "end": [
+            154,
+            24
+          ],
+          "fieldType": "bytes",
+          "name": "bytes_field",
+          "id": 8,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                154,
+                8
+              ],
+              "end": [
+                154,
+                22
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  154,
+                  18
+                ],
+                "end": [
+                  154,
+                  22
+                ],
+                "literalType": "string",
+                "raw": "\"moo\"",
+                "value": "moo"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        157,
+        1
+      ],
+      "end": [
+        166,
+        1
+      ],
+      "name": "FloatingPointFields",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            158,
+            12
+          ],
+          "end": [
+            158,
+            42
+          ],
+          "fieldType": "float",
+          "name": "optional_float_field",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            159,
+            12
+          ],
+          "end": [
+            159,
+            42
+          ],
+          "fieldType": "float",
+          "name": "required_float_field",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            160,
+            12
+          ],
+          "end": [
+            160,
+            42
+          ],
+          "fieldType": "float",
+          "name": "repeated_float_field",
+          "id": 3,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            161,
+            12
+          ],
+          "end": [
+            161,
+            57
+          ],
+          "fieldType": "float",
+          "name": "default_float_field",
+          "id": 4,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                161,
+                43
+              ],
+              "end": [
+                161,
+                55
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  161,
+                  53
+                ],
+                "end": [
+                  161,
+                  55
+                ],
+                "literalType": "float",
+                "raw": "2.0",
+                "value": 2
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            162,
+            12
+          ],
+          "end": [
+            162,
+            44
+          ],
+          "fieldType": "double",
+          "name": "optional_double_field",
+          "id": 5,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            163,
+            12
+          ],
+          "end": [
+            163,
+            44
+          ],
+          "fieldType": "double",
+          "name": "required_double_field",
+          "id": 6,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            164,
+            12
+          ],
+          "end": [
+            164,
+            44
+          ],
+          "fieldType": "double",
+          "name": "repeated_double_field",
+          "id": 7,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            165,
+            12
+          ],
+          "end": [
+            165,
+            59
+          ],
+          "fieldType": "double",
+          "name": "default_double_field",
+          "id": 8,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                165,
+                45
+              ],
+              "end": [
+                165,
+                57
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  165,
+                  55
+                ],
+                "end": [
+                  165,
+                  57
+                ],
+                "literalType": "float",
+                "raw": "2.0",
+                "value": 2
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        168,
+        1
+      ],
+      "end": [
+        173,
+        1
+      ],
+      "name": "BooleanFields",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            169,
+            12
+          ],
+          "end": [
+            169,
+            43
+          ],
+          "fieldType": "bool",
+          "name": "optional_boolean_field",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            170,
+            12
+          ],
+          "end": [
+            170,
+            43
+          ],
+          "fieldType": "bool",
+          "name": "required_boolean_field",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            171,
+            12
+          ],
+          "end": [
+            171,
+            43
+          ],
+          "fieldType": "bool",
+          "name": "repeated_boolean_field",
+          "id": 3,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            172,
+            12
+          ],
+          "end": [
+            172,
+            59
+          ],
+          "fieldType": "bool",
+          "name": "default_boolean_field",
+          "id": 4,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                172,
+                44
+              ],
+              "end": [
+                172,
+                57
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  172,
+                  54
+                ],
+                "end": [
+                  172,
+                  57
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        175,
+        1
+      ],
+      "end": [
+        182,
+        1
+      ],
+      "name": "TestClone",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            176,
+            12
+          ],
+          "end": [
+            176,
+            26
+          ],
+          "fieldType": "string",
+          "name": "str",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            177,
+            12
+          ],
+          "end": [
+            177,
+            31
+          ],
+          "fieldType": "Simple1",
+          "name": "simple1",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            178,
+            12
+          ],
+          "end": [
+            178,
+            31
+          ],
+          "fieldType": "Simple1",
+          "name": "simple2",
+          "id": 5,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            179,
+            12
+          ],
+          "end": [
+            179,
+            33
+          ],
+          "fieldType": "bytes",
+          "name": "bytes_field",
+          "id": 6,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            180,
+            12
+          ],
+          "end": [
+            180,
+            29
+          ],
+          "fieldType": "string",
+          "name": "unused",
+          "id": 7,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            181,
+            3
+          ],
+          "end": [
+            181,
+            23
+          ],
+          "ranges": [
+            [
+              10,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        184,
+        1
+      ],
+      "end": [
+        189,
+        1
+      ],
+      "name": "TestCloneExtension",
+      "body": [
+        {
+          "type": "Extend",
+          "start": [
+            185,
+            3
+          ],
+          "end": [
+            187,
+            3
+          ],
+          "name": "TestClone",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                186,
+                5
+              ],
+              "end": [
+                186,
+                45
+              ],
+              "fieldType": "TestCloneExtension",
+              "name": "low_ext",
+              "id": 11,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            188,
+            12
+          ],
+          "end": [
+            188,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "f",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        191,
+        1
+      ],
+      "end": [
+        196,
+        1
+      ],
+      "name": "CloneExtension",
+      "body": [
+        {
+          "type": "Extend",
+          "start": [
+            192,
+            3
+          ],
+          "end": [
+            194,
+            3
+          ],
+          "name": "TestClone",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                193,
+                5
+              ],
+              "end": [
+                193,
+                44
+              ],
+              "fieldType": "CloneExtension",
+              "name": "ext_field",
+              "id": 100,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            195,
+            12
+          ],
+          "end": [
+            195,
+            26
+          ],
+          "fieldType": "string",
+          "name": "ext",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        198,
+        1
+      ],
+      "end": [
+        212,
+        1
+      ],
+      "name": "TestGroup",
+      "body": [
+        {
+          "type": "Group",
+          "start": [
+            199,
+            12
+          ],
+          "end": [
+            202,
+            3
+          ],
+          "name": "RepeatedGroup",
+          "id": 1,
+          "repeated": true,
+          "optional": false,
+          "required": false,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                200,
+                5
+              ],
+              "end": [
+                200,
+                27
+              ],
+              "fieldType": "string",
+              "name": "id",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            },
+            {
+              "type": "Field",
+              "start": [
+                201,
+                5
+              ],
+              "end": [
+                201,
+                32
+              ],
+              "fieldType": "bool",
+              "name": "some_bool",
+              "id": 2,
+              "options": [],
+              "repeated": true,
+              "optional": false,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Group",
+          "start": [
+            203,
+            12
+          ],
+          "end": [
+            205,
+            3
+          ],
+          "name": "RequiredGroup",
+          "id": 2,
+          "repeated": false,
+          "optional": false,
+          "required": true,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                204,
+                5
+              ],
+              "end": [
+                204,
+                27
+              ],
+              "fieldType": "string",
+              "name": "id",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            }
+          ]
+        },
+        {
+          "type": "Group",
+          "start": [
+            206,
+            12
+          ],
+          "end": [
+            208,
+            3
+          ],
+          "name": "OptionalGroup",
+          "id": 3,
+          "repeated": false,
+          "optional": true,
+          "required": false,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                207,
+                5
+              ],
+              "end": [
+                207,
+                27
+              ],
+              "fieldType": "string",
+              "name": "id",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            209,
+            12
+          ],
+          "end": [
+            209,
+            25
+          ],
+          "fieldType": "string",
+          "name": "id",
+          "id": 4,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            210,
+            12
+          ],
+          "end": [
+            210,
+            39
+          ],
+          "fieldType": "Simple2",
+          "name": "required_simple",
+          "id": 5,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            211,
+            12
+          ],
+          "end": [
+            211,
+            39
+          ],
+          "fieldType": "Simple2",
+          "name": "optional_simple",
+          "id": 6,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        214,
+        1
+      ],
+      "end": [
+        216,
+        1
+      ],
+      "name": "TestGroup1",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            215,
+            12
+          ],
+          "end": [
+            215,
+            45
+          ],
+          "fieldType": "TestGroup.RepeatedGroup",
+          "name": "group",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        218,
+        1
+      ],
+      "end": [
+        221,
+        1
+      ],
+      "name": "TestReservedNames",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            219,
+            12
+          ],
+          "end": [
+            219,
+            31
+          ],
+          "fieldType": "int32",
+          "name": "extension",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            220,
+            3
+          ],
+          "end": [
+            220,
+            23
+          ],
+          "ranges": [
+            [
+              10,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        223,
+        1
+      ],
+      "end": [
+        227,
+        1
+      ],
+      "name": "TestReservedNamesExtension",
+      "body": [
+        {
+          "type": "Extend",
+          "start": [
+            224,
+            3
+          ],
+          "end": [
+            226,
+            3
+          ],
+          "name": "TestReservedNames",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                225,
+                5
+              ],
+              "end": [
+                225,
+                28
+              ],
+              "fieldType": "int32",
+              "name": "foo",
+              "id": 10,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        229,
+        1
+      ],
+      "end": [
+        253,
+        1
+      ],
+      "name": "TestMessageWithOneof",
+      "body": [
+        {
+          "type": "Oneof",
+          "start": [
+            231,
+            3
+          ],
+          "end": [
+            234,
+            3
+          ],
+          "name": "partial_oneof",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                232,
+                5
+              ],
+              "end": [
+                232,
+                20
+              ],
+              "fieldType": "string",
+              "name": "pone",
+              "id": 3,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                233,
+                5
+              ],
+              "end": [
+                233,
+                22
+              ],
+              "fieldType": "string",
+              "name": "pthree",
+              "id": 5,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Oneof",
+          "start": [
+            236,
+            3
+          ],
+          "end": [
+            239,
+            3
+          ],
+          "name": "recursive_oneof",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                237,
+                5
+              ],
+              "end": [
+                237,
+                34
+              ],
+              "fieldType": "TestMessageWithOneof",
+              "name": "rone",
+              "id": 6,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                238,
+                5
+              ],
+              "end": [
+                238,
+                20
+              ],
+              "fieldType": "string",
+              "name": "rtwo",
+              "id": 7,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            241,
+            12
+          ],
+          "end": [
+            241,
+            33
+          ],
+          "fieldType": "bool",
+          "name": "normal_field",
+          "id": 8,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            242,
+            12
+          ],
+          "end": [
+            242,
+            37
+          ],
+          "fieldType": "string",
+          "name": "repeated_field",
+          "id": 9,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Oneof",
+          "start": [
+            244,
+            3
+          ],
+          "end": [
+            247,
+            3
+          ],
+          "name": "default_oneof_a",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                245,
+                5
+              ],
+              "end": [
+                245,
+                37
+              ],
+              "fieldType": "int32",
+              "name": "aone",
+              "id": 10,
+              "options": [
+                {
+                  "type": "FieldOption",
+                  "start": [
+                    245,
+                    22
+                  ],
+                  "end": [
+                    245,
+                    35
+                  ],
+                  "key": "default",
+                  "value": {
+                    "type": "Constant",
+                    "start": [
+                      245,
+                      32
+                    ],
+                    "end": [
+                      245,
+                      35
+                    ],
+                    "literalType": "int",
+                    "raw": "1234",
+                    "value": 1234
+                  }
+                }
+              ],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                246,
+                5
+              ],
+              "end": [
+                246,
+                20
+              ],
+              "fieldType": "int32",
+              "name": "atwo",
+              "id": 11,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Oneof",
+          "start": [
+            249,
+            3
+          ],
+          "end": [
+            252,
+            3
+          ],
+          "name": "default_oneof_b",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                250,
+                5
+              ],
+              "end": [
+                250,
+                20
+              ],
+              "fieldType": "int32",
+              "name": "bone",
+              "id": 12,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                251,
+                5
+              ],
+              "end": [
+                251,
+                37
+              ],
+              "fieldType": "int32",
+              "name": "btwo",
+              "id": 13,
+              "options": [
+                {
+                  "type": "FieldOption",
+                  "start": [
+                    251,
+                    22
+                  ],
+                  "end": [
+                    251,
+                    35
+                  ],
+                  "key": "default",
+                  "value": {
+                    "type": "Constant",
+                    "start": [
+                      251,
+                      32
+                    ],
+                    "end": [
+                      251,
+                      35
+                    ],
+                    "literalType": "int",
+                    "raw": "1234",
+                    "value": 1234
+                  }
+                }
+              ],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        255,
+        1
+      ],
+      "end": [
+        258,
+        1
+      ],
+      "name": "TestEndsWithBytes",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            256,
+            12
+          ],
+          "end": [
+            256,
+            27
+          ],
+          "fieldType": "int32",
+          "name": "value",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            257,
+            12
+          ],
+          "end": [
+            257,
+            26
+          ],
+          "fieldType": "bytes",
+          "name": "data",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        262,
+        1
+      ],
+      "end": [
+        265,
+        1
+      ],
+      "name": "TestLastFieldBeforePivot",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            263,
+            12
+          ],
+          "end": [
+            263,
+            45
+          ],
+          "fieldType": "int32",
+          "name": "last_field_before_pivot",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            264,
+            3
+          ],
+          "end": [
+            264,
+            24
+          ],
+          "ranges": [
+            [
+              100,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        267,
+        1
+      ],
+      "end": [
+        269,
+        1
+      ],
+      "name": "TestLastFieldBeforePivot",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            268,
+            3
+          ],
+          "end": [
+            268,
+            65
+          ],
+          "fieldType": "int32",
+          "name": "extend_test_last_field_before_pivot_field",
+          "id": 101,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        272,
+        1
+      ],
+      "end": [
+        277,
+        1
+      ],
+      "name": "Int64Types",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            273,
+            12
+          ],
+          "end": [
+            273,
+            55
+          ],
+          "fieldType": "int64",
+          "name": "int64_normal",
+          "id": 1,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                273,
+                36
+              ],
+              "end": [
+                273,
+                53
+              ],
+              "key": "jstype",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  273,
+                  45
+                ],
+                "end": [
+                  273,
+                  53
+                ],
+                "literalType": "identifier",
+                "raw": "JS_NORMAL",
+                "value": "JS_NORMAL"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            274,
+            12
+          ],
+          "end": [
+            274,
+            56
+          ],
+          "fieldType": "sint64",
+          "name": "int64_string",
+          "id": 2,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                274,
+                37
+              ],
+              "end": [
+                274,
+                54
+              ],
+              "key": "jstype",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  274,
+                  46
+                ],
+                "end": [
+                  274,
+                  54
+                ],
+                "literalType": "identifier",
+                "raw": "JS_STRING",
+                "value": "JS_STRING"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            275,
+            12
+          ],
+          "end": [
+            275,
+            56
+          ],
+          "fieldType": "uint64",
+          "name": "int64_number",
+          "id": 3,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                275,
+                37
+              ],
+              "end": [
+                275,
+                54
+              ],
+              "key": "jstype",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  275,
+                  46
+                ],
+                "end": [
+                  275,
+                  54
+                ],
+                "literalType": "identifier",
+                "raw": "JS_NUMBER",
+                "value": "JS_NUMBER"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        279,
+        1
+      ],
+      "end": [
+        294,
+        1
+      ],
+      "name": "TestMapFieldsNoBinary",
+      "body": [
+        {
+          "type": "MapField",
+          "start": [
+            280,
+            3
+          ],
+          "end": [
+            280,
+            44
+          ],
+          "keyType": "string",
+          "valueType": "string",
+          "name": "map_string_string",
+          "id": 1
+        },
+        {
+          "type": "MapField",
+          "start": [
+            281,
+            3
+          ],
+          "end": [
+            281,
+            42
+          ],
+          "keyType": "string",
+          "valueType": "int32",
+          "name": "map_string_int32",
+          "id": 2
+        },
+        {
+          "type": "MapField",
+          "start": [
+            282,
+            3
+          ],
+          "end": [
+            282,
+            42
+          ],
+          "keyType": "string",
+          "valueType": "int64",
+          "name": "map_string_int64",
+          "id": 3
+        },
+        {
+          "type": "MapField",
+          "start": [
+            283,
+            3
+          ],
+          "end": [
+            283,
+            40
+          ],
+          "keyType": "string",
+          "valueType": "bool",
+          "name": "map_string_bool",
+          "id": 4
+        },
+        {
+          "type": "MapField",
+          "start": [
+            284,
+            3
+          ],
+          "end": [
+            284,
+            44
+          ],
+          "keyType": "string",
+          "valueType": "double",
+          "name": "map_string_double",
+          "id": 5
+        },
+        {
+          "type": "MapField",
+          "start": [
+            285,
+            3
+          ],
+          "end": [
+            285,
+            56
+          ],
+          "keyType": "string",
+          "valueType": "MapValueEnumNoBinary",
+          "name": "map_string_enum",
+          "id": 6
+        },
+        {
+          "type": "MapField",
+          "start": [
+            286,
+            3
+          ],
+          "end": [
+            286,
+            58
+          ],
+          "keyType": "string",
+          "valueType": "MapValueMessageNoBinary",
+          "name": "map_string_msg",
+          "id": 7
+        },
+        {
+          "type": "MapField",
+          "start": [
+            288,
+            3
+          ],
+          "end": [
+            288,
+            42
+          ],
+          "keyType": "int32",
+          "valueType": "string",
+          "name": "map_int32_string",
+          "id": 8
+        },
+        {
+          "type": "MapField",
+          "start": [
+            289,
+            3
+          ],
+          "end": [
+            289,
+            42
+          ],
+          "keyType": "int64",
+          "valueType": "string",
+          "name": "map_int64_string",
+          "id": 9
+        },
+        {
+          "type": "MapField",
+          "start": [
+            290,
+            3
+          ],
+          "end": [
+            290,
+            41
+          ],
+          "keyType": "bool",
+          "valueType": "string",
+          "name": "map_bool_string",
+          "id": 10
+        },
+        {
+          "type": "Field",
+          "start": [
+            292,
+            12
+          ],
+          "end": [
+            292,
+            54
+          ],
+          "fieldType": "TestMapFieldsNoBinary",
+          "name": "test_map_fields",
+          "id": 11,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "MapField",
+          "start": [
+            293,
+            3
+          ],
+          "end": [
+            293,
+            67
+          ],
+          "keyType": "string",
+          "valueType": "TestMapFieldsNoBinary",
+          "name": "map_string_testmapfields",
+          "id": 12
+        }
+      ]
+    },
+    {
+      "type": "Enum",
+      "start": [
+        296,
+        1
+      ],
+      "end": [
+        300,
+        1
+      ],
+      "name": "MapValueEnumNoBinary",
+      "body": [
+        {
+          "type": "EnumField",
+          "start": [
+            297,
+            3
+          ],
+          "end": [
+            297,
+            29
+          ],
+          "name": "MAP_VALUE_FOO_NOBINARY",
+          "id": 0
+        },
+        {
+          "type": "EnumField",
+          "start": [
+            298,
+            3
+          ],
+          "end": [
+            298,
+            29
+          ],
+          "name": "MAP_VALUE_BAR_NOBINARY",
+          "id": 1
+        },
+        {
+          "type": "EnumField",
+          "start": [
+            299,
+            3
+          ],
+          "end": [
+            299,
+            29
+          ],
+          "name": "MAP_VALUE_BAZ_NOBINARY",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        302,
+        1
+      ],
+      "end": [
+        304,
+        1
+      ],
+      "name": "MapValueMessageNoBinary",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            303,
+            12
+          ],
+          "end": [
+            303,
+            25
+          ],
+          "fieldType": "int32",
+          "name": "foo",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        306,
+        1
+      ],
+      "end": [
+        312,
+        1
+      ],
+      "name": "Deeply",
+      "body": [
+        {
+          "type": "Message",
+          "start": [
+            307,
+            3
+          ],
+          "end": [
+            311,
+            3
+          ],
+          "name": "Nested",
+          "body": [
+            {
+              "type": "Message",
+              "start": [
+                308,
+                5
+              ],
+              "end": [
+                310,
+                5
+              ],
+              "name": "Message",
+              "body": [
+                {
+                  "type": "Field",
+                  "start": [
+                    309,
+                    16
+                  ],
+                  "end": [
+                    309,
+                    31
+                  ],
+                  "fieldType": "int32",
+                  "name": "count",
+                  "id": 1,
+                  "options": [],
+                  "repeated": false,
+                  "optional": true,
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Enum",
+      "start": [
+        316,
+        1
+      ],
+      "end": [
+        322,
+        1
+      ],
+      "name": "TestAllowAliasEnum",
+      "body": [
+        {
+          "type": "Option",
+          "start": [
+            317,
+            3
+          ],
+          "end": [
+            317,
+            28
+          ],
+          "key": "allow_alias",
+          "value": {
+            "type": "Constant",
+            "start": [
+              317,
+              24
+            ],
+            "end": [
+              317,
+              27
+            ],
+            "literalType": "boolean",
+            "raw": "true",
+            "value": true
+          }
+        },
+        {
+          "type": "EnumField",
+          "start": [
+            319,
+            3
+          ],
+          "end": [
+            319,
+            31
+          ],
+          "name": "TEST_ALLOW_ALIAS_DEFAULT",
+          "id": 0
+        },
+        {
+          "type": "EnumField",
+          "start": [
+            320,
+            3
+          ],
+          "end": [
+            320,
+            13
+          ],
+          "name": "VALUE1",
+          "id": 1
+        },
+        {
+          "type": "EnumField",
+          "start": [
+            321,
+            3
+          ],
+          "end": [
+            321,
+            13
+          ],
+          "name": "value1",
+          "id": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    14,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        1,
+        1
+      ],
+      "end": [
+        1,
+        18
+      ],
+      "version": 3
+    },
+    {
+      "type": "Service",
+      "start": [
+        3,
+        1
+      ],
+      "end": [
+        5,
+        1
+      ],
+      "name": "MyService",
+      "body": [
+        {
+          "type": "RPC",
+          "start": [
+            4,
+            5
+          ],
+          "end": [
+            4,
+            50
+          ],
+          "name": "MyMethod",
+          "request": {
+            "name": "MyRequest",
+            "streaming": false
+          },
+          "response": {
+            "name": "MyResponse",
+            "streaming": false
+          },
+          "body": null
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        7,
+        1
+      ],
+      "end": [
+        9,
+        1
+      ],
+      "name": "MyRequest",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            8,
+            5
+          ],
+          "end": [
+            8,
+            20
+          ],
+          "fieldType": "string",
+          "name": "path",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        11,
+        1
+      ],
+      "end": [
+        13,
+        1
+      ],
+      "name": "MyResponse",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            12,
+            5
+          ],
+          "end": [
+            12,
+            21
+          ],
+          "fieldType": "int32",
+          "name": "status",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        }
+      ]
+    }
+  ]
+}

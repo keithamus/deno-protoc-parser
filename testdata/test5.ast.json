@@ -1,0 +1,152 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    45,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Package",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        26
+      ],
+      "name": "jspb.exttest.beta"
+    },
+    {
+      "type": "Option",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        35,
+        51
+      ],
+      "key": "java_package",
+      "value": {
+        "type": "Constant",
+        "start": [
+          35,
+          23
+        ],
+        "end": [
+          35,
+          50
+        ],
+        "literalType": "string",
+        "raw": "\"com.google.apps.jspb.proto\"",
+        "value": "com.google.apps.jspb.proto"
+      }
+    },
+    {
+      "type": "Option",
+      "start": [
+        36,
+        1
+      ],
+      "end": [
+        36,
+        34
+      ],
+      "key": "java_multiple_files",
+      "value": {
+        "type": "Constant",
+        "start": [
+          36,
+          30
+        ],
+        "end": [
+          36,
+          33
+        ],
+        "literalType": "boolean",
+        "raw": "true",
+        "value": true
+      }
+    },
+    {
+      "type": "Message",
+      "start": [
+        38,
+        1
+      ],
+      "end": [
+        40,
+        1
+      ],
+      "name": "TestBetaExtensionsMessage",
+      "body": [
+        {
+          "type": "Extensions",
+          "start": [
+            39,
+            3
+          ],
+          "end": [
+            39,
+            24
+          ],
+          "ranges": [
+            [
+              100,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        42,
+        1
+      ],
+      "end": [
+        44,
+        1
+      ],
+      "name": "TestBetaExtensionsMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            43,
+            3
+          ],
+          "end": [
+            43,
+            43
+          ],
+          "fieldType": "string",
+          "name": "floating_str_field",
+          "id": 101,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    }
+  ]
+}

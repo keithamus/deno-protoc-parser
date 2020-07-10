@@ -1,0 +1,1799 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    181,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        30,
+        1
+      ],
+      "end": [
+        30,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Option",
+      "start": [
+        32,
+        1
+      ],
+      "end": [
+        32,
+        82
+      ],
+      "key": "go_package",
+      "value": {
+        "type": "Constant",
+        "start": [
+          32,
+          21
+        ],
+        "end": [
+          32,
+          81
+        ],
+        "literalType": "string",
+        "raw": "\"github.com/golang/protobuf/internal/testprotos/jsonpb_proto\"",
+        "value": "github.com/golang/protobuf/internal/testprotos/jsonpb_proto"
+      }
+    },
+    {
+      "type": "Import",
+      "start": [
+        34,
+        1
+      ],
+      "end": [
+        34,
+        35
+      ],
+      "weak": false,
+      "public": false,
+      "source": "google/protobuf/any.proto"
+    },
+    {
+      "type": "Import",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        35,
+        40
+      ],
+      "weak": false,
+      "public": false,
+      "source": "google/protobuf/duration.proto"
+    },
+    {
+      "type": "Import",
+      "start": [
+        36,
+        1
+      ],
+      "end": [
+        36,
+        38
+      ],
+      "weak": false,
+      "public": false,
+      "source": "google/protobuf/struct.proto"
+    },
+    {
+      "type": "Import",
+      "start": [
+        37,
+        1
+      ],
+      "end": [
+        37,
+        41
+      ],
+      "weak": false,
+      "public": false,
+      "source": "google/protobuf/timestamp.proto"
+    },
+    {
+      "type": "Import",
+      "start": [
+        38,
+        1
+      ],
+      "end": [
+        38,
+        40
+      ],
+      "weak": false,
+      "public": false,
+      "source": "google/protobuf/wrappers.proto"
+    },
+    {
+      "type": "Package",
+      "start": [
+        40,
+        1
+      ],
+      "end": [
+        40,
+        20
+      ],
+      "name": "jsonpb_test"
+    },
+    {
+      "type": "Message",
+      "start": [
+        43,
+        1
+      ],
+      "end": [
+        63,
+        1
+      ],
+      "name": "Simple",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            44,
+            12
+          ],
+          "end": [
+            44,
+            27
+          ],
+          "fieldType": "bool",
+          "name": "o_bool",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            45,
+            12
+          ],
+          "end": [
+            45,
+            29
+          ],
+          "fieldType": "int32",
+          "name": "o_int32",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            46,
+            12
+          ],
+          "end": [
+            46,
+            33
+          ],
+          "fieldType": "int32",
+          "name": "o_int32_str",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            47,
+            12
+          ],
+          "end": [
+            47,
+            29
+          ],
+          "fieldType": "int64",
+          "name": "o_int64",
+          "id": 4,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            48,
+            12
+          ],
+          "end": [
+            48,
+            33
+          ],
+          "fieldType": "int64",
+          "name": "o_int64_str",
+          "id": 5,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            49,
+            12
+          ],
+          "end": [
+            49,
+            31
+          ],
+          "fieldType": "uint32",
+          "name": "o_uint32",
+          "id": 6,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            50,
+            12
+          ],
+          "end": [
+            50,
+            35
+          ],
+          "fieldType": "uint32",
+          "name": "o_uint32_str",
+          "id": 7,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            51,
+            12
+          ],
+          "end": [
+            51,
+            31
+          ],
+          "fieldType": "uint64",
+          "name": "o_uint64",
+          "id": 8,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            52,
+            12
+          ],
+          "end": [
+            52,
+            35
+          ],
+          "fieldType": "uint64",
+          "name": "o_uint64_str",
+          "id": 9,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            53,
+            12
+          ],
+          "end": [
+            53,
+            32
+          ],
+          "fieldType": "sint32",
+          "name": "o_sint32",
+          "id": 10,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            54,
+            12
+          ],
+          "end": [
+            54,
+            36
+          ],
+          "fieldType": "sint32",
+          "name": "o_sint32_str",
+          "id": 11,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            55,
+            12
+          ],
+          "end": [
+            55,
+            32
+          ],
+          "fieldType": "sint64",
+          "name": "o_sint64",
+          "id": 12,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            56,
+            12
+          ],
+          "end": [
+            56,
+            36
+          ],
+          "fieldType": "sint64",
+          "name": "o_sint64_str",
+          "id": 13,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            57,
+            12
+          ],
+          "end": [
+            57,
+            30
+          ],
+          "fieldType": "float",
+          "name": "o_float",
+          "id": 14,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            58,
+            12
+          ],
+          "end": [
+            58,
+            34
+          ],
+          "fieldType": "float",
+          "name": "o_float_str",
+          "id": 15,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            59,
+            12
+          ],
+          "end": [
+            59,
+            32
+          ],
+          "fieldType": "double",
+          "name": "o_double",
+          "id": 16,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            60,
+            12
+          ],
+          "end": [
+            60,
+            36
+          ],
+          "fieldType": "double",
+          "name": "o_double_str",
+          "id": 17,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            61,
+            12
+          ],
+          "end": [
+            61,
+            32
+          ],
+          "fieldType": "string",
+          "name": "o_string",
+          "id": 18,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            62,
+            12
+          ],
+          "end": [
+            62,
+            30
+          ],
+          "fieldType": "bytes",
+          "name": "o_bytes",
+          "id": 19,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        66,
+        1
+      ],
+      "end": [
+        73,
+        1
+      ],
+      "name": "NonFinites",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            67,
+            14
+          ],
+          "end": [
+            67,
+            29
+          ],
+          "fieldType": "float",
+          "name": "f_nan",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            68,
+            14
+          ],
+          "end": [
+            68,
+            30
+          ],
+          "fieldType": "float",
+          "name": "f_pinf",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            69,
+            14
+          ],
+          "end": [
+            69,
+            30
+          ],
+          "fieldType": "float",
+          "name": "f_ninf",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            70,
+            14
+          ],
+          "end": [
+            70,
+            30
+          ],
+          "fieldType": "double",
+          "name": "d_nan",
+          "id": 4,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            71,
+            14
+          ],
+          "end": [
+            71,
+            31
+          ],
+          "fieldType": "double",
+          "name": "d_pinf",
+          "id": 5,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            72,
+            14
+          ],
+          "end": [
+            72,
+            31
+          ],
+          "fieldType": "double",
+          "name": "d_ninf",
+          "id": 6,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        76,
+        1
+      ],
+      "end": [
+        88,
+        1
+      ],
+      "name": "Repeats",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            77,
+            12
+          ],
+          "end": [
+            77,
+            27
+          ],
+          "fieldType": "bool",
+          "name": "r_bool",
+          "id": 1,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            78,
+            12
+          ],
+          "end": [
+            78,
+            29
+          ],
+          "fieldType": "int32",
+          "name": "r_int32",
+          "id": 2,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            79,
+            12
+          ],
+          "end": [
+            79,
+            29
+          ],
+          "fieldType": "int64",
+          "name": "r_int64",
+          "id": 3,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            80,
+            12
+          ],
+          "end": [
+            80,
+            31
+          ],
+          "fieldType": "uint32",
+          "name": "r_uint32",
+          "id": 4,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            81,
+            12
+          ],
+          "end": [
+            81,
+            31
+          ],
+          "fieldType": "uint64",
+          "name": "r_uint64",
+          "id": 5,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            82,
+            12
+          ],
+          "end": [
+            82,
+            31
+          ],
+          "fieldType": "sint32",
+          "name": "r_sint32",
+          "id": 6,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            83,
+            12
+          ],
+          "end": [
+            83,
+            31
+          ],
+          "fieldType": "sint64",
+          "name": "r_sint64",
+          "id": 7,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            84,
+            12
+          ],
+          "end": [
+            84,
+            29
+          ],
+          "fieldType": "float",
+          "name": "r_float",
+          "id": 8,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            85,
+            12
+          ],
+          "end": [
+            85,
+            31
+          ],
+          "fieldType": "double",
+          "name": "r_double",
+          "id": 9,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            86,
+            12
+          ],
+          "end": [
+            86,
+            32
+          ],
+          "fieldType": "string",
+          "name": "r_string",
+          "id": 10,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            87,
+            12
+          ],
+          "end": [
+            87,
+            30
+          ],
+          "fieldType": "bytes",
+          "name": "r_bytes",
+          "id": 11,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        91,
+        1
+      ],
+      "end": [
+        105,
+        1
+      ],
+      "name": "Widget",
+      "body": [
+        {
+          "type": "Enum",
+          "start": [
+            92,
+            3
+          ],
+          "end": [
+            96,
+            3
+          ],
+          "name": "Color",
+          "body": [
+            {
+              "type": "EnumField",
+              "start": [
+                93,
+                5
+              ],
+              "end": [
+                93,
+                12
+              ],
+              "name": "RED",
+              "id": 0
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                94,
+                5
+              ],
+              "end": [
+                94,
+                14
+              ],
+              "name": "GREEN",
+              "id": 1
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                95,
+                5
+              ],
+              "end": [
+                95,
+                13
+              ],
+              "name": "BLUE",
+              "id": 2
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            97,
+            12
+          ],
+          "end": [
+            97,
+            27
+          ],
+          "fieldType": "Color",
+          "name": "color",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            98,
+            12
+          ],
+          "end": [
+            98,
+            29
+          ],
+          "fieldType": "Color",
+          "name": "r_color",
+          "id": 2,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            100,
+            12
+          ],
+          "end": [
+            100,
+            30
+          ],
+          "fieldType": "Simple",
+          "name": "simple",
+          "id": 10,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            101,
+            12
+          ],
+          "end": [
+            101,
+            32
+          ],
+          "fieldType": "Simple",
+          "name": "r_simple",
+          "id": 11,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            103,
+            12
+          ],
+          "end": [
+            103,
+            32
+          ],
+          "fieldType": "Repeats",
+          "name": "repeats",
+          "id": 20,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            104,
+            12
+          ],
+          "end": [
+            104,
+            34
+          ],
+          "fieldType": "Repeats",
+          "name": "r_repeats",
+          "id": 21,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        107,
+        1
+      ],
+      "end": [
+        110,
+        1
+      ],
+      "name": "Maps",
+      "body": [
+        {
+          "type": "MapField",
+          "start": [
+            108,
+            3
+          ],
+          "end": [
+            108,
+            37
+          ],
+          "keyType": "int64",
+          "valueType": "string",
+          "name": "m_int64_str",
+          "id": 1
+        },
+        {
+          "type": "MapField",
+          "start": [
+            109,
+            3
+          ],
+          "end": [
+            109,
+            38
+          ],
+          "keyType": "bool",
+          "valueType": "Simple",
+          "name": "m_bool_simple",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        112,
+        1
+      ],
+      "end": [
+        120,
+        1
+      ],
+      "name": "MsgWithOneof",
+      "body": [
+        {
+          "type": "Oneof",
+          "start": [
+            113,
+            3
+          ],
+          "end": [
+            119,
+            3
+          ],
+          "name": "union",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                114,
+                5
+              ],
+              "end": [
+                114,
+                21
+              ],
+              "fieldType": "string",
+              "name": "title",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                115,
+                5
+              ],
+              "end": [
+                115,
+                21
+              ],
+              "fieldType": "int64",
+              "name": "salary",
+              "id": 2,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                116,
+                5
+              ],
+              "end": [
+                116,
+                23
+              ],
+              "fieldType": "string",
+              "name": "Country",
+              "id": 3,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                117,
+                5
+              ],
+              "end": [
+                117,
+                28
+              ],
+              "fieldType": "string",
+              "name": "home_address",
+              "id": 4,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                118,
+                5
+              ],
+              "end": [
+                118,
+                42
+              ],
+              "fieldType": "MsgWithRequired",
+              "name": "msg_with_required",
+              "id": 5,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        122,
+        1
+      ],
+      "end": [
+        125,
+        1
+      ],
+      "name": "Real",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            123,
+            12
+          ],
+          "end": [
+            123,
+            28
+          ],
+          "fieldType": "double",
+          "name": "value",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            124,
+            3
+          ],
+          "end": [
+            124,
+            24
+          ],
+          "ranges": [
+            [
+              100,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        127,
+        1
+      ],
+      "end": [
+        129,
+        1
+      ],
+      "name": "Real",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            128,
+            3
+          ],
+          "end": [
+            128,
+            29
+          ],
+          "fieldType": "string",
+          "name": "name",
+          "id": 124,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        131,
+        1
+      ],
+      "end": [
+        137,
+        1
+      ],
+      "name": "Complex",
+      "body": [
+        {
+          "type": "Extend",
+          "start": [
+            132,
+            3
+          ],
+          "end": [
+            134,
+            3
+          ],
+          "name": "Real",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                133,
+                5
+              ],
+              "end": [
+                133,
+                42
+              ],
+              "fieldType": "Complex",
+              "name": "real_extension",
+              "id": 123,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            135,
+            12
+          ],
+          "end": [
+            135,
+            32
+          ],
+          "fieldType": "double",
+          "name": "imaginary",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            136,
+            3
+          ],
+          "end": [
+            136,
+            24
+          ],
+          "ranges": [
+            [
+              100,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        139,
+        1
+      ],
+      "end": [
+        156,
+        1
+      ],
+      "name": "KnownTypes",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            140,
+            12
+          ],
+          "end": [
+            140,
+            39
+          ],
+          "fieldType": "google.protobuf.Any",
+          "name": "an",
+          "id": 14,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            141,
+            12
+          ],
+          "end": [
+            141,
+            44
+          ],
+          "fieldType": "google.protobuf.Duration",
+          "name": "dur",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            142,
+            12
+          ],
+          "end": [
+            142,
+            42
+          ],
+          "fieldType": "google.protobuf.Struct",
+          "name": "st",
+          "id": 12,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            143,
+            12
+          ],
+          "end": [
+            143,
+            44
+          ],
+          "fieldType": "google.protobuf.Timestamp",
+          "name": "ts",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            144,
+            12
+          ],
+          "end": [
+            144,
+            45
+          ],
+          "fieldType": "google.protobuf.ListValue",
+          "name": "lv",
+          "id": 15,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            145,
+            12
+          ],
+          "end": [
+            145,
+            42
+          ],
+          "fieldType": "google.protobuf.Value",
+          "name": "val",
+          "id": 16,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            147,
+            12
+          ],
+          "end": [
+            147,
+            47
+          ],
+          "fieldType": "google.protobuf.DoubleValue",
+          "name": "dbl",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            148,
+            12
+          ],
+          "end": [
+            148,
+            46
+          ],
+          "fieldType": "google.protobuf.FloatValue",
+          "name": "flt",
+          "id": 4,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            149,
+            12
+          ],
+          "end": [
+            149,
+            46
+          ],
+          "fieldType": "google.protobuf.Int64Value",
+          "name": "i64",
+          "id": 5,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            150,
+            12
+          ],
+          "end": [
+            150,
+            47
+          ],
+          "fieldType": "google.protobuf.UInt64Value",
+          "name": "u64",
+          "id": 6,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            151,
+            12
+          ],
+          "end": [
+            151,
+            46
+          ],
+          "fieldType": "google.protobuf.Int32Value",
+          "name": "i32",
+          "id": 7,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            152,
+            12
+          ],
+          "end": [
+            152,
+            47
+          ],
+          "fieldType": "google.protobuf.UInt32Value",
+          "name": "u32",
+          "id": 8,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            153,
+            12
+          ],
+          "end": [
+            153,
+            46
+          ],
+          "fieldType": "google.protobuf.BoolValue",
+          "name": "bool",
+          "id": 9,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            154,
+            12
+          ],
+          "end": [
+            154,
+            48
+          ],
+          "fieldType": "google.protobuf.StringValue",
+          "name": "str",
+          "id": 10,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            155,
+            12
+          ],
+          "end": [
+            155,
+            49
+          ],
+          "fieldType": "google.protobuf.BytesValue",
+          "name": "bytes",
+          "id": 11,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        159,
+        1
+      ],
+      "end": [
+        161,
+        1
+      ],
+      "name": "MsgWithRequired",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            160,
+            12
+          ],
+          "end": [
+            160,
+            26
+          ],
+          "fieldType": "string",
+          "name": "str",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        163,
+        1
+      ],
+      "end": [
+        167,
+        1
+      ],
+      "name": "MsgWithIndirectRequired",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            164,
+            12
+          ],
+          "end": [
+            164,
+            36
+          ],
+          "fieldType": "MsgWithRequired",
+          "name": "subm",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "MapField",
+          "start": [
+            165,
+            3
+          ],
+          "end": [
+            165,
+            45
+          ],
+          "keyType": "string",
+          "valueType": "MsgWithRequired",
+          "name": "map_field",
+          "id": 2
+        },
+        {
+          "type": "Field",
+          "start": [
+            166,
+            12
+          ],
+          "end": [
+            166,
+            43
+          ],
+          "fieldType": "MsgWithRequired",
+          "name": "slice_field",
+          "id": 3,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        169,
+        1
+      ],
+      "end": [
+        171,
+        1
+      ],
+      "name": "MsgWithRequiredBytes",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            170,
+            12
+          ],
+          "end": [
+            170,
+            26
+          ],
+          "fieldType": "bytes",
+          "name": "byts",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        173,
+        1
+      ],
+      "end": [
+        175,
+        1
+      ],
+      "name": "MsgWithRequiredWKT",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            174,
+            12
+          ],
+          "end": [
+            174,
+            47
+          ],
+          "fieldType": "google.protobuf.StringValue",
+          "name": "str",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        177,
+        1
+      ],
+      "end": [
+        179,
+        1
+      ],
+      "name": "Real",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            178,
+            3
+          ],
+          "end": [
+            178,
+            38
+          ],
+          "fieldType": "MsgWithRequired",
+          "name": "extm",
+          "id": 125,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    }
+  ]
+}

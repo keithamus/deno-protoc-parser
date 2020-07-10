@@ -1,0 +1,135 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    43,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Package",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        21
+      ],
+      "name": "jspb.exttest"
+    },
+    {
+      "type": "Import",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        35,
+        21
+      ],
+      "weak": false,
+      "public": false,
+      "source": "test3.proto"
+    },
+    {
+      "type": "Option",
+      "start": [
+        37,
+        1
+      ],
+      "end": [
+        37,
+        51
+      ],
+      "key": "java_package",
+      "value": {
+        "type": "Constant",
+        "start": [
+          37,
+          23
+        ],
+        "end": [
+          37,
+          50
+        ],
+        "literalType": "string",
+        "raw": "\"com.google.apps.jspb.proto\"",
+        "value": "com.google.apps.jspb.proto"
+      }
+    },
+    {
+      "type": "Option",
+      "start": [
+        38,
+        1
+      ],
+      "end": [
+        38,
+        34
+      ],
+      "key": "java_multiple_files",
+      "value": {
+        "type": "Constant",
+        "start": [
+          38,
+          30
+        ],
+        "end": [
+          38,
+          33
+        ],
+        "literalType": "boolean",
+        "raw": "true",
+        "value": true
+      }
+    },
+    {
+      "type": "Extend",
+      "start": [
+        40,
+        1
+      ],
+      "end": [
+        42,
+        1
+      ],
+      "name": "TestExtensionsMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            41,
+            3
+          ],
+          "end": [
+            41,
+            57
+          ],
+          "fieldType": "ExtensionMessage",
+          "name": "floating_msg_field_two",
+          "id": 103,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    }
+  ]
+}

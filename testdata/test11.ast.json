@@ -1,0 +1,192 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    53,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Package",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        29
+      ],
+      "name": "jspb.exttest.reverse"
+    },
+    {
+      "type": "Message",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        44,
+        1
+      ],
+      "name": "TestExtensionReverseOrderMessage1",
+      "body": [
+        {
+          "type": "Extend",
+          "start": [
+            36,
+            3
+          ],
+          "end": [
+            38,
+            3
+          ],
+          "name": "TestExtensionReverseOrderMessage2",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                37,
+                5
+              ],
+              "end": [
+                37,
+                25
+              ],
+              "fieldType": "int32",
+              "name": "a",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Message",
+          "start": [
+            39,
+            3
+          ],
+          "end": [
+            43,
+            3
+          ],
+          "name": "TestExtensionReverseOrderNestedMessage1",
+          "body": [
+            {
+              "type": "Extend",
+              "start": [
+                40,
+                5
+              ],
+              "end": [
+                42,
+                5
+              ],
+              "name": "TestExtensionReverseOrderMessage2",
+              "body": [
+                {
+                  "type": "Field",
+                  "start": [
+                    41,
+                    7
+                  ],
+                  "end": [
+                    41,
+                    27
+                  ],
+                  "fieldType": "int32",
+                  "name": "b",
+                  "id": 2,
+                  "options": [],
+                  "repeated": false,
+                  "optional": true,
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        46,
+        1
+      ],
+      "end": [
+        48,
+        1
+      ],
+      "name": "TestExtensionReverseOrderMessage2",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            47,
+            3
+          ],
+          "end": [
+            47,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "c",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        50,
+        1
+      ],
+      "end": [
+        52,
+        1
+      ],
+      "name": "TestExtensionReverseOrderMessage2",
+      "body": [
+        {
+          "type": "Extensions",
+          "start": [
+            51,
+            3
+          ],
+          "end": [
+            51,
+            22
+          ],
+          "ranges": [
+            [
+              1,
+              100
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    40,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Package",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        35
+      ],
+      "name": "jspb.filenametest.package1"
+    },
+    {
+      "type": "Import",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        35,
+        22
+      ],
+      "weak": false,
+      "public": false,
+      "source": "test13.proto"
+    },
+    {
+      "type": "Extend",
+      "start": [
+        37,
+        1
+      ],
+      "end": [
+        39,
+        1
+      ],
+      "name": "TestMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            38,
+            3
+          ],
+          "end": [
+            38,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    }
+  ]
+}

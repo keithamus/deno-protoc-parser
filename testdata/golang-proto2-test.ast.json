@@ -1,0 +1,7326 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    511,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Option",
+      "start": [
+        33,
+        1
+      ],
+      "end": [
+        33,
+        82
+      ],
+      "key": "go_package",
+      "value": {
+        "type": "Constant",
+        "start": [
+          33,
+          21
+        ],
+        "end": [
+          33,
+          81
+        ],
+        "literalType": "string",
+        "raw": "\"github.com/golang/protobuf/internal/testprotos/proto2_proto\"",
+        "value": "github.com/golang/protobuf/internal/testprotos/proto2_proto"
+      }
+    },
+    {
+      "type": "Package",
+      "start": [
+        35,
+        1
+      ],
+      "end": [
+        35,
+        20
+      ],
+      "name": "proto2_test"
+    },
+    {
+      "type": "Enum",
+      "start": [
+        37,
+        1
+      ],
+      "end": [
+        37,
+        22
+      ],
+      "name": "FOO",
+      "body": [
+        {
+          "type": "EnumField",
+          "start": [
+            37,
+            12
+          ],
+          "end": [
+            37,
+            20
+          ],
+          "name": "FOO1",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        39,
+        1
+      ],
+      "end": [
+        41,
+        1
+      ],
+      "name": "GoEnum",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            40,
+            12
+          ],
+          "end": [
+            40,
+            23
+          ],
+          "fieldType": "FOO",
+          "name": "foo",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        43,
+        1
+      ],
+      "end": [
+        46,
+        1
+      ],
+      "name": "GoTestField",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            44,
+            12
+          ],
+          "end": [
+            44,
+            28
+          ],
+          "fieldType": "string",
+          "name": "Label",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            45,
+            12
+          ],
+          "end": [
+            45,
+            27
+          ],
+          "fieldType": "string",
+          "name": "Type",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        48,
+        1
+      ],
+      "end": [
+        179,
+        1
+      ],
+      "name": "GoTest",
+      "body": [
+        {
+          "type": "Enum",
+          "start": [
+            50,
+            3
+          ],
+          "end": [
+            72,
+            3
+          ],
+          "name": "KIND",
+          "body": [
+            {
+              "type": "EnumField",
+              "start": [
+                51,
+                5
+              ],
+              "end": [
+                51,
+                13
+              ],
+              "name": "VOID",
+              "id": 0
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                54,
+                5
+              ],
+              "end": [
+                54,
+                13
+              ],
+              "name": "BOOL",
+              "id": 1
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                55,
+                5
+              ],
+              "end": [
+                55,
+                14
+              ],
+              "name": "BYTES",
+              "id": 2
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                56,
+                5
+              ],
+              "end": [
+                56,
+                20
+              ],
+              "name": "FINGERPRINT",
+              "id": 3
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                57,
+                5
+              ],
+              "end": [
+                57,
+                14
+              ],
+              "name": "FLOAT",
+              "id": 4
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                58,
+                5
+              ],
+              "end": [
+                58,
+                12
+              ],
+              "name": "INT",
+              "id": 5
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                59,
+                5
+              ],
+              "end": [
+                59,
+                15
+              ],
+              "name": "STRING",
+              "id": 6
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                60,
+                5
+              ],
+              "end": [
+                60,
+                13
+              ],
+              "name": "TIME",
+              "id": 7
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                63,
+                5
+              ],
+              "end": [
+                63,
+                14
+              ],
+              "name": "TUPLE",
+              "id": 8
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                64,
+                5
+              ],
+              "end": [
+                64,
+                14
+              ],
+              "name": "ARRAY",
+              "id": 9
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                65,
+                5
+              ],
+              "end": [
+                65,
+                13
+              ],
+              "name": "MAP",
+              "id": 10
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                68,
+                5
+              ],
+              "end": [
+                68,
+                15
+              ],
+              "name": "TABLE",
+              "id": 11
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                71,
+                5
+              ],
+              "end": [
+                71,
+                18
+              ],
+              "name": "FUNCTION",
+              "id": 12
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            75,
+            12
+          ],
+          "end": [
+            75,
+            25
+          ],
+          "fieldType": "KIND",
+          "name": "Kind",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            76,
+            12
+          ],
+          "end": [
+            76,
+            28
+          ],
+          "fieldType": "string",
+          "name": "Table",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            77,
+            12
+          ],
+          "end": [
+            77,
+            27
+          ],
+          "fieldType": "int32",
+          "name": "Param",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            80,
+            12
+          ],
+          "end": [
+            80,
+            41
+          ],
+          "fieldType": "GoTestField",
+          "name": "RequiredField",
+          "id": 4,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            81,
+            12
+          ],
+          "end": [
+            81,
+            41
+          ],
+          "fieldType": "GoTestField",
+          "name": "RepeatedField",
+          "id": 5,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            82,
+            12
+          ],
+          "end": [
+            82,
+            41
+          ],
+          "fieldType": "GoTestField",
+          "name": "OptionalField",
+          "id": 6,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            85,
+            12
+          ],
+          "end": [
+            85,
+            37
+          ],
+          "fieldType": "bool",
+          "name": "F_Bool_required",
+          "id": 10,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            86,
+            12
+          ],
+          "end": [
+            86,
+            39
+          ],
+          "fieldType": "int32",
+          "name": "F_Int32_required",
+          "id": 11,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            87,
+            12
+          ],
+          "end": [
+            87,
+            39
+          ],
+          "fieldType": "int64",
+          "name": "F_Int64_required",
+          "id": 12,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            88,
+            12
+          ],
+          "end": [
+            88,
+            43
+          ],
+          "fieldType": "fixed32",
+          "name": "F_Fixed32_required",
+          "id": 13,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            89,
+            12
+          ],
+          "end": [
+            89,
+            43
+          ],
+          "fieldType": "fixed64",
+          "name": "F_Fixed64_required",
+          "id": 14,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            90,
+            12
+          ],
+          "end": [
+            90,
+            41
+          ],
+          "fieldType": "uint32",
+          "name": "F_Uint32_required",
+          "id": 15,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            91,
+            12
+          ],
+          "end": [
+            91,
+            41
+          ],
+          "fieldType": "uint64",
+          "name": "F_Uint64_required",
+          "id": 16,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            92,
+            12
+          ],
+          "end": [
+            92,
+            39
+          ],
+          "fieldType": "float",
+          "name": "F_Float_required",
+          "id": 17,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            93,
+            12
+          ],
+          "end": [
+            93,
+            41
+          ],
+          "fieldType": "double",
+          "name": "F_Double_required",
+          "id": 18,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            94,
+            12
+          ],
+          "end": [
+            94,
+            41
+          ],
+          "fieldType": "string",
+          "name": "F_String_required",
+          "id": 19,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            95,
+            12
+          ],
+          "end": [
+            95,
+            40
+          ],
+          "fieldType": "bytes",
+          "name": "F_Bytes_required",
+          "id": 101,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            96,
+            12
+          ],
+          "end": [
+            96,
+            42
+          ],
+          "fieldType": "sint32",
+          "name": "F_Sint32_required",
+          "id": 102,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            97,
+            12
+          ],
+          "end": [
+            97,
+            42
+          ],
+          "fieldType": "sint64",
+          "name": "F_Sint64_required",
+          "id": 103,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            98,
+            12
+          ],
+          "end": [
+            98,
+            46
+          ],
+          "fieldType": "sfixed32",
+          "name": "F_Sfixed32_required",
+          "id": 104,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            99,
+            12
+          ],
+          "end": [
+            99,
+            46
+          ],
+          "fieldType": "sfixed64",
+          "name": "F_Sfixed64_required",
+          "id": 105,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            102,
+            12
+          ],
+          "end": [
+            102,
+            37
+          ],
+          "fieldType": "bool",
+          "name": "F_Bool_repeated",
+          "id": 20,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            103,
+            12
+          ],
+          "end": [
+            103,
+            39
+          ],
+          "fieldType": "int32",
+          "name": "F_Int32_repeated",
+          "id": 21,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            104,
+            12
+          ],
+          "end": [
+            104,
+            39
+          ],
+          "fieldType": "int64",
+          "name": "F_Int64_repeated",
+          "id": 22,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            105,
+            12
+          ],
+          "end": [
+            105,
+            43
+          ],
+          "fieldType": "fixed32",
+          "name": "F_Fixed32_repeated",
+          "id": 23,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            106,
+            12
+          ],
+          "end": [
+            106,
+            43
+          ],
+          "fieldType": "fixed64",
+          "name": "F_Fixed64_repeated",
+          "id": 24,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            107,
+            12
+          ],
+          "end": [
+            107,
+            41
+          ],
+          "fieldType": "uint32",
+          "name": "F_Uint32_repeated",
+          "id": 25,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            108,
+            12
+          ],
+          "end": [
+            108,
+            41
+          ],
+          "fieldType": "uint64",
+          "name": "F_Uint64_repeated",
+          "id": 26,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            109,
+            12
+          ],
+          "end": [
+            109,
+            39
+          ],
+          "fieldType": "float",
+          "name": "F_Float_repeated",
+          "id": 27,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            110,
+            12
+          ],
+          "end": [
+            110,
+            41
+          ],
+          "fieldType": "double",
+          "name": "F_Double_repeated",
+          "id": 28,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            111,
+            12
+          ],
+          "end": [
+            111,
+            41
+          ],
+          "fieldType": "string",
+          "name": "F_String_repeated",
+          "id": 29,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            112,
+            12
+          ],
+          "end": [
+            112,
+            40
+          ],
+          "fieldType": "bytes",
+          "name": "F_Bytes_repeated",
+          "id": 201,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            113,
+            12
+          ],
+          "end": [
+            113,
+            42
+          ],
+          "fieldType": "sint32",
+          "name": "F_Sint32_repeated",
+          "id": 202,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            114,
+            12
+          ],
+          "end": [
+            114,
+            42
+          ],
+          "fieldType": "sint64",
+          "name": "F_Sint64_repeated",
+          "id": 203,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            115,
+            12
+          ],
+          "end": [
+            115,
+            46
+          ],
+          "fieldType": "sfixed32",
+          "name": "F_Sfixed32_repeated",
+          "id": 204,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            116,
+            12
+          ],
+          "end": [
+            116,
+            46
+          ],
+          "fieldType": "sfixed64",
+          "name": "F_Sfixed64_repeated",
+          "id": 205,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            119,
+            12
+          ],
+          "end": [
+            119,
+            37
+          ],
+          "fieldType": "bool",
+          "name": "F_Bool_optional",
+          "id": 30,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            120,
+            12
+          ],
+          "end": [
+            120,
+            39
+          ],
+          "fieldType": "int32",
+          "name": "F_Int32_optional",
+          "id": 31,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            121,
+            12
+          ],
+          "end": [
+            121,
+            39
+          ],
+          "fieldType": "int64",
+          "name": "F_Int64_optional",
+          "id": 32,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            122,
+            12
+          ],
+          "end": [
+            122,
+            43
+          ],
+          "fieldType": "fixed32",
+          "name": "F_Fixed32_optional",
+          "id": 33,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            123,
+            12
+          ],
+          "end": [
+            123,
+            43
+          ],
+          "fieldType": "fixed64",
+          "name": "F_Fixed64_optional",
+          "id": 34,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            124,
+            12
+          ],
+          "end": [
+            124,
+            41
+          ],
+          "fieldType": "uint32",
+          "name": "F_Uint32_optional",
+          "id": 35,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            125,
+            12
+          ],
+          "end": [
+            125,
+            41
+          ],
+          "fieldType": "uint64",
+          "name": "F_Uint64_optional",
+          "id": 36,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            126,
+            12
+          ],
+          "end": [
+            126,
+            39
+          ],
+          "fieldType": "float",
+          "name": "F_Float_optional",
+          "id": 37,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            127,
+            12
+          ],
+          "end": [
+            127,
+            41
+          ],
+          "fieldType": "double",
+          "name": "F_Double_optional",
+          "id": 38,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            128,
+            12
+          ],
+          "end": [
+            128,
+            41
+          ],
+          "fieldType": "string",
+          "name": "F_String_optional",
+          "id": 39,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            129,
+            12
+          ],
+          "end": [
+            129,
+            40
+          ],
+          "fieldType": "bytes",
+          "name": "F_Bytes_optional",
+          "id": 301,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            130,
+            12
+          ],
+          "end": [
+            130,
+            42
+          ],
+          "fieldType": "sint32",
+          "name": "F_Sint32_optional",
+          "id": 302,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            131,
+            12
+          ],
+          "end": [
+            131,
+            42
+          ],
+          "fieldType": "sint64",
+          "name": "F_Sint64_optional",
+          "id": 303,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            132,
+            12
+          ],
+          "end": [
+            132,
+            46
+          ],
+          "fieldType": "sfixed32",
+          "name": "F_Sfixed32_optional",
+          "id": 304,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            133,
+            12
+          ],
+          "end": [
+            133,
+            46
+          ],
+          "fieldType": "sfixed64",
+          "name": "F_Sfixed64_optional",
+          "id": 305,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            136,
+            12
+          ],
+          "end": [
+            136,
+            53
+          ],
+          "fieldType": "bool",
+          "name": "F_Bool_defaulted",
+          "id": 40,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                136,
+                40
+              ],
+              "end": [
+                136,
+                51
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  136,
+                  48
+                ],
+                "end": [
+                  136,
+                  51
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            137,
+            12
+          ],
+          "end": [
+            137,
+            53
+          ],
+          "fieldType": "int32",
+          "name": "F_Int32_defaulted",
+          "id": 41,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                137,
+                42
+              ],
+              "end": [
+                137,
+                51
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  137,
+                  50
+                ],
+                "end": [
+                  137,
+                  51
+                ],
+                "literalType": "int",
+                "raw": "32",
+                "value": 32
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            138,
+            12
+          ],
+          "end": [
+            138,
+            53
+          ],
+          "fieldType": "int64",
+          "name": "F_Int64_defaulted",
+          "id": 42,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                138,
+                42
+              ],
+              "end": [
+                138,
+                51
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  138,
+                  50
+                ],
+                "end": [
+                  138,
+                  51
+                ],
+                "literalType": "int",
+                "raw": "64",
+                "value": 64
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            139,
+            12
+          ],
+          "end": [
+            139,
+            58
+          ],
+          "fieldType": "fixed32",
+          "name": "F_Fixed32_defaulted",
+          "id": 43,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                139,
+                46
+              ],
+              "end": [
+                139,
+                56
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  139,
+                  54
+                ],
+                "end": [
+                  139,
+                  56
+                ],
+                "literalType": "int",
+                "raw": "320",
+                "value": 320
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            140,
+            12
+          ],
+          "end": [
+            140,
+            58
+          ],
+          "fieldType": "fixed64",
+          "name": "F_Fixed64_defaulted",
+          "id": 44,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                140,
+                46
+              ],
+              "end": [
+                140,
+                56
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  140,
+                  54
+                ],
+                "end": [
+                  140,
+                  56
+                ],
+                "literalType": "int",
+                "raw": "640",
+                "value": 640
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            141,
+            12
+          ],
+          "end": [
+            141,
+            57
+          ],
+          "fieldType": "uint32",
+          "name": "F_Uint32_defaulted",
+          "id": 45,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                141,
+                44
+              ],
+              "end": [
+                141,
+                55
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  141,
+                  52
+                ],
+                "end": [
+                  141,
+                  55
+                ],
+                "literalType": "int",
+                "raw": "3200",
+                "value": 3200
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            142,
+            12
+          ],
+          "end": [
+            142,
+            57
+          ],
+          "fieldType": "uint64",
+          "name": "F_Uint64_defaulted",
+          "id": 46,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                142,
+                44
+              ],
+              "end": [
+                142,
+                55
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  142,
+                  52
+                ],
+                "end": [
+                  142,
+                  55
+                ],
+                "literalType": "int",
+                "raw": "6400",
+                "value": 6400
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            143,
+            12
+          ],
+          "end": [
+            143,
+            58
+          ],
+          "fieldType": "float",
+          "name": "F_Float_defaulted",
+          "id": 47,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                143,
+                42
+              ],
+              "end": [
+                143,
+                56
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  143,
+                  50
+                ],
+                "end": [
+                  143,
+                  56
+                ],
+                "literalType": "float",
+                "raw": "314159.",
+                "value": 314159
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            144,
+            12
+          ],
+          "end": [
+            144,
+            60
+          ],
+          "fieldType": "double",
+          "name": "F_Double_defaulted",
+          "id": 48,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                144,
+                44
+              ],
+              "end": [
+                144,
+                58
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  144,
+                  52
+                ],
+                "end": [
+                  144,
+                  58
+                ],
+                "literalType": "float",
+                "raw": "271828.",
+                "value": 271828
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            145,
+            12
+          ],
+          "end": [
+            145,
+            74
+          ],
+          "fieldType": "string",
+          "name": "F_String_defaulted",
+          "id": 49,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                145,
+                44
+              ],
+              "end": [
+                145,
+                72
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  145,
+                  52
+                ],
+                "end": [
+                  145,
+                  72
+                ],
+                "literalType": "string",
+                "raw": "\"hello, \\\"world!\\\"\\n\"",
+                "value": "hello, \\\"world!\\\"\\n"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            146,
+            12
+          ],
+          "end": [
+            146,
+            61
+          ],
+          "fieldType": "bytes",
+          "name": "F_Bytes_defaulted",
+          "id": 401,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                146,
+                43
+              ],
+              "end": [
+                146,
+                59
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  146,
+                  51
+                ],
+                "end": [
+                  146,
+                  59
+                ],
+                "literalType": "string",
+                "raw": "\"Bignose\"",
+                "value": "Bignose"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            147,
+            12
+          ],
+          "end": [
+            147,
+            59
+          ],
+          "fieldType": "sint32",
+          "name": "F_Sint32_defaulted",
+          "id": 402,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                147,
+                45
+              ],
+              "end": [
+                147,
+                57
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  147,
+                  55
+                ],
+                "end": [
+                  147,
+                  57
+                ],
+                "literalType": "int",
+                "raw": "-32",
+                "value": -32
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            148,
+            12
+          ],
+          "end": [
+            148,
+            59
+          ],
+          "fieldType": "sint64",
+          "name": "F_Sint64_defaulted",
+          "id": 403,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                148,
+                45
+              ],
+              "end": [
+                148,
+                57
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  148,
+                  55
+                ],
+                "end": [
+                  148,
+                  57
+                ],
+                "literalType": "int",
+                "raw": "-64",
+                "value": -64
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            149,
+            12
+          ],
+          "end": [
+            149,
+            63
+          ],
+          "fieldType": "sfixed32",
+          "name": "F_Sfixed32_defaulted",
+          "id": 404,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                149,
+                49
+              ],
+              "end": [
+                149,
+                61
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  149,
+                  59
+                ],
+                "end": [
+                  149,
+                  61
+                ],
+                "literalType": "int",
+                "raw": "-32",
+                "value": -32
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            150,
+            12
+          ],
+          "end": [
+            150,
+            63
+          ],
+          "fieldType": "sfixed64",
+          "name": "F_Sfixed64_defaulted",
+          "id": 405,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                150,
+                49
+              ],
+              "end": [
+                150,
+                61
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  150,
+                  59
+                ],
+                "end": [
+                  150,
+                  61
+                ],
+                "literalType": "int",
+                "raw": "-64",
+                "value": -64
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            153,
+            12
+          ],
+          "end": [
+            153,
+            58
+          ],
+          "fieldType": "bool",
+          "name": "F_Bool_repeated_packed",
+          "id": 50,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                153,
+                46
+              ],
+              "end": [
+                153,
+                56
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  153,
+                  53
+                ],
+                "end": [
+                  153,
+                  56
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            154,
+            12
+          ],
+          "end": [
+            154,
+            60
+          ],
+          "fieldType": "int32",
+          "name": "F_Int32_repeated_packed",
+          "id": 51,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                154,
+                48
+              ],
+              "end": [
+                154,
+                58
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  154,
+                  55
+                ],
+                "end": [
+                  154,
+                  58
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            155,
+            12
+          ],
+          "end": [
+            155,
+            60
+          ],
+          "fieldType": "int64",
+          "name": "F_Int64_repeated_packed",
+          "id": 52,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                155,
+                48
+              ],
+              "end": [
+                155,
+                58
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  155,
+                  55
+                ],
+                "end": [
+                  155,
+                  58
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            156,
+            12
+          ],
+          "end": [
+            156,
+            64
+          ],
+          "fieldType": "fixed32",
+          "name": "F_Fixed32_repeated_packed",
+          "id": 53,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                156,
+                52
+              ],
+              "end": [
+                156,
+                62
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  156,
+                  59
+                ],
+                "end": [
+                  156,
+                  62
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            157,
+            12
+          ],
+          "end": [
+            157,
+            64
+          ],
+          "fieldType": "fixed64",
+          "name": "F_Fixed64_repeated_packed",
+          "id": 54,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                157,
+                52
+              ],
+              "end": [
+                157,
+                62
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  157,
+                  59
+                ],
+                "end": [
+                  157,
+                  62
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            158,
+            12
+          ],
+          "end": [
+            158,
+            62
+          ],
+          "fieldType": "uint32",
+          "name": "F_Uint32_repeated_packed",
+          "id": 55,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                158,
+                50
+              ],
+              "end": [
+                158,
+                60
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  158,
+                  57
+                ],
+                "end": [
+                  158,
+                  60
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            159,
+            12
+          ],
+          "end": [
+            159,
+            62
+          ],
+          "fieldType": "uint64",
+          "name": "F_Uint64_repeated_packed",
+          "id": 56,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                159,
+                50
+              ],
+              "end": [
+                159,
+                60
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  159,
+                  57
+                ],
+                "end": [
+                  159,
+                  60
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            160,
+            12
+          ],
+          "end": [
+            160,
+            60
+          ],
+          "fieldType": "float",
+          "name": "F_Float_repeated_packed",
+          "id": 57,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                160,
+                48
+              ],
+              "end": [
+                160,
+                58
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  160,
+                  55
+                ],
+                "end": [
+                  160,
+                  58
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            161,
+            12
+          ],
+          "end": [
+            161,
+            62
+          ],
+          "fieldType": "double",
+          "name": "F_Double_repeated_packed",
+          "id": 58,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                161,
+                50
+              ],
+              "end": [
+                161,
+                60
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  161,
+                  57
+                ],
+                "end": [
+                  161,
+                  60
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            162,
+            12
+          ],
+          "end": [
+            162,
+            63
+          ],
+          "fieldType": "sint32",
+          "name": "F_Sint32_repeated_packed",
+          "id": 502,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                162,
+                51
+              ],
+              "end": [
+                162,
+                61
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  162,
+                  58
+                ],
+                "end": [
+                  162,
+                  61
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            163,
+            12
+          ],
+          "end": [
+            163,
+            63
+          ],
+          "fieldType": "sint64",
+          "name": "F_Sint64_repeated_packed",
+          "id": 503,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                163,
+                51
+              ],
+              "end": [
+                163,
+                61
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  163,
+                  58
+                ],
+                "end": [
+                  163,
+                  61
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            164,
+            12
+          ],
+          "end": [
+            164,
+            67
+          ],
+          "fieldType": "sfixed32",
+          "name": "F_Sfixed32_repeated_packed",
+          "id": 504,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                164,
+                55
+              ],
+              "end": [
+                164,
+                65
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  164,
+                  62
+                ],
+                "end": [
+                  164,
+                  65
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            165,
+            12
+          ],
+          "end": [
+            165,
+            67
+          ],
+          "fieldType": "sfixed64",
+          "name": "F_Sfixed64_repeated_packed",
+          "id": 505,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                165,
+                55
+              ],
+              "end": [
+                165,
+                65
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  165,
+                  62
+                ],
+                "end": [
+                  165,
+                  65
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Group",
+          "start": [
+            168,
+            12
+          ],
+          "end": [
+            170,
+            3
+          ],
+          "name": "RequiredGroup",
+          "id": 70,
+          "repeated": false,
+          "optional": false,
+          "required": true,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                169,
+                5
+              ],
+              "end": [
+                169,
+                39
+              ],
+              "fieldType": "string",
+              "name": "RequiredField",
+              "id": 71,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            }
+          ]
+        },
+        {
+          "type": "Group",
+          "start": [
+            172,
+            12
+          ],
+          "end": [
+            174,
+            3
+          ],
+          "name": "RepeatedGroup",
+          "id": 80,
+          "repeated": true,
+          "optional": false,
+          "required": false,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                173,
+                5
+              ],
+              "end": [
+                173,
+                39
+              ],
+              "fieldType": "string",
+              "name": "RequiredField",
+              "id": 81,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            }
+          ]
+        },
+        {
+          "type": "Group",
+          "start": [
+            176,
+            12
+          ],
+          "end": [
+            178,
+            3
+          ],
+          "name": "OptionalGroup",
+          "id": 90,
+          "repeated": false,
+          "optional": true,
+          "required": false,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                177,
+                5
+              ],
+              "end": [
+                177,
+                39
+              ],
+              "fieldType": "string",
+              "name": "RequiredField",
+              "id": 91,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        182,
+        1
+      ],
+      "end": [
+        186,
+        1
+      ],
+      "name": "GoTestRequiredGroupField",
+      "body": [
+        {
+          "type": "Group",
+          "start": [
+            183,
+            12
+          ],
+          "end": [
+            185,
+            3
+          ],
+          "name": "Group",
+          "id": 1,
+          "repeated": false,
+          "optional": false,
+          "required": true,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                184,
+                5
+              ],
+              "end": [
+                184,
+                29
+              ],
+              "fieldType": "int32",
+              "name": "Field",
+              "id": 2,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        191,
+        1
+      ],
+      "end": [
+        200,
+        1
+      ],
+      "name": "GoSkipTest",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            192,
+            12
+          ],
+          "end": [
+            192,
+            33
+          ],
+          "fieldType": "int32",
+          "name": "skip_int32",
+          "id": 11,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            193,
+            12
+          ],
+          "end": [
+            193,
+            37
+          ],
+          "fieldType": "fixed32",
+          "name": "skip_fixed32",
+          "id": 12,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            194,
+            12
+          ],
+          "end": [
+            194,
+            37
+          ],
+          "fieldType": "fixed64",
+          "name": "skip_fixed64",
+          "id": 13,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            195,
+            12
+          ],
+          "end": [
+            195,
+            35
+          ],
+          "fieldType": "string",
+          "name": "skip_string",
+          "id": 14,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Group",
+          "start": [
+            196,
+            12
+          ],
+          "end": [
+            199,
+            3
+          ],
+          "name": "SkipGroup",
+          "id": 15,
+          "repeated": false,
+          "optional": false,
+          "required": true,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                197,
+                5
+              ],
+              "end": [
+                197,
+                36
+              ],
+              "fieldType": "int32",
+              "name": "group_int32",
+              "id": 16,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            },
+            {
+              "type": "Field",
+              "start": [
+                198,
+                5
+              ],
+              "end": [
+                198,
+                38
+              ],
+              "fieldType": "string",
+              "name": "group_string",
+              "id": 17,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        204,
+        1
+      ],
+      "end": [
+        206,
+        1
+      ],
+      "name": "NonPackedTest",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            205,
+            12
+          ],
+          "end": [
+            205,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        208,
+        1
+      ],
+      "end": [
+        210,
+        1
+      ],
+      "name": "PackedTest",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            209,
+            12
+          ],
+          "end": [
+            209,
+            37
+          ],
+          "fieldType": "int32",
+          "name": "b",
+          "id": 1,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                209,
+                25
+              ],
+              "end": [
+                209,
+                35
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  209,
+                  32
+                ],
+                "end": [
+                  209,
+                  35
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        212,
+        1
+      ],
+      "end": [
+        215,
+        1
+      ],
+      "name": "MaxTag",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            214,
+            12
+          ],
+          "end": [
+            214,
+            41
+          ],
+          "fieldType": "string",
+          "name": "last_field",
+          "id": 536870911,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        217,
+        1
+      ],
+      "end": [
+        224,
+        1
+      ],
+      "name": "OldMessage",
+      "body": [
+        {
+          "type": "Message",
+          "start": [
+            218,
+            3
+          ],
+          "end": [
+            220,
+            3
+          ],
+          "name": "Nested",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                219,
+                14
+              ],
+              "end": [
+                219,
+                29
+              ],
+              "fieldType": "string",
+              "name": "name",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            221,
+            12
+          ],
+          "end": [
+            221,
+            29
+          ],
+          "fieldType": "Nested",
+          "name": "nested",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            223,
+            12
+          ],
+          "end": [
+            223,
+            25
+          ],
+          "fieldType": "int32",
+          "name": "num",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        228,
+        1
+      ],
+      "end": [
+        237,
+        1
+      ],
+      "name": "NewMessage",
+      "body": [
+        {
+          "type": "Message",
+          "start": [
+            229,
+            3
+          ],
+          "end": [
+            232,
+            3
+          ],
+          "name": "Nested",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                230,
+                14
+              ],
+              "end": [
+                230,
+                29
+              ],
+              "fieldType": "string",
+              "name": "name",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                231,
+                14
+              ],
+              "end": [
+                231,
+                35
+              ],
+              "fieldType": "string",
+              "name": "food_group",
+              "id": 2,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            233,
+            12
+          ],
+          "end": [
+            233,
+            29
+          ],
+          "fieldType": "Nested",
+          "name": "nested",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            236,
+            12
+          ],
+          "end": [
+            236,
+            25
+          ],
+          "fieldType": "int64",
+          "name": "num",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        241,
+        1
+      ],
+      "end": [
+        245,
+        1
+      ],
+      "name": "InnerMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            242,
+            12
+          ],
+          "end": [
+            242,
+            27
+          ],
+          "fieldType": "string",
+          "name": "host",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            243,
+            12
+          ],
+          "end": [
+            243,
+            41
+          ],
+          "fieldType": "int32",
+          "name": "port",
+          "id": 2,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                243,
+                28
+              ],
+              "end": [
+                243,
+                39
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  243,
+                  36
+                ],
+                "end": [
+                  243,
+                  39
+                ],
+                "literalType": "int",
+                "raw": "4000",
+                "value": 4000
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            244,
+            12
+          ],
+          "end": [
+            244,
+            30
+          ],
+          "fieldType": "bool",
+          "name": "connected",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        247,
+        1
+      ],
+      "end": [
+        254,
+        1
+      ],
+      "name": "OtherMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            248,
+            12
+          ],
+          "end": [
+            248,
+            25
+          ],
+          "fieldType": "int64",
+          "name": "key",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            249,
+            12
+          ],
+          "end": [
+            249,
+            27
+          ],
+          "fieldType": "bytes",
+          "name": "value",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            250,
+            12
+          ],
+          "end": [
+            250,
+            28
+          ],
+          "fieldType": "float",
+          "name": "weight",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            251,
+            12
+          ],
+          "end": [
+            251,
+            34
+          ],
+          "fieldType": "InnerMessage",
+          "name": "inner",
+          "id": 4,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            253,
+            3
+          ],
+          "end": [
+            253,
+            24
+          ],
+          "ranges": [
+            [
+              100,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        256,
+        1
+      ],
+      "end": [
+        258,
+        1
+      ],
+      "name": "RequiredInnerMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            257,
+            12
+          ],
+          "end": [
+            257,
+            53
+          ],
+          "fieldType": "InnerMessage",
+          "name": "leo_finally_won_an_oscar",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        260,
+        1
+      ],
+      "end": [
+        287,
+        1
+      ],
+      "name": "MyMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            261,
+            12
+          ],
+          "end": [
+            261,
+            27
+          ],
+          "fieldType": "int32",
+          "name": "count",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            262,
+            12
+          ],
+          "end": [
+            262,
+            27
+          ],
+          "fieldType": "string",
+          "name": "name",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            263,
+            12
+          ],
+          "end": [
+            263,
+            28
+          ],
+          "fieldType": "string",
+          "name": "quote",
+          "id": 3,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            264,
+            12
+          ],
+          "end": [
+            264,
+            26
+          ],
+          "fieldType": "string",
+          "name": "pet",
+          "id": 4,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            265,
+            12
+          ],
+          "end": [
+            265,
+            34
+          ],
+          "fieldType": "InnerMessage",
+          "name": "inner",
+          "id": 5,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            266,
+            12
+          ],
+          "end": [
+            266,
+            35
+          ],
+          "fieldType": "OtherMessage",
+          "name": "others",
+          "id": 6,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            267,
+            12
+          ],
+          "end": [
+            267,
+            55
+          ],
+          "fieldType": "RequiredInnerMessage",
+          "name": "we_must_go_deeper",
+          "id": 13,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            268,
+            12
+          ],
+          "end": [
+            268,
+            39
+          ],
+          "fieldType": "InnerMessage",
+          "name": "rep_inner",
+          "id": 12,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Enum",
+          "start": [
+            270,
+            3
+          ],
+          "end": [
+            274,
+            3
+          ],
+          "name": "Color",
+          "body": [
+            {
+              "type": "EnumField",
+              "start": [
+                271,
+                5
+              ],
+              "end": [
+                271,
+                12
+              ],
+              "name": "RED",
+              "id": 0
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                272,
+                5
+              ],
+              "end": [
+                272,
+                14
+              ],
+              "name": "GREEN",
+              "id": 1
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                273,
+                5
+              ],
+              "end": [
+                273,
+                13
+              ],
+              "name": "BLUE",
+              "id": 2
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            275,
+            12
+          ],
+          "end": [
+            275,
+            30
+          ],
+          "fieldType": "Color",
+          "name": "bikeshed",
+          "id": 7,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Group",
+          "start": [
+            277,
+            12
+          ],
+          "end": [
+            279,
+            3
+          ],
+          "name": "SomeGroup",
+          "id": 8,
+          "repeated": false,
+          "optional": true,
+          "required": false,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                278,
+                5
+              ],
+              "end": [
+                278,
+                35
+              ],
+              "fieldType": "int32",
+              "name": "group_field",
+              "id": 9,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            282,
+            12
+          ],
+          "end": [
+            282,
+            32
+          ],
+          "fieldType": "bytes",
+          "name": "rep_bytes",
+          "id": 10,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            284,
+            12
+          ],
+          "end": [
+            284,
+            32
+          ],
+          "fieldType": "double",
+          "name": "bigfloat",
+          "id": 11,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            286,
+            3
+          ],
+          "end": [
+            286,
+            24
+          ],
+          "ranges": [
+            [
+              100,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        289,
+        1
+      ],
+      "end": [
+        298,
+        1
+      ],
+      "name": "Ext",
+      "body": [
+        {
+          "type": "Extend",
+          "start": [
+            290,
+            3
+          ],
+          "end": [
+            294,
+            3
+          ],
+          "name": "MyMessage",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                291,
+                5
+              ],
+              "end": [
+                291,
+                28
+              ],
+              "fieldType": "Ext",
+              "name": "more",
+              "id": 103,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                292,
+                5
+              ],
+              "end": [
+                292,
+                31
+              ],
+              "fieldType": "string",
+              "name": "text",
+              "id": 104,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                293,
+                5
+              ],
+              "end": [
+                293,
+                32
+              ],
+              "fieldType": "int32",
+              "name": "number",
+              "id": 105,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            296,
+            12
+          ],
+          "end": [
+            296,
+            27
+          ],
+          "fieldType": "string",
+          "name": "data",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "MapField",
+          "start": [
+            297,
+            3
+          ],
+          "end": [
+            297,
+            34
+          ],
+          "keyType": "int32",
+          "valueType": "int32",
+          "name": "map_field",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        300,
+        1
+      ],
+      "end": [
+        303,
+        1
+      ],
+      "name": "MyMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            301,
+            3
+          ],
+          "end": [
+            301,
+            33
+          ],
+          "fieldType": "string",
+          "name": "greeting",
+          "id": 106,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        305,
+        1
+      ],
+      "end": [
+        309,
+        1
+      ],
+      "name": "ComplexExtension",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            306,
+            12
+          ],
+          "end": [
+            306,
+            27
+          ],
+          "fieldType": "int32",
+          "name": "first",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            307,
+            12
+          ],
+          "end": [
+            307,
+            28
+          ],
+          "fieldType": "int32",
+          "name": "second",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            308,
+            12
+          ],
+          "end": [
+            308,
+            27
+          ],
+          "fieldType": "int32",
+          "name": "third",
+          "id": 3,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        311,
+        1
+      ],
+      "end": [
+        314,
+        1
+      ],
+      "name": "OtherMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            312,
+            3
+          ],
+          "end": [
+            312,
+            42
+          ],
+          "fieldType": "ComplexExtension",
+          "name": "complex",
+          "id": 200,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            313,
+            3
+          ],
+          "end": [
+            313,
+            44
+          ],
+          "fieldType": "ComplexExtension",
+          "name": "r_complex",
+          "id": 201,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        316,
+        1
+      ],
+      "end": [
+        323,
+        1
+      ],
+      "name": "DefaultsMessage",
+      "body": [
+        {
+          "type": "Enum",
+          "start": [
+            317,
+            3
+          ],
+          "end": [
+            321,
+            3
+          ],
+          "name": "DefaultsEnum",
+          "body": [
+            {
+              "type": "EnumField",
+              "start": [
+                318,
+                5
+              ],
+              "end": [
+                318,
+                13
+              ],
+              "name": "ZERO",
+              "id": 0
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                319,
+                5
+              ],
+              "end": [
+                319,
+                12
+              ],
+              "name": "ONE",
+              "id": 1
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                320,
+                5
+              ],
+              "end": [
+                320,
+                12
+              ],
+              "name": "TWO",
+              "id": 2
+            }
+          ]
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            322,
+            3
+          ],
+          "end": [
+            322,
+            24
+          ],
+          "ranges": [
+            [
+              100,
+              "max"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Extend",
+      "start": [
+        325,
+        1
+      ],
+      "end": [
+        359,
+        1
+      ],
+      "name": "DefaultsMessage",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            326,
+            3
+          ],
+          "end": [
+            326,
+            42
+          ],
+          "fieldType": "double",
+          "name": "no_default_double",
+          "id": 101,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            327,
+            3
+          ],
+          "end": [
+            327,
+            40
+          ],
+          "fieldType": "float",
+          "name": "no_default_float",
+          "id": 102,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            328,
+            3
+          ],
+          "end": [
+            328,
+            40
+          ],
+          "fieldType": "int32",
+          "name": "no_default_int32",
+          "id": 103,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            329,
+            3
+          ],
+          "end": [
+            329,
+            40
+          ],
+          "fieldType": "int64",
+          "name": "no_default_int64",
+          "id": 104,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            330,
+            3
+          ],
+          "end": [
+            330,
+            42
+          ],
+          "fieldType": "uint32",
+          "name": "no_default_uint32",
+          "id": 105,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            331,
+            3
+          ],
+          "end": [
+            331,
+            42
+          ],
+          "fieldType": "uint64",
+          "name": "no_default_uint64",
+          "id": 106,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            332,
+            3
+          ],
+          "end": [
+            332,
+            42
+          ],
+          "fieldType": "sint32",
+          "name": "no_default_sint32",
+          "id": 107,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            333,
+            3
+          ],
+          "end": [
+            333,
+            42
+          ],
+          "fieldType": "sint64",
+          "name": "no_default_sint64",
+          "id": 108,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            334,
+            3
+          ],
+          "end": [
+            334,
+            44
+          ],
+          "fieldType": "fixed32",
+          "name": "no_default_fixed32",
+          "id": 109,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            335,
+            3
+          ],
+          "end": [
+            335,
+            44
+          ],
+          "fieldType": "fixed64",
+          "name": "no_default_fixed64",
+          "id": 110,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            336,
+            3
+          ],
+          "end": [
+            336,
+            46
+          ],
+          "fieldType": "sfixed32",
+          "name": "no_default_sfixed32",
+          "id": 111,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            337,
+            3
+          ],
+          "end": [
+            337,
+            46
+          ],
+          "fieldType": "sfixed64",
+          "name": "no_default_sfixed64",
+          "id": 112,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            338,
+            3
+          ],
+          "end": [
+            338,
+            38
+          ],
+          "fieldType": "bool",
+          "name": "no_default_bool",
+          "id": 113,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            339,
+            3
+          ],
+          "end": [
+            339,
+            42
+          ],
+          "fieldType": "string",
+          "name": "no_default_string",
+          "id": 114,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            340,
+            3
+          ],
+          "end": [
+            340,
+            40
+          ],
+          "fieldType": "bytes",
+          "name": "no_default_bytes",
+          "id": 115,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            341,
+            3
+          ],
+          "end": [
+            341,
+            62
+          ],
+          "fieldType": "DefaultsMessage.DefaultsEnum",
+          "name": "no_default_enum",
+          "id": 116,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            343,
+            3
+          ],
+          "end": [
+            343,
+            58
+          ],
+          "fieldType": "double",
+          "name": "default_double",
+          "id": 201,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                343,
+                41
+              ],
+              "end": [
+                343,
+                56
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  343,
+                  51
+                ],
+                "end": [
+                  343,
+                  56
+                ],
+                "literalType": "float",
+                "raw": "3.1415",
+                "value": 3.1415
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            344,
+            3
+          ],
+          "end": [
+            344,
+            54
+          ],
+          "fieldType": "float",
+          "name": "default_float",
+          "id": 202,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                344,
+                39
+              ],
+              "end": [
+                344,
+                52
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  344,
+                  49
+                ],
+                "end": [
+                  344,
+                  52
+                ],
+                "literalType": "float",
+                "raw": "3.14",
+                "value": 3.14
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            345,
+            3
+          ],
+          "end": [
+            345,
+            52
+          ],
+          "fieldType": "int32",
+          "name": "default_int32",
+          "id": 203,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                345,
+                39
+              ],
+              "end": [
+                345,
+                50
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  345,
+                  49
+                ],
+                "end": [
+                  345,
+                  50
+                ],
+                "literalType": "int",
+                "raw": "42",
+                "value": 42
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            346,
+            3
+          ],
+          "end": [
+            346,
+            52
+          ],
+          "fieldType": "int64",
+          "name": "default_int64",
+          "id": 204,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                346,
+                39
+              ],
+              "end": [
+                346,
+                50
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  346,
+                  49
+                ],
+                "end": [
+                  346,
+                  50
+                ],
+                "literalType": "int",
+                "raw": "43",
+                "value": 43
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            347,
+            3
+          ],
+          "end": [
+            347,
+            54
+          ],
+          "fieldType": "uint32",
+          "name": "default_uint32",
+          "id": 205,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                347,
+                41
+              ],
+              "end": [
+                347,
+                52
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  347,
+                  51
+                ],
+                "end": [
+                  347,
+                  52
+                ],
+                "literalType": "int",
+                "raw": "44",
+                "value": 44
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            348,
+            3
+          ],
+          "end": [
+            348,
+            54
+          ],
+          "fieldType": "uint64",
+          "name": "default_uint64",
+          "id": 206,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                348,
+                41
+              ],
+              "end": [
+                348,
+                52
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  348,
+                  51
+                ],
+                "end": [
+                  348,
+                  52
+                ],
+                "literalType": "int",
+                "raw": "45",
+                "value": 45
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            349,
+            3
+          ],
+          "end": [
+            349,
+            54
+          ],
+          "fieldType": "sint32",
+          "name": "default_sint32",
+          "id": 207,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                349,
+                41
+              ],
+              "end": [
+                349,
+                52
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  349,
+                  51
+                ],
+                "end": [
+                  349,
+                  52
+                ],
+                "literalType": "int",
+                "raw": "46",
+                "value": 46
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            350,
+            3
+          ],
+          "end": [
+            350,
+            54
+          ],
+          "fieldType": "sint64",
+          "name": "default_sint64",
+          "id": 208,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                350,
+                41
+              ],
+              "end": [
+                350,
+                52
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  350,
+                  51
+                ],
+                "end": [
+                  350,
+                  52
+                ],
+                "literalType": "int",
+                "raw": "47",
+                "value": 47
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            351,
+            3
+          ],
+          "end": [
+            351,
+            56
+          ],
+          "fieldType": "fixed32",
+          "name": "default_fixed32",
+          "id": 209,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                351,
+                43
+              ],
+              "end": [
+                351,
+                54
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  351,
+                  53
+                ],
+                "end": [
+                  351,
+                  54
+                ],
+                "literalType": "int",
+                "raw": "48",
+                "value": 48
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            352,
+            3
+          ],
+          "end": [
+            352,
+            56
+          ],
+          "fieldType": "fixed64",
+          "name": "default_fixed64",
+          "id": 210,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                352,
+                43
+              ],
+              "end": [
+                352,
+                54
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  352,
+                  53
+                ],
+                "end": [
+                  352,
+                  54
+                ],
+                "literalType": "int",
+                "raw": "49",
+                "value": 49
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            353,
+            3
+          ],
+          "end": [
+            353,
+            58
+          ],
+          "fieldType": "sfixed32",
+          "name": "default_sfixed32",
+          "id": 211,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                353,
+                45
+              ],
+              "end": [
+                353,
+                56
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  353,
+                  55
+                ],
+                "end": [
+                  353,
+                  56
+                ],
+                "literalType": "int",
+                "raw": "50",
+                "value": 50
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            354,
+            3
+          ],
+          "end": [
+            354,
+            58
+          ],
+          "fieldType": "sfixed64",
+          "name": "default_sfixed64",
+          "id": 212,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                354,
+                45
+              ],
+              "end": [
+                354,
+                56
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  354,
+                  55
+                ],
+                "end": [
+                  354,
+                  56
+                ],
+                "literalType": "int",
+                "raw": "51",
+                "value": 51
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            355,
+            3
+          ],
+          "end": [
+            355,
+            52
+          ],
+          "fieldType": "bool",
+          "name": "default_bool",
+          "id": 213,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                355,
+                37
+              ],
+              "end": [
+                355,
+                50
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  355,
+                  47
+                ],
+                "end": [
+                  355,
+                  50
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            356,
+            3
+          ],
+          "end": [
+            356,
+            75
+          ],
+          "fieldType": "string",
+          "name": "default_string",
+          "id": 214,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                356,
+                41
+              ],
+              "end": [
+                356,
+                73
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  356,
+                  51
+                ],
+                "end": [
+                  356,
+                  73
+                ],
+                "literalType": "string",
+                "raw": "\"Hello, string,def=foo\"",
+                "value": "Hello, string,def=foo"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            357,
+            3
+          ],
+          "end": [
+            357,
+            64
+          ],
+          "fieldType": "bytes",
+          "name": "default_bytes",
+          "id": 215,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                357,
+                39
+              ],
+              "end": [
+                357,
+                62
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  357,
+                  49
+                ],
+                "end": [
+                  357,
+                  62
+                ],
+                "literalType": "string",
+                "raw": "\"Hello, bytes\"",
+                "value": "Hello, bytes"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            358,
+            3
+          ],
+          "end": [
+            358,
+            75
+          ],
+          "fieldType": "DefaultsMessage.DefaultsEnum",
+          "name": "default_enum",
+          "id": 216,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                358,
+                61
+              ],
+              "end": [
+                358,
+                73
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  358,
+                  71
+                ],
+                "end": [
+                  358,
+                  73
+                ],
+                "literalType": "identifier",
+                "raw": "ONE",
+                "value": "ONE"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        361,
+        1
+      ],
+      "end": [
+        362,
+        1
+      ],
+      "name": "Empty",
+      "body": []
+    },
+    {
+      "type": "Message",
+      "start": [
+        364,
+        1
+      ],
+      "end": [
+        369,
+        1
+      ],
+      "name": "MessageList",
+      "body": [
+        {
+          "type": "Group",
+          "start": [
+            365,
+            12
+          ],
+          "end": [
+            368,
+            3
+          ],
+          "name": "Message",
+          "id": 1,
+          "repeated": true,
+          "optional": false,
+          "required": false,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                366,
+                5
+              ],
+              "end": [
+                366,
+                29
+              ],
+              "fieldType": "string",
+              "name": "name",
+              "id": 2,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            },
+            {
+              "type": "Field",
+              "start": [
+                367,
+                5
+              ],
+              "end": [
+                367,
+                29
+              ],
+              "fieldType": "int32",
+              "name": "count",
+              "id": 3,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        371,
+        1
+      ],
+      "end": [
+        374,
+        1
+      ],
+      "name": "Strings",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            372,
+            12
+          ],
+          "end": [
+            372,
+            35
+          ],
+          "fieldType": "string",
+          "name": "string_field",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            373,
+            12
+          ],
+          "end": [
+            373,
+            33
+          ],
+          "fieldType": "bytes",
+          "name": "bytes_field",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        376,
+        1
+      ],
+      "end": [
+        410,
+        1
+      ],
+      "name": "Defaults",
+      "body": [
+        {
+          "type": "Enum",
+          "start": [
+            377,
+            3
+          ],
+          "end": [
+            381,
+            3
+          ],
+          "name": "Color",
+          "body": [
+            {
+              "type": "EnumField",
+              "start": [
+                378,
+                5
+              ],
+              "end": [
+                378,
+                12
+              ],
+              "name": "RED",
+              "id": 0
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                379,
+                5
+              ],
+              "end": [
+                379,
+                14
+              ],
+              "name": "GREEN",
+              "id": 1
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                380,
+                5
+              ],
+              "end": [
+                380,
+                13
+              ],
+              "name": "BLUE",
+              "id": 2
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            385,
+            12
+          ],
+          "end": [
+            385,
+            42
+          ],
+          "fieldType": "bool",
+          "name": "F_Bool",
+          "id": 1,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                385,
+                29
+              ],
+              "end": [
+                385,
+                40
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  385,
+                  37
+                ],
+                "end": [
+                  385,
+                  40
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            386,
+            12
+          ],
+          "end": [
+            386,
+            42
+          ],
+          "fieldType": "int32",
+          "name": "F_Int32",
+          "id": 2,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                386,
+                31
+              ],
+              "end": [
+                386,
+                40
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  386,
+                  39
+                ],
+                "end": [
+                  386,
+                  40
+                ],
+                "literalType": "int",
+                "raw": "32",
+                "value": 32
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            387,
+            12
+          ],
+          "end": [
+            387,
+            42
+          ],
+          "fieldType": "int64",
+          "name": "F_Int64",
+          "id": 3,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                387,
+                31
+              ],
+              "end": [
+                387,
+                40
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  387,
+                  39
+                ],
+                "end": [
+                  387,
+                  40
+                ],
+                "literalType": "int",
+                "raw": "64",
+                "value": 64
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            388,
+            12
+          ],
+          "end": [
+            388,
+            47
+          ],
+          "fieldType": "fixed32",
+          "name": "F_Fixed32",
+          "id": 4,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                388,
+                35
+              ],
+              "end": [
+                388,
+                45
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  388,
+                  43
+                ],
+                "end": [
+                  388,
+                  45
+                ],
+                "literalType": "int",
+                "raw": "320",
+                "value": 320
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            389,
+            12
+          ],
+          "end": [
+            389,
+            47
+          ],
+          "fieldType": "fixed64",
+          "name": "F_Fixed64",
+          "id": 5,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                389,
+                35
+              ],
+              "end": [
+                389,
+                45
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  389,
+                  43
+                ],
+                "end": [
+                  389,
+                  45
+                ],
+                "literalType": "int",
+                "raw": "640",
+                "value": 640
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            390,
+            12
+          ],
+          "end": [
+            390,
+            46
+          ],
+          "fieldType": "uint32",
+          "name": "F_Uint32",
+          "id": 6,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                390,
+                33
+              ],
+              "end": [
+                390,
+                44
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  390,
+                  41
+                ],
+                "end": [
+                  390,
+                  44
+                ],
+                "literalType": "int",
+                "raw": "3200",
+                "value": 3200
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            391,
+            12
+          ],
+          "end": [
+            391,
+            46
+          ],
+          "fieldType": "uint64",
+          "name": "F_Uint64",
+          "id": 7,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                391,
+                33
+              ],
+              "end": [
+                391,
+                44
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  391,
+                  41
+                ],
+                "end": [
+                  391,
+                  44
+                ],
+                "literalType": "int",
+                "raw": "6400",
+                "value": 6400
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            392,
+            12
+          ],
+          "end": [
+            392,
+            47
+          ],
+          "fieldType": "float",
+          "name": "F_Float",
+          "id": 8,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                392,
+                31
+              ],
+              "end": [
+                392,
+                45
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  392,
+                  39
+                ],
+                "end": [
+                  392,
+                  45
+                ],
+                "literalType": "float",
+                "raw": "314159.",
+                "value": 314159
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            393,
+            12
+          ],
+          "end": [
+            393,
+            49
+          ],
+          "fieldType": "double",
+          "name": "F_Double",
+          "id": 9,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                393,
+                33
+              ],
+              "end": [
+                393,
+                47
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  393,
+                  41
+                ],
+                "end": [
+                  393,
+                  47
+                ],
+                "literalType": "float",
+                "raw": "271828.",
+                "value": 271828
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            394,
+            12
+          ],
+          "end": [
+            394,
+            64
+          ],
+          "fieldType": "string",
+          "name": "F_String",
+          "id": 10,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                394,
+                34
+              ],
+              "end": [
+                394,
+                62
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  394,
+                  42
+                ],
+                "end": [
+                  394,
+                  62
+                ],
+                "literalType": "string",
+                "raw": "\"hello, \\\"world!\\\"\\n\"",
+                "value": "hello, \\\"world!\\\"\\n"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            395,
+            12
+          ],
+          "end": [
+            395,
+            50
+          ],
+          "fieldType": "bytes",
+          "name": "F_Bytes",
+          "id": 11,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                395,
+                32
+              ],
+              "end": [
+                395,
+                48
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  395,
+                  40
+                ],
+                "end": [
+                  395,
+                  48
+                ],
+                "literalType": "string",
+                "raw": "\"Bignose\"",
+                "value": "Bignose"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            396,
+            12
+          ],
+          "end": [
+            396,
+            46
+          ],
+          "fieldType": "sint32",
+          "name": "F_Sint32",
+          "id": 12,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                396,
+                34
+              ],
+              "end": [
+                396,
+                44
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  396,
+                  42
+                ],
+                "end": [
+                  396,
+                  44
+                ],
+                "literalType": "int",
+                "raw": "-32",
+                "value": -32
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            397,
+            12
+          ],
+          "end": [
+            397,
+            46
+          ],
+          "fieldType": "sint64",
+          "name": "F_Sint64",
+          "id": 13,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                397,
+                34
+              ],
+              "end": [
+                397,
+                44
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  397,
+                  42
+                ],
+                "end": [
+                  397,
+                  44
+                ],
+                "literalType": "int",
+                "raw": "-64",
+                "value": -64
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            398,
+            12
+          ],
+          "end": [
+            398,
+            45
+          ],
+          "fieldType": "Color",
+          "name": "F_Enum",
+          "id": 14,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                398,
+                31
+              ],
+              "end": [
+                398,
+                43
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  398,
+                  39
+                ],
+                "end": [
+                  398,
+                  43
+                ],
+                "literalType": "identifier",
+                "raw": "GREEN",
+                "value": "GREEN"
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            401,
+            12
+          ],
+          "end": [
+            401,
+            43
+          ],
+          "fieldType": "float",
+          "name": "F_Pinf",
+          "id": 15,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                401,
+                31
+              ],
+              "end": [
+                401,
+                41
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  401,
+                  39
+                ],
+                "end": [
+                  401,
+                  41
+                ],
+                "literalType": "int",
+                "raw": "inf",
+                "value": null
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            402,
+            12
+          ],
+          "end": [
+            402,
+            44
+          ],
+          "fieldType": "float",
+          "name": "F_Ninf",
+          "id": 16,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                402,
+                31
+              ],
+              "end": [
+                402,
+                42
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  402,
+                  39
+                ],
+                "end": [
+                  402,
+                  42
+                ],
+                "literalType": "int",
+                "raw": "-inf",
+                "value": null
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            403,
+            12
+          ],
+          "end": [
+            403,
+            42
+          ],
+          "fieldType": "float",
+          "name": "F_Nan",
+          "id": 17,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                403,
+                30
+              ],
+              "end": [
+                403,
+                40
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  403,
+                  38
+                ],
+                "end": [
+                  403,
+                  40
+                ],
+                "literalType": "int",
+                "raw": "nan",
+                "value": null
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            406,
+            12
+          ],
+          "end": [
+            406,
+            32
+          ],
+          "fieldType": "SubDefaults",
+          "name": "sub",
+          "id": 18,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            409,
+            12
+          ],
+          "end": [
+            409,
+            45
+          ],
+          "fieldType": "string",
+          "name": "str_zero",
+          "id": 19,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                409,
+                34
+              ],
+              "end": [
+                409,
+                43
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  409,
+                  42
+                ],
+                "end": [
+                  409,
+                  43
+                ],
+                "literalType": "string",
+                "raw": "\"\"",
+                "value": ""
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        412,
+        1
+      ],
+      "end": [
+        414,
+        1
+      ],
+      "name": "SubDefaults",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            413,
+            12
+          ],
+          "end": [
+            413,
+            35
+          ],
+          "fieldType": "int64",
+          "name": "n",
+          "id": 1,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                413,
+                25
+              ],
+              "end": [
+                413,
+                33
+              ],
+              "key": "default",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  413,
+                  33
+                ],
+                "end": [
+                  413,
+                  33
+                ],
+                "literalType": "int",
+                "raw": "7",
+                "value": 7
+              }
+            }
+          ],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        416,
+        1
+      ],
+      "end": [
+        421,
+        1
+      ],
+      "name": "RepeatedEnum",
+      "body": [
+        {
+          "type": "Enum",
+          "start": [
+            417,
+            3
+          ],
+          "end": [
+            419,
+            3
+          ],
+          "name": "Color",
+          "body": [
+            {
+              "type": "EnumField",
+              "start": [
+                418,
+                5
+              ],
+              "end": [
+                418,
+                12
+              ],
+              "name": "RED",
+              "id": 1
+            }
+          ]
+        },
+        {
+          "type": "Field",
+          "start": [
+            420,
+            12
+          ],
+          "end": [
+            420,
+            27
+          ],
+          "fieldType": "Color",
+          "name": "color",
+          "id": 1,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        423,
+        1
+      ],
+      "end": [
+        431,
+        1
+      ],
+      "name": "MoreRepeated",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            424,
+            12
+          ],
+          "end": [
+            424,
+            26
+          ],
+          "fieldType": "bool",
+          "name": "bools",
+          "id": 1,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            425,
+            12
+          ],
+          "end": [
+            425,
+            47
+          ],
+          "fieldType": "bool",
+          "name": "bools_packed",
+          "id": 2,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                425,
+                35
+              ],
+              "end": [
+                425,
+                45
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  425,
+                  42
+                ],
+                "end": [
+                  425,
+                  45
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            426,
+            12
+          ],
+          "end": [
+            426,
+            26
+          ],
+          "fieldType": "int32",
+          "name": "ints",
+          "id": 3,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            427,
+            12
+          ],
+          "end": [
+            427,
+            47
+          ],
+          "fieldType": "int32",
+          "name": "ints_packed",
+          "id": 4,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                427,
+                35
+              ],
+              "end": [
+                427,
+                45
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  427,
+                  42
+                ],
+                "end": [
+                  427,
+                  45
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            428,
+            12
+          ],
+          "end": [
+            428,
+            49
+          ],
+          "fieldType": "int64",
+          "name": "int64s_packed",
+          "id": 7,
+          "options": [
+            {
+              "type": "FieldOption",
+              "start": [
+                428,
+                37
+              ],
+              "end": [
+                428,
+                47
+              ],
+              "key": "packed",
+              "value": {
+                "type": "Constant",
+                "start": [
+                  428,
+                  44
+                ],
+                "end": [
+                  428,
+                  47
+                ],
+                "literalType": "boolean",
+                "raw": "true",
+                "value": true
+              }
+            }
+          ],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            429,
+            12
+          ],
+          "end": [
+            429,
+            30
+          ],
+          "fieldType": "string",
+          "name": "strings",
+          "id": 5,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            430,
+            12
+          ],
+          "end": [
+            430,
+            30
+          ],
+          "fieldType": "fixed32",
+          "name": "fixeds",
+          "id": 6,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        436,
+        1
+      ],
+      "end": [
+        440,
+        1
+      ],
+      "name": "GroupOld",
+      "body": [
+        {
+          "type": "Group",
+          "start": [
+            437,
+            12
+          ],
+          "end": [
+            439,
+            3
+          ],
+          "name": "G",
+          "id": 101,
+          "repeated": false,
+          "optional": true,
+          "required": false,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                438,
+                5
+              ],
+              "end": [
+                438,
+                25
+              ],
+              "fieldType": "int32",
+              "name": "x",
+              "id": 2,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        442,
+        1
+      ],
+      "end": [
+        447,
+        1
+      ],
+      "name": "GroupNew",
+      "body": [
+        {
+          "type": "Group",
+          "start": [
+            443,
+            12
+          ],
+          "end": [
+            446,
+            3
+          ],
+          "name": "G",
+          "id": 101,
+          "repeated": false,
+          "optional": true,
+          "required": false,
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                444,
+                5
+              ],
+              "end": [
+                444,
+                25
+              ],
+              "fieldType": "int32",
+              "name": "x",
+              "id": 2,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                445,
+                5
+              ],
+              "end": [
+                445,
+                25
+              ],
+              "fieldType": "int32",
+              "name": "y",
+              "id": 3,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        449,
+        1
+      ],
+      "end": [
+        452,
+        1
+      ],
+      "name": "FloatingPoint",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            450,
+            12
+          ],
+          "end": [
+            450,
+            24
+          ],
+          "fieldType": "double",
+          "name": "f",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": true
+        },
+        {
+          "type": "Field",
+          "start": [
+            451,
+            12
+          ],
+          "end": [
+            451,
+            26
+          ],
+          "fieldType": "bool",
+          "name": "exact",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        454,
+        1
+      ],
+      "end": [
+        459,
+        1
+      ],
+      "name": "MessageWithMap",
+      "body": [
+        {
+          "type": "MapField",
+          "start": [
+            455,
+            3
+          ],
+          "end": [
+            455,
+            38
+          ],
+          "keyType": "int32",
+          "valueType": "string",
+          "name": "name_mapping",
+          "id": 1
+        },
+        {
+          "type": "MapField",
+          "start": [
+            456,
+            3
+          ],
+          "end": [
+            456,
+            45
+          ],
+          "keyType": "sint64",
+          "valueType": "FloatingPoint",
+          "name": "msg_mapping",
+          "id": 2
+        },
+        {
+          "type": "MapField",
+          "start": [
+            457,
+            3
+          ],
+          "end": [
+            457,
+            36
+          ],
+          "keyType": "bool",
+          "valueType": "bytes",
+          "name": "byte_mapping",
+          "id": 3
+        },
+        {
+          "type": "MapField",
+          "start": [
+            458,
+            3
+          ],
+          "end": [
+            458,
+            37
+          ],
+          "keyType": "string",
+          "valueType": "string",
+          "name": "str_to_str",
+          "id": 4
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        461,
+        1
+      ],
+      "end": [
+        487,
+        1
+      ],
+      "name": "Oneof",
+      "body": [
+        {
+          "type": "Oneof",
+          "start": [
+            462,
+            3
+          ],
+          "end": [
+            482,
+            3
+          ],
+          "name": "union",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                463,
+                5
+              ],
+              "end": [
+                463,
+                20
+              ],
+              "fieldType": "bool",
+              "name": "F_Bool",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                464,
+                5
+              ],
+              "end": [
+                464,
+                22
+              ],
+              "fieldType": "int32",
+              "name": "F_Int32",
+              "id": 2,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                465,
+                5
+              ],
+              "end": [
+                465,
+                22
+              ],
+              "fieldType": "int64",
+              "name": "F_Int64",
+              "id": 3,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                466,
+                5
+              ],
+              "end": [
+                466,
+                26
+              ],
+              "fieldType": "fixed32",
+              "name": "F_Fixed32",
+              "id": 4,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                467,
+                5
+              ],
+              "end": [
+                467,
+                26
+              ],
+              "fieldType": "fixed64",
+              "name": "F_Fixed64",
+              "id": 5,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                468,
+                5
+              ],
+              "end": [
+                468,
+                24
+              ],
+              "fieldType": "uint32",
+              "name": "F_Uint32",
+              "id": 6,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                469,
+                5
+              ],
+              "end": [
+                469,
+                24
+              ],
+              "fieldType": "uint64",
+              "name": "F_Uint64",
+              "id": 7,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                470,
+                5
+              ],
+              "end": [
+                470,
+                22
+              ],
+              "fieldType": "float",
+              "name": "F_Float",
+              "id": 8,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                471,
+                5
+              ],
+              "end": [
+                471,
+                24
+              ],
+              "fieldType": "double",
+              "name": "F_Double",
+              "id": 9,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                472,
+                5
+              ],
+              "end": [
+                472,
+                25
+              ],
+              "fieldType": "string",
+              "name": "F_String",
+              "id": 10,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                473,
+                5
+              ],
+              "end": [
+                473,
+                23
+              ],
+              "fieldType": "bytes",
+              "name": "F_Bytes",
+              "id": 11,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                474,
+                5
+              ],
+              "end": [
+                474,
+                25
+              ],
+              "fieldType": "sint32",
+              "name": "F_Sint32",
+              "id": 12,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                475,
+                5
+              ],
+              "end": [
+                475,
+                25
+              ],
+              "fieldType": "sint64",
+              "name": "F_Sint64",
+              "id": 13,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                476,
+                5
+              ],
+              "end": [
+                476,
+                32
+              ],
+              "fieldType": "MyMessage.Color",
+              "name": "F_Enum",
+              "id": 14,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                477,
+                5
+              ],
+              "end": [
+                477,
+                31
+              ],
+              "fieldType": "GoTestField",
+              "name": "F_Message",
+              "id": 15,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Group",
+              "start": [
+                478,
+                5
+              ],
+              "end": [
+                480,
+                5
+              ],
+              "name": "F_Group",
+              "id": 16,
+              "repeated": false,
+              "optional": false,
+              "required": false,
+              "body": [
+                {
+                  "type": "Field",
+                  "start": [
+                    479,
+                    7
+                  ],
+                  "end": [
+                    479,
+                    28
+                  ],
+                  "fieldType": "int32",
+                  "name": "x",
+                  "id": 17,
+                  "options": [],
+                  "repeated": false,
+                  "optional": true,
+                  "required": false
+                }
+              ]
+            },
+            {
+              "type": "Field",
+              "start": [
+                481,
+                5
+              ],
+              "end": [
+                481,
+                36
+              ],
+              "fieldType": "int32",
+              "name": "F_Largest_Tag",
+              "id": 536870911,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "Oneof",
+          "start": [
+            484,
+            3
+          ],
+          "end": [
+            486,
+            3
+          ],
+          "name": "tormato",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                485,
+                5
+              ],
+              "end": [
+                485,
+                22
+              ],
+              "fieldType": "int32",
+              "name": "value",
+              "id": 100,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        489,
+        1
+      ],
+      "end": [
+        501,
+        1
+      ],
+      "name": "Communique",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            490,
+            12
+          ],
+          "end": [
+            490,
+            32
+          ],
+          "fieldType": "bool",
+          "name": "make_me_cry",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Oneof",
+          "start": [
+            493,
+            3
+          ],
+          "end": [
+            500,
+            3
+          ],
+          "name": "union",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                494,
+                5
+              ],
+              "end": [
+                494,
+                21
+              ],
+              "fieldType": "int32",
+              "name": "number",
+              "id": 5,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                495,
+                5
+              ],
+              "end": [
+                495,
+                20
+              ],
+              "fieldType": "string",
+              "name": "name",
+              "id": 6,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                496,
+                5
+              ],
+              "end": [
+                496,
+                19
+              ],
+              "fieldType": "bytes",
+              "name": "data",
+              "id": 7,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                497,
+                5
+              ],
+              "end": [
+                497,
+                22
+              ],
+              "fieldType": "double",
+              "name": "temp_c",
+              "id": 8,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                498,
+                5
+              ],
+              "end": [
+                498,
+                28
+              ],
+              "fieldType": "MyMessage.Color",
+              "name": "col",
+              "id": 9,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            },
+            {
+              "type": "Field",
+              "start": [
+                499,
+                5
+              ],
+              "end": [
+                499,
+                21
+              ],
+              "fieldType": "Strings",
+              "name": "msg",
+              "id": 10,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        503,
+        1
+      ],
+      "end": [
+        509,
+        1
+      ],
+      "name": "TestUTF8",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            504,
+            12
+          ],
+          "end": [
+            504,
+            29
+          ],
+          "fieldType": "string",
+          "name": "scalar",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            505,
+            12
+          ],
+          "end": [
+            505,
+            29
+          ],
+          "fieldType": "string",
+          "name": "vector",
+          "id": 2,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Oneof",
+          "start": [
+            506,
+            3
+          ],
+          "end": [
+            506,
+            35
+          ],
+          "name": "oneof",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                506,
+                17
+              ],
+              "end": [
+                506,
+                33
+              ],
+              "fieldType": "string",
+              "name": "field",
+              "id": 3,
+              "options": [],
+              "repeated": false,
+              "optional": false,
+              "required": false
+            }
+          ]
+        },
+        {
+          "type": "MapField",
+          "start": [
+            507,
+            3
+          ],
+          "end": [
+            507,
+            33
+          ],
+          "keyType": "string",
+          "valueType": "int64",
+          "name": "map_key",
+          "id": 4
+        },
+        {
+          "type": "MapField",
+          "start": [
+            508,
+            3
+          ],
+          "end": [
+            508,
+            35
+          ],
+          "keyType": "int64",
+          "valueType": "string",
+          "name": "map_value",
+          "id": 5
+        }
+      ]
+    }
+  ]
+}

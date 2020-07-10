@@ -1,0 +1,846 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    120,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        31,
+        1
+      ],
+      "end": [
+        31,
+        18
+      ],
+      "version": 2
+    },
+    {
+      "type": "Package",
+      "start": [
+        34,
+        1
+      ],
+      "end": [
+        34,
+        26
+      ],
+      "name": "jspb.circulartest"
+    },
+    {
+      "type": "Message",
+      "start": [
+        36,
+        1
+      ],
+      "end": [
+        39,
+        1
+      ],
+      "name": "MessageField1",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            37,
+            12
+          ],
+          "end": [
+            37,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            38,
+            12
+          ],
+          "end": [
+            38,
+            31
+          ],
+          "fieldType": "MessageField2",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        41,
+        1
+      ],
+      "end": [
+        44,
+        1
+      ],
+      "name": "MessageField2",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            42,
+            12
+          ],
+          "end": [
+            42,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            43,
+            12
+          ],
+          "end": [
+            43,
+            31
+          ],
+          "fieldType": "MessageField1",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        47,
+        1
+      ],
+      "end": [
+        50,
+        1
+      ],
+      "name": "RepeatedMessageField1",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            48,
+            12
+          ],
+          "end": [
+            48,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            49,
+            12
+          ],
+          "end": [
+            49,
+            39
+          ],
+          "fieldType": "RepeatedMessageField2",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        52,
+        1
+      ],
+      "end": [
+        55,
+        1
+      ],
+      "name": "RepeatedMessageField2",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            53,
+            12
+          ],
+          "end": [
+            53,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            54,
+            12
+          ],
+          "end": [
+            54,
+            39
+          ],
+          "fieldType": "RepeatedMessageField1",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        57,
+        1
+      ],
+      "end": [
+        60,
+        1
+      ],
+      "name": "MapField1",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            58,
+            12
+          ],
+          "end": [
+            58,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            59,
+            12
+          ],
+          "end": [
+            59,
+            27
+          ],
+          "fieldType": "MapField2",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        62,
+        1
+      ],
+      "end": [
+        65,
+        1
+      ],
+      "name": "MapField2",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            63,
+            12
+          ],
+          "end": [
+            63,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "MapField",
+          "start": [
+            64,
+            3
+          ],
+          "end": [
+            64,
+            30
+          ],
+          "keyType": "int32",
+          "valueType": "MapField1",
+          "name": "b",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        67,
+        1
+      ],
+      "end": [
+        72,
+        1
+      ],
+      "name": "NestedMessage1",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            68,
+            12
+          ],
+          "end": [
+            68,
+            32
+          ],
+          "fieldType": "NestedMessage2",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Message",
+          "start": [
+            69,
+            3
+          ],
+          "end": [
+            71,
+            3
+          ],
+          "name": "NestedNestedMessage",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                70,
+                14
+              ],
+              "end": [
+                70,
+                25
+              ],
+              "fieldType": "int32",
+              "name": "a",
+              "id": 1,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        74,
+        1
+      ],
+      "end": [
+        77,
+        1
+      ],
+      "name": "NestedMessage2",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            75,
+            12
+          ],
+          "end": [
+            75,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            76,
+            12
+          ],
+          "end": [
+            76,
+            52
+          ],
+          "fieldType": "NestedMessage1.NestedNestedMessage",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        79,
+        1
+      ],
+      "end": [
+        85,
+        1
+      ],
+      "name": "NestedEnum1",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            80,
+            12
+          ],
+          "end": [
+            80,
+            29
+          ],
+          "fieldType": "NestedEnum2",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Enum",
+          "start": [
+            81,
+            3
+          ],
+          "end": [
+            84,
+            3
+          ],
+          "name": "NestedNestedEnum",
+          "body": [
+            {
+              "type": "EnumField",
+              "start": [
+                82,
+                5
+              ],
+              "end": [
+                82,
+                18
+              ],
+              "name": "UNDEFINED",
+              "id": 0
+            },
+            {
+              "type": "EnumField",
+              "start": [
+                83,
+                5
+              ],
+              "end": [
+                83,
+                16
+              ],
+              "name": "VALUE_1",
+              "id": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        87,
+        1
+      ],
+      "end": [
+        90,
+        1
+      ],
+      "name": "NestedEnum2",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            88,
+            12
+          ],
+          "end": [
+            88,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            89,
+            12
+          ],
+          "end": [
+            89,
+            46
+          ],
+          "fieldType": "NestedEnum1.NestedNestedEnum",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        92,
+        1
+      ],
+      "end": [
+        96,
+        1
+      ],
+      "name": "ExtensionContainingType1",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            93,
+            12
+          ],
+          "end": [
+            93,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            94,
+            12
+          ],
+          "end": [
+            94,
+            42
+          ],
+          "fieldType": "ExtensionContainingType2",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extensions",
+          "start": [
+            95,
+            3
+          ],
+          "end": [
+            95,
+            23
+          ],
+          "ranges": [
+            [
+              99,
+              100
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        98,
+        1
+      ],
+      "end": [
+        103,
+        1
+      ],
+      "name": "ExtensionContainingType2",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            99,
+            12
+          ],
+          "end": [
+            99,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extend",
+          "start": [
+            100,
+            3
+          ],
+          "end": [
+            102,
+            3
+          ],
+          "name": "ExtensionContainingType1",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                101,
+                5
+              ],
+              "end": [
+                101,
+                26
+              ],
+              "fieldType": "int32",
+              "name": "c",
+              "id": 99,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        105,
+        1
+      ],
+      "end": [
+        108,
+        1
+      ],
+      "name": "ExtensionField1",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            106,
+            12
+          ],
+          "end": [
+            106,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            107,
+            12
+          ],
+          "end": [
+            107,
+            33
+          ],
+          "fieldType": "ExtensionField2",
+          "name": "b",
+          "id": 2,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        110,
+        1
+      ],
+      "end": [
+        115,
+        1
+      ],
+      "name": "ExtensionField2",
+      "body": [
+        {
+          "type": "Field",
+          "start": [
+            111,
+            12
+          ],
+          "end": [
+            111,
+            23
+          ],
+          "fieldType": "int32",
+          "name": "a",
+          "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": true,
+          "required": false
+        },
+        {
+          "type": "Extend",
+          "start": [
+            112,
+            3
+          ],
+          "end": [
+            114,
+            3
+          ],
+          "name": "ExtensionField3",
+          "body": [
+            {
+              "type": "Field",
+              "start": [
+                113,
+                5
+              ],
+              "end": [
+                113,
+                36
+              ],
+              "fieldType": "ExtensionField1",
+              "name": "c",
+              "id": 99,
+              "options": [],
+              "repeated": false,
+              "optional": true,
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Message",
+      "start": [
+        117,
+        1
+      ],
+      "end": [
+        119,
+        1
+      ],
+      "name": "ExtensionField3",
+      "body": [
+        {
+          "type": "Extensions",
+          "start": [
+            118,
+            3
+          ],
+          "end": [
+            118,
+            23
+          ],
+          "ranges": [
+            [
+              99,
+              100
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
