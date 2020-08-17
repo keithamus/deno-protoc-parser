@@ -10,7 +10,7 @@ import {parse} from 'https://deno.land/x/protoc_parser/mod.ts'
 const file = Deno.open('./my-file.proto')
 try {
   const proto = parse(file)
-  proto.accept(class {
+  proto.accept({
     visitMessage(messageNode) {
         // Do stuff with message node
     },
