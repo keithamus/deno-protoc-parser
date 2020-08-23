@@ -10,7 +10,6 @@ import { Visitor } from "./visitor.ts";
  * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#import_statement
  */
 export class Import extends ParseNode {
-  [b];
   /**
    * If the import was labelled `weak`.
    */
