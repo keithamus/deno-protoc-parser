@@ -13,9 +13,20 @@ import { Syntax } from "./syntax.ts";
 import { Comment } from "./comment.ts";
 import { assignComments } from "./util.ts";
 
+type ProtoStatement =
+  | Enum
+  | Extend
+  | Field
+  | Import
+  | Message
+  | Option
+  | Package
+  | Service
+  | Syntax;
+
 export class Proto extends ParseNode {
   constructor(
-    public body: ParseNode[],
+    public body: ProtoStatement[],
     public start: [number, number] = [0, 0],
     public end: [number, number] = [0, 0],
     public comments: Comment[] = [],
@@ -53,7 +64,7 @@ export class Proto extends ParseNode {
 
   static async parse(scanner: Scanner, syntax: 2 | 3 = 3): Promise<Proto> {
     let seenSyntax = false;
-    const body: ParseNode[] = [];
+    const body: ProtoStatement[] = [];
     const comments: Comment[] = [];
     for await (const token of scanner) {
       const str = scanner.contents;
