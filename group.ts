@@ -1,16 +1,15 @@
-import { ParseNode, ParseNodeJSON, Visitor } from "./parsenode.ts";
+import { ParseNode, ParseNodeJSON } from "./parsenode.ts";
+import { Visitor } from "./visitor.ts";
 import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
-import {
-  Field,
-  Enum,
-  Message,
-  Option,
-  Extend,
-  Extensions,
-  Oneof,
-  MapField,
-  Reserved,
-} from "./nodes.ts";
+import { Field } from "./field.ts";
+import { Enum } from "./enum.ts";
+import { Message } from "./message.ts";
+import { Option } from "./option.ts";
+import { Extend } from "./extend.ts";
+import { Extensions } from "./extensions.ts";
+import { Oneof } from "./oneof.ts";
+import { MapField } from "./mapfield.ts";
+import { Reserved } from "./reserved.ts";
 import { expectSimpleIdent } from "./util.ts";
 
 type MessageStatement =

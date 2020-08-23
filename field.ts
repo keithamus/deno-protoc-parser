@@ -1,5 +1,7 @@
-import { ParseNode, Visitor } from "./parsenode.ts";
-import { FieldOption, Comment } from "./nodes.ts";
+import { ParseNode } from "./parsenode.ts";
+import { Visitor } from "./visitor.ts";
+import { FieldOption } from "./fieldoption.ts";
+import { Comment } from "./comment.ts";
 import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
 import { expectSimpleIdent } from "./util.ts";
 

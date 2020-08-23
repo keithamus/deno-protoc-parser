@@ -1,6 +1,7 @@
-import { ParseNode, Visitor } from "./parsenode.ts";
+import { ParseNode } from "./parsenode.ts";
+import { Visitor } from "./visitor.ts";
 import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
-import { Field } from "./nodes.ts";
+import { Field } from "./field.ts";
 
 export class Extend extends ParseNode {
   constructor(

@@ -1,5 +1,6 @@
-import { ParseNode, Visitor } from "./parsenode.ts";
-import { Constant } from "./nodes.ts";
+import { ParseNode } from "./parsenode.ts";
+import { Visitor } from "./visitor.ts";
+import { Constant } from "./constant.ts";
 import { Scanner, Token, nextTokenIs } from "./deps.ts";
 import { expectFullIdent } from "./util.ts";
 

@@ -1,17 +1,16 @@
-import { ParseNode, Visitor } from "./parsenode.ts";
+import { ParseNode } from "./parsenode.ts";
+import { Visitor } from "./visitor.ts";
 import { Scanner, Token, TokenError } from "./deps.ts";
-import {
-  Enum,
-  Extend,
-  Field,
-  Import,
-  Message,
-  Option,
-  Package,
-  Service,
-  Syntax,
-  Comment,
-} from "./nodes.ts";
+import { Enum } from "./enum.ts";
+import { Extend } from "./extend.ts";
+import { Field } from "./field.ts";
+import { Import } from "./import.ts";
+import { Message } from "./message.ts";
+import { Option } from "./option.ts";
+import { Package } from "./package.ts";
+import { Service } from "./service.ts";
+import { Syntax } from "./syntax.ts";
+import { Comment } from "./comment.ts";
 import { assignComments } from "./util.ts";
 
 export class Proto extends ParseNode {

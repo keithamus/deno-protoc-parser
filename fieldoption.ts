@@ -1,5 +1,6 @@
 import { Scanner, Token, nextTokenIs } from "./deps.ts";
-import { ParseNode, Visitor } from "./parsenode.ts";
+import { ParseNode } from "./parsenode.ts";
+import { Visitor } from "./visitor.ts";
 import { Constant } from "./constant.ts";
 
 export class FieldOption extends ParseNode {

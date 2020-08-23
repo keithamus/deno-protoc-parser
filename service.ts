@@ -1,7 +1,10 @@
 import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
 import { expectSimpleIdent, assignComments, indent } from "./util.ts";
-import { Option, RPC, Comment } from "./nodes.ts";
-import { ParseNode, Visitor } from "./parsenode.ts";
+import { Option } from "./option.ts";
+import { RPC } from "./rpc.ts";
+import { Comment } from "./comment.ts";
+import { ParseNode } from "./parsenode.ts";
+import { Visitor } from "./visitor.ts";
 
 type ServiceStatement =
   | Option

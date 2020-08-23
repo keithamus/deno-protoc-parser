@@ -1,7 +1,9 @@
-import { ParseNode, Visitor } from "./parsenode.ts";
+import { ParseNode } from "./parsenode.ts";
+import { Visitor } from "./visitor.ts";
 import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
 import { expectSimpleIdent, assignComments } from "./util.ts";
-import { Option, Comment } from "./nodes.ts";
+import { Option } from "./option.ts";
+import { Comment } from "./comment.ts";
 
 export class RPC extends ParseNode {
   constructor(

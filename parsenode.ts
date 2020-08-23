@@ -1,9 +1,5 @@
 import { Scanner, TokenError } from "./deps.ts";
-import { Visitor } from "./nodes.ts";
-
-export {
-  Visitor,
-};
+import { Visitor } from "./visitor.ts";
 
 export interface ParseNodeJSON {
   type: string;

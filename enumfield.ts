@@ -1,4 +1,5 @@
-import { ParseNode, Visitor } from "./parsenode.ts";
+import { ParseNode } from "./parsenode.ts";
+import { Visitor } from "./visitor.ts";
 import { Scanner, Token, nextTokenIs } from "./deps.ts";
 
 export class EnumField extends ParseNode {
