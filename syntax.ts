@@ -2,10 +2,27 @@ import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
 import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
 
+/**
+ * Represents a Syntax definition.
+ *
+ * The syntax statement is used to define the protobuf version.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#syntax
+ */
 export class Syntax extends ParseNode {
   constructor(
+    /**
+     * The version the syntax statement declared. This is normalised to just
+     * the number part, so `"syntax3"` becomes just `3`.
+     */
     public version: 2 | 3 = 3,
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
   ) {
     super();

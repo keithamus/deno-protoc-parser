@@ -9,11 +9,32 @@ type EnumStatement =
   | EnumField
   | Option;
 
+/**
+ * Represents an Enum Definition.
+ *
+ * The enum definition consists of a name and an enum body. The enum body can
+ * have options and enum fields. Enum definitions must start with enum value
+ * zero.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#enum_definition
+ */
 export class Enum extends ParseNode {
   constructor(
+    /**
+     * The name of the Enum.
+     */
     public name: string,
+    /**
+     * A collection of direct child nodes in the Enum.
+     */
     public body: EnumStatement[] = [],
+    /**
+     * The ending [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
   ) {
     super();

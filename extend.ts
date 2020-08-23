@@ -3,11 +3,30 @@ import { Visitor } from "./visitor.ts";
 import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
 import { Field } from "./field.ts";
 
+/**
+ * Represents a Extend definition.
+ *
+ * This Node will only appear in Proto2 files. It was removed from Proto3.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto2-spec#extend
+ */
 export class Extend extends ParseNode {
   constructor(
+    /**
+     * The name of the message this definition is extending.
+     */
     public name: string,
+    /**
+     * A collection of direct child nodes in the Extend definition.
+     */
     public body: Field[] = [],
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
   ) {
     super();

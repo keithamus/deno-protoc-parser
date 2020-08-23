@@ -3,12 +3,32 @@ import { Visitor } from "./visitor.ts";
 import { Scanner, Token, TokenError } from "./deps.ts";
 import { expectFullIdent } from "./util.ts";
 
+/**
+ * Represents a Constant, aka a Literal value.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#constant
+ */
 export class Constant extends ParseNode {
+  /**
+   * The value of the Constant, converted to a first class JS type.
+   */
   public value: boolean | string | number | null;
   constructor(
+    /**
+     * What ProtoBuf type the value of the Constant is.
+     */
     public literalType: "identifier" | "string" | "int" | "float" | "boolean",
+    /**
+     * A raw string containing the contents of the Constant value, including delimiters.
+     */
     private raw: string,
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
   ) {
     super();

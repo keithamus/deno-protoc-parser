@@ -24,6 +24,12 @@ import { protoScanner, ProtoScannerInit } from "./protoscanner.ts";
 
 export { ProtoScannerInit } from "./protoscanner.ts";
 
-export async function parse(reader: Deno.Reader, init: ProtoScannerInit) {
+/**
+ * Parse the contents of a Reader, returning a `Proto` AST node.
+ */
+export async function parse(
+  reader: Deno.Reader,
+  init: ProtoScannerInit,
+): Promise<Proto> {
   return await Proto.parse(protoScanner(reader, init));
 }

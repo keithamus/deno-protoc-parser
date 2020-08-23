@@ -25,12 +25,37 @@ type MessageStatement =
   | MapField
   | Reserved;
 
+/**
+ * Represents a Message definition.
+ *
+ * A message consists of a message name and a message body. The message body
+ * can have fields, nested enum definitions, nested message definitions,
+ * options, oneofs, map fields, and reserved statements.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#message_definition
+ */
 export class Message extends ParseNode {
   constructor(
+    /**
+     * The name of the Message.
+     */
     public name: string,
+    /**
+     * A collection of direct child nodes in the Message.
+     */
     public body: MessageStatement[] = [],
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
+    /**
+     * Any comment nodes directly above a message, or inside a message that
+     * don't belong to one of the child nodes.
+     */
     public comments: Comment[] = [],
   ) {
     super();

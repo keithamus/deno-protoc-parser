@@ -2,13 +2,36 @@ import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
 import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
 
+/**
+ * Represents an Import statement.
+ *
+ * The import statement is used to import another .proto's definitions.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#import_statement
+ */
 export class Import extends ParseNode {
+  [b];
+  /**
+   * If the import was labelled `weak`.
+   */
   weak: boolean;
+  /**
+   * If the import was labelled `public`.
+   */
   public: boolean;
   constructor(
+    /**
+     * The source file the import statement has declared for import.
+     */
     public source: string,
     opts: { weak?: boolean; public?: boolean } = {},
+    /**
+       * The starting [line, column]
+       */
     public start: [number, number] = [0, 0],
+    /**
+       * The ending [line, column]
+       */
     public end: [number, number] = [0, 0],
   ) {
     super();

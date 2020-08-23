@@ -3,11 +3,28 @@ import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
 import { Constant } from "./constant.ts";
 
+/**
+ * Represents an inline option defined as part of a "Normal" Field definition.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto2-spec#fields
+ */
 export class FieldOption extends ParseNode {
   constructor(
+    /**
+     * The key of the option.
+     */
     public key: string,
+    /**
+     * The value of the option - as a Constant node.
+     */
     public value: Constant,
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The endign [line, column]
+     */
     public end: [number, number] = [0, 0],
   ) {
     super();

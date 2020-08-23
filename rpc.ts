@@ -5,14 +5,43 @@ import { expectSimpleIdent, assignComments } from "./util.ts";
 import { Option } from "./option.ts";
 import { Comment } from "./comment.ts";
 
+/**
+ * Represents an RPC method of a Service definition.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#service_definition
+ */
 export class RPC extends ParseNode {
   constructor(
+    /**
+     * The name of the RPC method.
+     */
     public name: string,
+    /**
+     * The identifier of the Request object, and whether or not this is
+     * streaming.
+     */
     public request: { name: string; streaming?: boolean },
+    /**
+     * The identifier of the Resonse object, and whether or not this is
+     * streaming.
+     */
     public response: { name: string; streaming?: boolean },
+    /**
+     * A collection of direct child nodes in the RPC definition.
+     */
     public body: Option[] | null = [],
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
+    /**
+     * Any comment nodes directly above a RPC statement, or inside an RPC block
+     * that don't belong to one of the child nodes.
+     */
     public comments: Comment[] = [],
   ) {
     super();

@@ -9,11 +9,34 @@ type OneofStatement =
   | Field
   | Group;
 
+/**
+ * Represents a Oneof field.
+ *
+ * Fields are the basic elements of a protocol buffer message. Fields can be
+ * normal fields, oneof fields, or map fields. A field has a type and field
+ * number.
+ *
+ * A oneof consists of oneof fields and a oneof name.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#oneof_and_oneof_field
+ */
 export class Oneof extends ParseNode {
   constructor(
+    /**
+     * The name of the Oneof field.
+     */
     public name: string,
+    /**
+     * A collection of direct child nodes in the Oneof field.
+     */
     public body: OneofStatement[],
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
   ) {
     super();

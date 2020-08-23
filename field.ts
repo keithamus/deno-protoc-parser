@@ -5,18 +5,69 @@ import { Comment } from "./comment.ts";
 import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
 import { expectSimpleIdent } from "./util.ts";
 
+/**
+ * Represents a "Normal" Field definition.
+ *
+ * Fields are the basic elements of a protocol buffer message. Fields can be
+ * normal fields, oneof fields, or map fields. A field has a type and field
+ * number.
+ *
+ * Each field has type, name and field number. It may have field options.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto2-spec#fields
+ */
 export class Field extends ParseNode {
+  /**
+   * If the field was prefixed `repeated`
+   */
   repeated: boolean;
+  /**
+   * If the field was prefixed `optional`.
+   *
+   * Note this will only ever be `true` for Proto2 ASTs, as Proto3
+   * deprecated this option. In Proto3 all fields are optional and must
+   * default to a pre-defined Zero value.
+   */
   optional: boolean;
+  /**
+   * If the field was prefixed `required`
+   *
+   * Note this will only ever be `true` for Proto2 ASTs, as Proto3
+   * deprecated this option. In Proto3 all fields are optional and must
+   * default to a pre-defined Zero value.
+   */
   required: boolean;
   constructor(
+    /**
+     * The ProtoBuf "type" of the field - this might be one of the built in
+     * types, such as `int32` or might be an identifier to an Enum or Message.
+     */
     public fieldType: string,
+    /**
+     * The name of the Field.
+     */
     public name: string,
+    /**
+     * The id (or "field number") of the field.
+     */
     public id: number,
     { repeated = false, optional = false, required = false } = {},
+    /**
+     * A collection of `FieldOption` nodes that define the inline options for
+     * this field.
+     */
     public options: FieldOption[] = [],
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
+    /**
+     * Any comment nodes above or on the same line as this field.
+     */
     public comments: Comment[] = [],
   ) {
     super();

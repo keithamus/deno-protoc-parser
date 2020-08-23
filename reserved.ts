@@ -12,10 +12,34 @@ function rangeToString(value: [number, number] | string): string {
   return `${from} to ${to}`;
 }
 
+/**
+ * Represents a Reserved definition.
+ *
+ * Reserved statements declare a range of field numbers or field names that cannot be used in this message.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#reserved
+ */
 export class Reserved extends ParseNode {
   constructor(
+    /**
+     * A collection of ranges; either as numerical tuples, or as an array of
+     * field name identifiers.
+     *
+     * The numerical ranges are inclusive, and are always a number tuple. If
+     * the reserved range was just one field ID then both numbers in the tuple
+     * will be equal.
+     *
+     * For example `reserved 4, 20 to max;` will result in:
+     * `[[4, 4], [20, Infinity]]`
+     */
     public ranges: RangeSet = [],
+    /**
+       * The starting [line, column]
+       */
     public start: [number, number] = [0, 0],
+    /**
+       * The ending [line, column]
+       */
     public end: [number, number] = [0, 0],
   ) {
     super();

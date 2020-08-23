@@ -23,6 +23,13 @@ type MessageStatement =
   | MapField
   | Reserved;
 
+/**
+ * Represents a Group definition.
+ *
+ * This Node will only appear in Proto2 files. It was removed from Proto3.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto2-spec#group_field
+ */
 export class Group extends ParseNode {
   repeated: boolean;
   optional: boolean;

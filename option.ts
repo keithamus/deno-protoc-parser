@@ -4,11 +4,33 @@ import { Constant } from "./constant.ts";
 import { Scanner, Token, nextTokenIs } from "./deps.ts";
 import { expectFullIdent } from "./util.ts";
 
+/**
+ * Represents an Option definition, that may be globally scoped, scoped to an
+ * Enum, Message, Service, RPC. Fields use a separate `FieldOption` node.
+ *
+ * Options can be used in proto files, messages, enums and services. An option
+ * can be a protobuf defined option or a custom option. For more information,
+ * see Options in the language guide.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto2-spec#option
+ */
 export class Option extends ParseNode {
   constructor(
+    /**
+     * The key of the option.
+     */
     public key: string,
+    /**
+     * The value of the option - as a Constant node.
+     */
     public value: Constant,
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
   ) {
     super();

@@ -18,6 +18,18 @@ enum KeyType {
   string = "string",
 }
 
+/**
+ * Represents an Import statement.
+ *
+ * Fields are the basic elements of a protocol buffer message. Fields can be
+ * normal fields, oneof fields, or map fields. A field has a type and field
+ * number.
+ *
+ * A map field has a key type, value type, name, and field number. The key type
+ * can be any integral or string type.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#map_field
+ */
 export class MapField extends ParseNode {
   keyType: KeyType;
   constructor(
@@ -25,7 +37,13 @@ export class MapField extends ParseNode {
     public valueType: string,
     public name: string,
     public id: number,
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
   ) {
     super();

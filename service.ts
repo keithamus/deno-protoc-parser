@@ -10,12 +10,33 @@ type ServiceStatement =
   | Option
   | RPC;
 
+/**
+ * Represents a Service definition.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#service_definition
+ */
 export class Service extends ParseNode {
   constructor(
+    /**
+     * The name of the service.
+     */
     public name: string,
+    /**
+     * A collection of direct child nodes in the Service.
+     */
     public body: ServiceStatement[] = [],
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
+    /**
+     * Any comment nodes directly above a service, or inside a service that
+     * don't belong to one of the child nodes.
+     */
     public comments: Comment[] = [],
   ) {
     super();

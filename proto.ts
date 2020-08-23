@@ -24,11 +24,28 @@ type ProtoStatement =
   | Service
   | Syntax;
 
+/**
+ * Represents a Proto node, the root node of any Proto file.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#proto_file
+ */
 export class Proto extends ParseNode {
   constructor(
+    /**
+     * A collection of direct child nodes in the Proto.
+     */
     public body: ProtoStatement[],
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
+    /**
+     * Any "top level" comment nodes (comments that don't belong to child nodes).
+     */
     public comments: Comment[] = [],
   ) {
     super();

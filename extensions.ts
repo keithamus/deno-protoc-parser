@@ -9,10 +9,31 @@ function rangeToString(value: [number, number]): string {
   return `${from} to ${to}`;
 }
 
+/**
+ * Represents a Extensions definition.
+ *
+ * This Node will only appear in Proto2 files. It was removed from Proto3.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto2-spec#extensions_and_reserved
+ */
 export class Extensions extends ParseNode {
   constructor(
+    /**
+     * The numerical ranges an extension field has enumerated. The ranges are
+     * inclusive, and are always a number tuple. If the extension range was
+     * just one field ID then both numbers in the tuple will be equal.
+     *
+     * For example `extensions 4, 20 to max;` will result in:
+     * `[[4, 4], [20, Infinity]]`
+     */
     public ranges: [number, number][] = [],
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
   ) {
     super();

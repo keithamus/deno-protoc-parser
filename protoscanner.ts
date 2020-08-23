@@ -17,7 +17,7 @@ const keywords = new Set(
     "weak",
     "inf",
     "nan",
-    // Syntax2
+    // Proto2
     "extend",
     "required",
     "optional",
@@ -25,7 +25,13 @@ const keywords = new Set(
   ],
 );
 
+/**
+ * Options for configuring `protoScanner`
+ */
 export interface ProtoScannerInit {
+  /**
+   * Should comments be parsed or skipped?
+   */
   comments?: boolean;
 }
 

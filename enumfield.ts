@@ -2,11 +2,28 @@ import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
 import { Scanner, Token, nextTokenIs } from "./deps.ts";
 
+/**
+ * Represents an EnumField - the keys/values that an Enum is composed of.
+ *
+ * https://developers.google.com/protocol-buffers/docs/reference/proto3-spec#enum_definition
+ */
 export class EnumField extends ParseNode {
   constructor(
+    /**
+     * The name of the EnumField.
+     */
     public name: string,
+    /**
+     * The id of the EnumField.
+     */
     public id: number,
+    /**
+     * The starting [line, column]
+     */
     public start: [number, number] = [0, 0],
+    /**
+     * The ending [line, column]
+     */
     public end: [number, number] = [0, 0],
   ) {
     super();
