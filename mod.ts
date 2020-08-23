@@ -19,10 +19,10 @@ export { Reserved } from "./reserved.ts";
 export { Service } from "./service.ts";
 export { Syntax } from "./syntax.ts";
 export { Comment } from "./comment.ts";
+export { ProtoScannerInit } from "./protoscanner.ts";
 
 import { protoScanner, ProtoScannerInit } from "./protoscanner.ts";
-
-export { ProtoScannerInit } from "./protoscanner.ts";
+import { Proto } from "./proto.ts";
 
 /**
  * Parse the contents of a Reader, returning a `Proto` AST node.
