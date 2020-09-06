@@ -79,7 +79,7 @@ export class Proto extends ParseNode {
     for (const node of this.comments) node.accept(visitor);
   }
 
-  static async parse(scanner: Scanner, syntax: 2 | 3 = 3): Promise<Proto> {
+  static async parse(scanner: Scanner, syntax: 2 | 3 = 2): Promise<Proto> {
     let seenSyntax = false;
     const body: ProtoStatement[] = [];
     const comments: Comment[] = [];
