@@ -43,7 +43,7 @@ export function protoScanner(
     mode: defaultTokens | (comments ? scanComments : 0),
     isIdent(ch: string, i: number) {
       return (ch >= "A" && ch <= "Z") || (ch >= "a" && ch <= "z") ||
-        (i > 0 && ((ch >= "0" && ch <= "9") || ch === "_" || ch === "."));
+        (i > 0 && ((ch >= "0" && ch <= "9") || ch === "_") || ch === ".");
     },
     isBinary: () => false,
     isKeyword(ident: string) {
