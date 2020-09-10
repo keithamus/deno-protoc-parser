@@ -13,6 +13,15 @@ Deno.test("Option", async () => {
         [1, 40],
       ),
     ],
+    [
+      `option (java_package) = "com.example.foo";`,
+      new Option(
+        "(java_package)",
+        new Constant("string", '"com.example.foo"', [1, 25], [1, 41]),
+        [1, 1],
+        [1, 42],
+      ),
+    ],
   ];
   for (const t of tt) await assertNode(Option, ...t);
 });
