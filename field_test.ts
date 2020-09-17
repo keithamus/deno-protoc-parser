@@ -19,6 +19,19 @@ Deno.test("Field", async () => {
       2,
     ],
     [
+      `.Foo bar = 1;`,
+      new Field(
+        ".Foo",
+        "bar",
+        1,
+        {},
+        [],
+        [1, 1],
+        [1, 13],
+      ),
+      2,
+    ],
+    [
       `foo.bar nested_message = 2;`,
       new Field(
         "foo.bar",

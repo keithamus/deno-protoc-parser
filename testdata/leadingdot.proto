@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message Foo {
+  message Bar {}
+  repeated .Foo.Bar thing = 1;
+}

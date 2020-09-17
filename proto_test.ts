@@ -33,3 +33,4 @@ Deno.test(testFile(`test2`, 2));
 Deno.test(testFile(`test1`, 2));
 Deno.test(testFile(`rpc1`, 2));
 Deno.test(testFile(`comments`, 2, { comments: true }));
+Deno.test(testFile(`leadingdot`, 2, { write: true }));
