@@ -7,8 +7,9 @@ Deno.test("FieldOption", async () => {
     [
       `default = true`,
       new FieldOption(
-        "default",
+        ["default"],
         new Constant("boolean", "true", [1, 11], [1, 14]),
+        false,
         [1, 1],
         [1, 14],
       ),
@@ -16,8 +17,9 @@ Deno.test("FieldOption", async () => {
     [
       `hello = "world"`,
       new FieldOption(
-        "hello",
+        ["hello"],
         new Constant("string", '"world"', [1, 9], [1, 15]),
+        false,
         [1, 1],
         [1, 15],
       ),
@@ -25,8 +27,9 @@ Deno.test("FieldOption", async () => {
     [
       `full.ident = full.ident`,
       new FieldOption(
-        "full.ident",
+        ["full.ident"],
         new Constant("identifier", "full.ident", [1, 14], [1, 23]),
+        false,
         [1, 1],
         [1, 23],
       ),
@@ -34,8 +37,9 @@ Deno.test("FieldOption", async () => {
     [
       `under_bar = 10`,
       new FieldOption(
-        "under_bar",
+        ["under_bar"],
         new Constant("int", "10", [1, 13], [1, 14]),
+        false,
         [1, 1],
         [1, 14],
       ),
@@ -43,8 +47,9 @@ Deno.test("FieldOption", async () => {
     [
       `bar = 10.01`,
       new FieldOption(
-        "bar",
+        ["bar"],
         new Constant("float", "10.01", [1, 7], [1, 11]),
+        false,
         [1, 1],
         [1, 11],
       ),
@@ -52,8 +57,9 @@ Deno.test("FieldOption", async () => {
     [
       `foo = -10`,
       new FieldOption(
-        "foo",
+        ["foo"],
         new Constant("int", "-10", [1, 7], [1, 9]),
+        false,
         [1, 1],
         [1, 9],
       ),
@@ -61,10 +67,31 @@ Deno.test("FieldOption", async () => {
     [
       `baz = -1e4`,
       new FieldOption(
-        "baz",
+        ["baz"],
         new Constant("float", "-1e4", [1, 7], [1, 10]),
+        false,
         [1, 1],
         [1, 10],
+      ),
+    ],
+    [
+      `(field_option) = true`,
+      new FieldOption(
+        ["field_option"],
+        new Constant("boolean", "true", [1, 18], [1, 21]),
+        true,
+        [1, 1],
+        [1, 21],
+      ),
+    ],
+    [
+      `(my.custom).nested = true`,
+      new FieldOption(
+        ["my.custom", "nested"],
+        new Constant("boolean", "true", [1, 22], [1, 25]),
+        true,
+        [1, 1],
+        [1, 25],
       ),
     ],
   ];

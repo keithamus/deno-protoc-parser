@@ -1,7 +1,7 @@
 import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
 import { Constant } from "./constant.ts";
-import { Scanner, Token, nextTokenIs } from "./deps.ts";
+import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
 import { expectFullIdent } from "./util.ts";
 
 /**
@@ -19,11 +19,15 @@ export class Option extends ParseNode {
     /**
      * The key of the option.
      */
-    public key: string,
+    public key: string[],
     /**
      * The value of the option - as a Constant node.
      */
     public value: Constant,
+    /**
+     * If the key is an extension (wrapped in parens)
+     */
+    public isExtension: boolean,
     /**
      * The starting [line, column]
      */
@@ -37,13 +41,21 @@ export class Option extends ParseNode {
   }
 
   toProto() {
-    return `option ${this.key} = ${this.value.toProto()};`;
+    let key = this.key.join(".");
+    if (this.isExtension) {
+      key = `(${this.key[0]})`;
+      if (this.key.length > 1) key += `.${this.key.slice(1).join(".")}`;
+    } else {
+      key = this.key.join(".");
+    }
+    return `option ${key} = ${this.value.toProto()};`;
   }
 
   toJSON() {
     return {
       type: "Option",
       start: this.start,
+      isExtension: this.isExtension,
       end: this.end,
       key: this.key,
       value: this.value.toJSON(),
@@ -61,10 +73,30 @@ export class Option extends ParseNode {
       await nextTokenIs(scanner, Token.keyword, "option");
     }
     const start = scanner.startPos;
-    const key = await expectFullIdent(scanner);
-    await nextTokenIs(scanner, Token.token, "=");
+    let token = await scanner.scan();
+    let contents = scanner.contents;
+    const key = [];
+    let isExtension = false;
+    if (token === Token.token && contents === "(") {
+      isExtension = true;
+      key.push(await expectFullIdent(scanner));
+      await nextTokenIs(scanner, Token.token, ")");
+      await nextTokenIs(scanner, Token.token);
+      contents = scanner.contents;
+      if (contents === ".") {
+        key.push(await expectFullIdent(scanner));
+        await nextTokenIs(scanner, Token.token, "=");
+      } else if (contents !== "=") {
+        throw new TokenError(scanner, token, Token.token);
+      }
+    } else if (token === Token.identifier) {
+      key.push(await expectFullIdent(scanner, false));
+      await nextTokenIs(scanner, Token.token, "=");
+    } else {
+      throw new TokenError(scanner, token, Token.identifier);
+    }
     const value = await Constant.parse(scanner);
     await nextTokenIs(scanner, Token.token, ";");
-    return new Option(key, value, start, scanner.endPos);
+    return new Option(key, value, isExtension, start, scanner.endPos);
   }
 }

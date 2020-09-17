@@ -7,8 +7,9 @@ Deno.test("Option", async () => {
     [
       `option java_package = "com.example.foo";`,
       new Option(
-        "java_package",
+        ["java_package"],
         new Constant("string", '"com.example.foo"', [1, 23], [1, 39]),
+        false,
         [1, 1],
         [1, 40],
       ),
@@ -16,10 +17,21 @@ Deno.test("Option", async () => {
     [
       `option (java_package) = "com.example.foo";`,
       new Option(
-        "(java_package)",
+        ["java_package"],
         new Constant("string", '"com.example.foo"', [1, 25], [1, 41]),
+        true,
         [1, 1],
         [1, 42],
+      ),
+    ],
+    [
+      `option (my.custom).nested = "com.example.foo";`,
+      new Option(
+        ["my.custom", "nested"],
+        new Constant("string", '"com.example.foo"', [1, 29], [1, 45]),
+        true,
+        [1, 1],
+        [1, 46],
       ),
     ],
   ];
@@ -35,6 +47,10 @@ Deno.test("Option errors", async () => {
     [
       `option foo..bar = "";`,
       `unexpected token (.) on line 1, column 12; expected identifier`,
+    ],
+    [
+      `option (partial = true;`,
+      `unexpected token (=) on line 1, column 17`,
     ],
   ];
   for (const t of tt) await assertNodeThrows(Option, ...t);

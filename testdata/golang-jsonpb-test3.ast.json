@@ -31,7 +31,8 @@
         32,
         82
       ],
-      "key": "go_package",
+      "key": ["go_package"],
+      "isExtension": false,
       "value": {
         "type": "Constant",
         "start": [
