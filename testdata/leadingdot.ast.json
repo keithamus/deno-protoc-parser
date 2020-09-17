@@ -1,0 +1,70 @@
+{
+  "type": "Proto",
+  "start": [
+    1,
+    1
+  ],
+  "end": [
+    7,
+    0
+  ],
+  "body": [
+    {
+      "type": "Syntax",
+      "start": [
+        1,
+        1
+      ],
+      "end": [
+        1,
+        18
+      ],
+      "version": 3
+    },
+    {
+      "type": "Message",
+      "start": [
+        3,
+        1
+      ],
+      "end": [
+        6,
+        1
+      ],
+      "name": "Foo",
+      "body": [
+        {
+          "type": "Message",
+          "start": [
+            4,
+            3
+          ],
+          "end": [
+            4,
+            16
+          ],
+          "name": "Bar",
+          "body": []
+        },
+        {
+          "type": "Field",
+          "start": [
+            5,
+            12
+          ],
+          "end": [
+            5,
+            30
+          ],
+          "fieldType": ".Foo.Bar",
+          "name": "thing",
+          "id": 1,
+          "options": [],
+          "repeated": true,
+          "optional": false,
+          "required": false
+        }
+      ]
+    }
+  ]
+}
