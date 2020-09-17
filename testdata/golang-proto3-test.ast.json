@@ -27,11 +27,14 @@
         31,
         1
       ],
+      "isExtension": false,
       "end": [
         31,
         82
       ],
-      "key": "go_package",
+      "key": [
+        "go_package"
+      ],
       "value": {
         "type": "Constant",
         "start": [

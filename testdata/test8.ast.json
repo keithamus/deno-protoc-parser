@@ -39,11 +39,14 @@
         35,
         1
       ],
+      "isExtension": false,
       "end": [
         35,
         51
       ],
-      "key": "java_package",
+      "key": [
+        "java_package"
+      ],
       "value": {
         "type": "Constant",
         "start": [
@@ -65,11 +68,14 @@
         36,
         1
       ],
+      "isExtension": false,
       "end": [
         36,
         34
       ],
-      "key": "java_multiple_files",
+      "key": [
+        "java_multiple_files"
+      ],
       "value": {
         "type": "Constant",
         "start": [

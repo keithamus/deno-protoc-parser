@@ -53,7 +53,8 @@ Deno.test("Field", async () => {
         { repeated: true },
         [
           new FieldOption(
-            "packed",
+            ["packed"],
+            false,
             new Constant("boolean", "true", [1, 38], [1, 41]),
             [1, 29],
             [1, 41],
@@ -61,6 +62,27 @@ Deno.test("Field", async () => {
         ],
         [1, 1],
         [1, 43],
+      ),
+      3,
+    ],
+    [
+      `repeated int32 samples = 4 [(some.nested).key = true];`,
+      new Field(
+        "int32",
+        "samples",
+        4,
+        { repeated: true },
+        [
+          new FieldOption(
+            ["some.nested", "key"],
+            true,
+            new Constant("boolean", "true", [1, 49], [1, 52]),
+            [1, 29],
+            [1, 52],
+          ),
+        ],
+        [1, 1],
+        [1, 54],
       ),
       3,
     ],
