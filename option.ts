@@ -21,13 +21,13 @@ export class Option extends ParseNode {
      */
     public key: string[],
     /**
-     * The value of the option - as a Constant node.
-     */
-    public value: Constant,
-    /**
      * If the key is an extension (wrapped in parens)
      */
     public isExtension: boolean,
+    /**
+     * The value of the option - as a Constant node.
+     */
+    public value: Constant,
     /**
      * The starting [line, column]
      */
@@ -97,6 +97,6 @@ export class Option extends ParseNode {
     }
     const value = await Constant.parse(scanner);
     await nextTokenIs(scanner, Token.token, ";");
-    return new Option(key, value, isExtension, start, scanner.endPos);
+    return new Option(key, isExtension, value, start, scanner.endPos);
   }
 }

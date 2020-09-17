@@ -41,8 +41,8 @@ Deno.test("Field", async () => {
         [
           new FieldOption(
             ["packed"],
-            new Constant("boolean", "true", [1, 38], [1, 41]),
             false,
+            new Constant("boolean", "true", [1, 38], [1, 41]),
             [1, 29],
             [1, 41],
           ),
@@ -62,8 +62,8 @@ Deno.test("Field", async () => {
         [
           new FieldOption(
             ["some.nested", "key"],
-            new Constant("boolean", "true", [1, 49], [1, 52]),
             true,
+            new Constant("boolean", "true", [1, 49], [1, 52]),
             [1, 29],
             [1, 52],
           ),

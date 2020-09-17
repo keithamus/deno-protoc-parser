@@ -8,8 +8,8 @@ Deno.test("Option", async () => {
       `option java_package = "com.example.foo";`,
       new Option(
         ["java_package"],
-        new Constant("string", '"com.example.foo"', [1, 23], [1, 39]),
         false,
+        new Constant("string", '"com.example.foo"', [1, 23], [1, 39]),
         [1, 1],
         [1, 40],
       ),
@@ -18,8 +18,8 @@ Deno.test("Option", async () => {
       `option (java_package) = "com.example.foo";`,
       new Option(
         ["java_package"],
-        new Constant("string", '"com.example.foo"', [1, 25], [1, 41]),
         true,
+        new Constant("string", '"com.example.foo"', [1, 25], [1, 41]),
         [1, 1],
         [1, 42],
       ),
@@ -28,8 +28,8 @@ Deno.test("Option", async () => {
       `option (my.custom).nested = "com.example.foo";`,
       new Option(
         ["my.custom", "nested"],
-        new Constant("string", '"com.example.foo"', [1, 29], [1, 45]),
         true,
+        new Constant("string", '"com.example.foo"', [1, 29], [1, 45]),
         [1, 1],
         [1, 46],
       ),

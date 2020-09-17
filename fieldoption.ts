@@ -16,13 +16,13 @@ export class FieldOption extends ParseNode {
      */
     public key: string[],
     /**
-     * The value of the option - as a Constant node.
-     */
-    public value: Constant,
-    /**
      * If the key is an extension (wrapped in parens)
      */
     public isExtension: boolean,
+    /**
+     * The value of the option - as a Constant node.
+     */
+    public value: Constant,
     /**
      * The starting [line, column]
      */
@@ -86,6 +86,6 @@ export class FieldOption extends ParseNode {
       await nextTokenIs(scanner, Token.token, "=");
     }
     const value = await Constant.parse(scanner);
-    return new FieldOption(key, value, isExtension, start, scanner.endPos);
+    return new FieldOption(key, isExtension, value, start, scanner.endPos);
   }
 }

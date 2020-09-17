@@ -8,8 +8,8 @@ Deno.test("FieldOption", async () => {
       `default = true`,
       new FieldOption(
         ["default"],
-        new Constant("boolean", "true", [1, 11], [1, 14]),
         false,
+        new Constant("boolean", "true", [1, 11], [1, 14]),
         [1, 1],
         [1, 14],
       ),
@@ -18,8 +18,8 @@ Deno.test("FieldOption", async () => {
       `hello = "world"`,
       new FieldOption(
         ["hello"],
-        new Constant("string", '"world"', [1, 9], [1, 15]),
         false,
+        new Constant("string", '"world"', [1, 9], [1, 15]),
         [1, 1],
         [1, 15],
       ),
@@ -28,8 +28,8 @@ Deno.test("FieldOption", async () => {
       `full.ident = full.ident`,
       new FieldOption(
         ["full.ident"],
-        new Constant("identifier", "full.ident", [1, 14], [1, 23]),
         false,
+        new Constant("identifier", "full.ident", [1, 14], [1, 23]),
         [1, 1],
         [1, 23],
       ),
@@ -38,8 +38,8 @@ Deno.test("FieldOption", async () => {
       `under_bar = 10`,
       new FieldOption(
         ["under_bar"],
-        new Constant("int", "10", [1, 13], [1, 14]),
         false,
+        new Constant("int", "10", [1, 13], [1, 14]),
         [1, 1],
         [1, 14],
       ),
@@ -48,8 +48,8 @@ Deno.test("FieldOption", async () => {
       `bar = 10.01`,
       new FieldOption(
         ["bar"],
-        new Constant("float", "10.01", [1, 7], [1, 11]),
         false,
+        new Constant("float", "10.01", [1, 7], [1, 11]),
         [1, 1],
         [1, 11],
       ),
@@ -58,8 +58,8 @@ Deno.test("FieldOption", async () => {
       `foo = -10`,
       new FieldOption(
         ["foo"],
-        new Constant("int", "-10", [1, 7], [1, 9]),
         false,
+        new Constant("int", "-10", [1, 7], [1, 9]),
         [1, 1],
         [1, 9],
       ),
@@ -68,8 +68,8 @@ Deno.test("FieldOption", async () => {
       `baz = -1e4`,
       new FieldOption(
         ["baz"],
-        new Constant("float", "-1e4", [1, 7], [1, 10]),
         false,
+        new Constant("float", "-1e4", [1, 7], [1, 10]),
         [1, 1],
         [1, 10],
       ),
@@ -78,8 +78,8 @@ Deno.test("FieldOption", async () => {
       `(field_option) = true`,
       new FieldOption(
         ["field_option"],
-        new Constant("boolean", "true", [1, 18], [1, 21]),
         true,
+        new Constant("boolean", "true", [1, 18], [1, 21]),
         [1, 1],
         [1, 21],
       ),
@@ -88,8 +88,8 @@ Deno.test("FieldOption", async () => {
       `(my.custom).nested = true`,
       new FieldOption(
         ["my.custom", "nested"],
-        new Constant("boolean", "true", [1, 22], [1, 25]),
         true,
+        new Constant("boolean", "true", [1, 22], [1, 25]),
         [1, 1],
         [1, 25],
       ),
