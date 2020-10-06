@@ -1,5 +1,6 @@
 import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
+import { Type } from "./type.ts";
 import { FieldOption } from "./fieldoption.ts";
 import { Comment } from "./comment.ts";
 import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
@@ -42,7 +43,7 @@ export class Field extends ParseNode {
      * The ProtoBuf "type" of the field - this might be one of the built in
      * types, such as `int32` or might be an identifier to an Enum or Message.
      */
-    public fieldType: string,
+    public fieldType: Type,
     /**
      * The name of the Field.
      */
@@ -91,7 +92,7 @@ export class Field extends ParseNode {
     if (this.repeated) str.push("repeated");
     if (this.optional) str.push("optional");
     if (this.required) str.push("required");
-    str.push(this.fieldType, this.name, "=", String(this.id));
+    str.push(this.fieldType.toProto(), this.name, "=", String(this.id));
     if (this.options.length) {
       str.push(
         `[${this.options.map((option) => option.toProto()).join(", ")}]`,
@@ -123,6 +124,7 @@ export class Field extends ParseNode {
   accept(visitor: Visitor) {
     visitor.visit?.(this);
     visitor.visitField?.(this);
+    this.fieldType.accept(visitor);
     for (const node of this.options) node.accept(visitor);
     for (const node of this.comments) node.accept(visitor);
   }
@@ -158,7 +160,7 @@ export class Field extends ParseNode {
       opts.repeated = true;
       await nextTokenIs(scanner, Token.identifier);
     }
-    const fieldType = scanner.contents;
+    const fieldType = await Type.parse(scanner);
     const name = await expectSimpleIdent(scanner);
     await nextTokenIs(scanner, Token.token, "=");
     const id = Number(await nextTokenIs(scanner, Token.int));

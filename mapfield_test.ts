@@ -1,11 +1,19 @@
 import { assertNode, assertNodeThrows } from "./testutil.ts";
 import { MapField } from "./mapfield.ts";
+import { Type } from "./type.ts";
 
 Deno.test("MapField", async () => {
   const tt: [string, MapField, 2 | 3][] = [
     [
       `map<int32, bar> foo = 3;`,
-      new MapField("int32", "bar", "foo", 3, [1, 1], [1, 24]),
+      new MapField(
+        "int32",
+        new Type("bar", [1, 12], [1, 14]),
+        "foo",
+        3,
+        [1, 1],
+        [1, 24],
+      ),
       2,
     ],
   ];

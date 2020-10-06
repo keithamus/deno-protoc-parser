@@ -18,6 +18,7 @@ import type { RPC } from "./rpc.ts";
 import type { Reserved } from "./reserved.ts";
 import type { Service } from "./service.ts";
 import type { Syntax } from "./syntax.ts";
+import type { Type } from "./type.ts";
 import type { Comment } from "./comment.ts";
 
 /**
@@ -106,6 +107,10 @@ export interface Visitor {
    * This will be called for every Syntax Node in the AST.
    */
   visitSyntax?: (node: Syntax) => void;
+  /**
+   * This will be called for every Type Node in the AST.
+   */
+  visitType?: (node: Type) => void;
   /**
    * This will be called for every Comment Node in the AST.
    */

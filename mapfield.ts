@@ -1,6 +1,7 @@
 import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
 import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
+import { Type } from "./type.ts";
 import { expectSimpleIdent } from "./util.ts";
 
 enum KeyType {
@@ -34,7 +35,7 @@ export class MapField extends ParseNode {
   keyType: KeyType;
   constructor(
     keyType: KeyType | keyof typeof KeyType,
-    public valueType: string,
+    public valueType: Type,
     public name: string,
     public id: number,
     /**
@@ -51,7 +52,7 @@ export class MapField extends ParseNode {
   }
 
   toProto() {
-    return `map<${this.keyType}, ${this.valueType}> ${this.name} = ${this.id};`;
+    return `map<${this.keyType}, ${this.valueType.toProto()}> ${this.name} = ${this.id};`;
   }
 
   toJSON() {
@@ -69,6 +70,7 @@ export class MapField extends ParseNode {
   accept(visitor: Visitor) {
     visitor.visit?.(this);
     visitor.visitMapField?.(this);
+    this.valueType.accept(visitor);
   }
 
   static async parse(scanner: Scanner): Promise<MapField> {
@@ -89,7 +91,7 @@ export class MapField extends ParseNode {
       );
     }
     await nextTokenIs(scanner, Token.token, ",");
-    const valueType = await nextTokenIs(scanner, Token.identifier);
+    const valueType = await Type.parse(scanner);
     await nextTokenIs(scanner, Token.token, ">");
     const name = await expectSimpleIdent(scanner);
     await nextTokenIs(scanner, Token.token, "=");

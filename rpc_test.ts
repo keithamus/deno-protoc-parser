@@ -1,15 +1,16 @@
 import { assertNode, assertNodeThrows } from "./testutil.ts";
 import { RPC } from "./rpc.ts";
+import { Type } from "./type.ts";
 
 Deno.test("RPC", async () => {
   const tt: [string, RPC][] = [
     [
       `rpc Foo (Req) returns (Res) {}`,
-      new RPC("Foo", { name: "Req" }, { name: "Res" }, [], [1, 1], [1, 30]),
+      new RPC("Foo", { name: new Type("Req", [1, 10], [1, 12]) }, { name: new Type("Res", [1, 24], [1, 26]) }, [], [1, 1], [1, 30]),
     ],
     [
       `rpc Foo (Req) returns (Res);`,
-      new RPC("Foo", { name: "Req" }, { name: "Res" }, null, [1, 1], [1, 28]),
+      new RPC("Foo", { name: new Type("Req", [1, 10], [1, 12]) }, { name: new Type("Res", [1, 24], [1, 26]) }, null, [1, 1], [1, 28]),
     ],
   ];
   for (const t of tt) await assertNode(RPC, ...t);
