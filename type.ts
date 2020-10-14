@@ -49,10 +49,12 @@ export class Type extends ParseNode {
       await scanner.scan();
     }
     const start = scanner.startPos;
-    let name = scanner.contents;
-    if (name === ".") {
-      name += await expectFullIdent(scanner);
+    let name = "";
+    if (scanner.contents === ".") {
+      name += ".";
+      await scanner.scan();
     }
+    name += await expectFullIdent(scanner, false);
     return new Type(name, start, scanner.endPos);
   }
 }
