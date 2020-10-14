@@ -178,7 +178,18 @@
             46,
             18
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              46,
+              3
+            ],
+            "end": [
+              46,
+              8
+            ],
+            "name": "string"
+          },
           "name": "name",
           "id": 1,
           "options": [],
@@ -196,7 +207,18 @@
             47,
             22
           ],
-          "fieldType": "Humour",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              47,
+              3
+            ],
+            "end": [
+              47,
+              8
+            ],
+            "name": "Humour"
+          },
           "name": "hilarity",
           "id": 2,
           "options": [],
@@ -214,7 +236,18 @@
             48,
             26
           ],
-          "fieldType": "uint32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              48,
+              3
+            ],
+            "end": [
+              48,
+              8
+            ],
+            "name": "uint32"
+          },
           "name": "height_in_cm",
           "id": 3,
           "options": [],
@@ -232,7 +265,18 @@
             49,
             17
           ],
-          "fieldType": "bytes",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              49,
+              3
+            ],
+            "end": [
+              49,
+              7
+            ],
+            "name": "bytes"
+          },
           "name": "data",
           "id": 4,
           "options": [],
@@ -250,7 +294,18 @@
             50,
             25
           ],
-          "fieldType": "int64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              50,
+              3
+            ],
+            "end": [
+              50,
+              7
+            ],
+            "name": "int64"
+          },
           "name": "result_count",
           "id": 7,
           "options": [],
@@ -268,7 +323,18 @@
             51,
             25
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              51,
+              3
+            ],
+            "end": [
+              51,
+              6
+            ],
+            "name": "bool"
+          },
           "name": "true_scotsman",
           "id": 8,
           "options": [],
@@ -286,7 +352,18 @@
             52,
             18
           ],
-          "fieldType": "float",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              52,
+              3
+            ],
+            "end": [
+              52,
+              7
+            ],
+            "name": "float"
+          },
           "name": "score",
           "id": 9,
           "options": [],
@@ -304,7 +381,18 @@
             54,
             26
           ],
-          "fieldType": "uint64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              54,
+              12
+            ],
+            "end": [
+              54,
+              17
+            ],
+            "name": "uint64"
+          },
           "name": "key",
           "id": 5,
           "options": [],
@@ -322,7 +410,18 @@
             55,
             32
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              55,
+              12
+            ],
+            "end": [
+              55,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "short_key",
           "id": 19,
           "options": [],
@@ -340,7 +439,18 @@
             56,
             20
           ],
-          "fieldType": "Nested",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              56,
+              3
+            ],
+            "end": [
+              56,
+              8
+            ],
+            "name": "Nested"
+          },
           "name": "nested",
           "id": 6,
           "options": [],
@@ -358,7 +468,18 @@
             57,
             31
           ],
-          "fieldType": "Humour",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              57,
+              12
+            ],
+            "end": [
+              57,
+              17
+            ],
+            "name": "Humour"
+          },
           "name": "r_funny",
           "id": 16,
           "options": [],
@@ -377,7 +498,18 @@
             35
           ],
           "keyType": "string",
-          "valueType": "Nested",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              59,
+              15
+            ],
+            "end": [
+              59,
+              20
+            ],
+            "name": "Nested"
+          },
           "name": "terrain",
           "id": 10
         },
@@ -391,7 +523,18 @@
             60,
             44
           ],
-          "fieldType": "proto2_test.SubDefaults",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              60,
+              3
+            ],
+            "end": [
+              60,
+              25
+            ],
+            "name": "proto2_test.SubDefaults"
+          },
           "name": "proto2_field",
           "id": 11,
           "options": [],
@@ -410,7 +553,18 @@
             57
           ],
           "keyType": "string",
-          "valueType": "proto2_test.SubDefaults",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              61,
+              15
+            ],
+            "end": [
+              61,
+              37
+            ],
+            "name": "proto2_test.SubDefaults"
+          },
           "name": "proto2_value",
           "id": 13
         },
@@ -424,7 +578,18 @@
             63,
             36
           ],
-          "fieldType": "google.protobuf.Any",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              63,
+              3
+            ],
+            "end": [
+              63,
+              21
+            ],
+            "name": "google.protobuf.Any"
+          },
           "name": "anything",
           "id": 14,
           "options": [],
@@ -442,7 +607,18 @@
             64,
             48
           ],
-          "fieldType": "google.protobuf.Any",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              64,
+              12
+            ],
+            "end": [
+              64,
+              30
+            ],
+            "name": "google.protobuf.Any"
+          },
           "name": "many_things",
           "id": 15,
           "options": [],
@@ -460,7 +636,18 @@
             66,
             26
           ],
-          "fieldType": "Message",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              66,
+              3
+            ],
+            "end": [
+              66,
+              9
+            ],
+            "name": "Message"
+          },
           "name": "submessage",
           "id": 17,
           "options": [],
@@ -478,7 +665,18 @@
             67,
             33
           ],
-          "fieldType": "Message",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              67,
+              12
+            ],
+            "end": [
+              67,
+              18
+            ],
+            "name": "Message"
+          },
           "name": "children",
           "id": 18,
           "options": [],
@@ -497,7 +695,18 @@
             38
           ],
           "keyType": "string",
-          "valueType": "string",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              69,
+              15
+            ],
+            "end": [
+              69,
+              20
+            ],
+            "name": "string"
+          },
           "name": "string_map",
           "id": 20
         }
@@ -525,7 +734,18 @@
             73,
             19
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              73,
+              3
+            ],
+            "end": [
+              73,
+              8
+            ],
+            "name": "string"
+          },
           "name": "bunny",
           "id": 1,
           "options": [],
@@ -543,7 +763,18 @@
             74,
             16
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              74,
+              3
+            ],
+            "end": [
+              74,
+              6
+            ],
+            "name": "bool"
+          },
           "name": "cute",
           "id": 2,
           "options": [],
@@ -576,7 +807,18 @@
             36
           ],
           "keyType": "bool",
-          "valueType": "bytes",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              78,
+              13
+            ],
+            "end": [
+              78,
+              17
+            ],
+            "name": "bytes"
+          },
           "name": "byte_mapping",
           "id": 1
         }
@@ -605,7 +847,18 @@
             28
           ],
           "keyType": "int32",
-          "valueType": "int32",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              83,
+              14
+            ],
+            "end": [
+              83,
+              18
+            ],
+            "name": "int32"
+          },
           "name": "rtt",
           "id": 1
         }
@@ -633,7 +886,18 @@
             87,
             27
           ],
-          "fieldType": "IntMap",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              87,
+              12
+            ],
+            "end": [
+              87,
+              17
+            ],
+            "name": "IntMap"
+          },
           "name": "maps",
           "id": 1,
           "options": [],
@@ -665,7 +929,18 @@
             91,
             20
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              91,
+              3
+            ],
+            "end": [
+              91,
+              8
+            ],
+            "name": "string"
+          },
           "name": "scalar",
           "id": 1,
           "options": [],
@@ -683,7 +958,18 @@
             92,
             29
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              92,
+              12
+            ],
+            "end": [
+              92,
+              17
+            ],
+            "name": "string"
+          },
           "name": "vector",
           "id": 2,
           "options": [],
@@ -713,7 +999,18 @@
                 93,
                 33
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  93,
+                  17
+                ],
+                "end": [
+                  93,
+                  22
+                ],
+                "name": "string"
+              },
               "name": "field",
               "id": 3,
               "options": [],
@@ -734,7 +1031,18 @@
             33
           ],
           "keyType": "string",
-          "valueType": "int64",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              94,
+              15
+            ],
+            "end": [
+              94,
+              19
+            ],
+            "name": "int64"
+          },
           "name": "map_key",
           "id": 4
         },
@@ -749,7 +1057,18 @@
             35
           ],
           "keyType": "int64",
-          "valueType": "string",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              95,
+              14
+            ],
+            "end": [
+              95,
+              19
+            ],
+            "name": "string"
+          },
           "name": "map_value",
           "id": 5
         }

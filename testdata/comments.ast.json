@@ -59,11 +59,33 @@
           ],
           "name": "MyMethod",
           "request": {
-            "name": "MyRequest",
+            "name": {
+              "type": "Type",
+              "start": [
+                14,
+                19
+              ],
+              "end": [
+                14,
+                27
+              ],
+              "name": "MyRequest"
+            },
             "streaming": false
           },
           "response": {
-            "name": "MyResponse",
+            "name": {
+              "type": "Type",
+              "start": [
+                14,
+                39
+              ],
+              "end": [
+                14,
+                48
+              ],
+              "name": "MyResponse"
+            },
             "streaming": false
           },
           "body": null,
@@ -106,7 +128,18 @@
             24,
             20
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              24,
+              5
+            ],
+            "end": [
+              24,
+              10
+            ],
+            "name": "string"
+          },
           "name": "path",
           "id": 1,
           "options": [],
@@ -166,7 +199,18 @@
             34,
             21
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              34,
+              5
+            ],
+            "end": [
+              34,
+              9
+            ],
+            "name": "int32"
+          },
           "name": "status",
           "id": 2,
           "options": [],

@@ -78,8 +78,14 @@ export class RPC extends ParseNode {
         start: this.start,
         end: this.end,
         name: this.name,
-        request: this.request,
-        response: this.response,
+        request: {
+          name: this.request.name.toJSON(),
+          streaming: this.request.streaming,
+        },
+        response: {
+          name: this.response.name.toJSON(),
+          streaming: this.response.streaming,
+        },
         body: this.body?.map((node) => node.toJSON()) || null,
       },
       this.comments.length

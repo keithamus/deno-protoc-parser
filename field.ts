@@ -107,7 +107,7 @@ export class Field extends ParseNode {
         type: "Field",
         start: this.start,
         end: this.end,
-        fieldType: this.fieldType,
+        fieldType: this.fieldType.toJSON(),
         name: this.name,
         id: this.id,
         options: this.options.map((node) => node.toJSON()),

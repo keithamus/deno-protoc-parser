@@ -61,7 +61,7 @@ export class MapField extends ParseNode {
       start: this.start,
       end: this.end,
       keyType: KeyType[this.keyType],
-      valueType: this.valueType,
+      valueType: this.valueType.toJSON(),
       name: this.name,
       id: this.id,
     };

@@ -113,7 +113,18 @@
             39,
             30
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              39,
+              12
+            ],
+            "end": [
+              39,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "intfield",
           "id": 1,
           "options": [],
@@ -174,7 +185,18 @@
                 45,
                 46
               ],
-              "fieldType": "ExtensionMessage",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  45,
+                  14
+                ],
+                "end": [
+                  45,
+                  29
+                ],
+                "name": "ExtensionMessage"
+              },
               "name": "ext_field",
               "id": 100,
               "options": [],
@@ -194,7 +216,18 @@
             47,
             27
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              47,
+              12
+            ],
+            "end": [
+              47,
+              17
+            ],
+            "name": "string"
+          },
           "name": "ext1",
           "id": 1,
           "options": [],
@@ -226,7 +259,18 @@
             51,
             53
           ],
-          "fieldType": "ExtensionMessage",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              51,
+              12
+            ],
+            "end": [
+              51,
+              27
+            ],
+            "name": "ExtensionMessage"
+          },
           "name": "floating_msg_field",
           "id": 101,
           "options": [],
@@ -244,7 +288,18 @@
             52,
             43
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              52,
+              12
+            ],
+            "end": [
+              52,
+              17
+            ],
+            "name": "string"
+          },
           "name": "floating_str_field",
           "id": 102,
           "options": [],

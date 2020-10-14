@@ -55,7 +55,18 @@
             36,
             23
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              36,
+              12
+            ],
+            "end": [
+              36,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "a",
           "id": 1,
           "options": [],

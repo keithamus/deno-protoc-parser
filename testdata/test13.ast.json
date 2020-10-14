@@ -86,7 +86,18 @@
             40,
             23
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              40,
+              12
+            ],
+            "end": [
+              40,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "a",
           "id": 1,
           "options": [],
@@ -158,7 +169,18 @@
             50,
             12
           ],
-          "fieldType": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName2",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              49,
+              12
+            ],
+            "end": [
+              49,
+              78
+            ],
+            "name": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName2"
+          },
           "name": "a",
           "id": 1,
           "options": [],
@@ -176,7 +198,18 @@
             51,
             23
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              51,
+              12
+            ],
+            "end": [
+              51,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "b",
           "id": 2,
           "options": [],
@@ -208,7 +241,18 @@
             56,
             12
           ],
-          "fieldType": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName3",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              55,
+              12
+            ],
+            "end": [
+              55,
+              78
+            ],
+            "name": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName3"
+          },
           "name": "a",
           "id": 1,
           "options": [],
@@ -226,7 +270,18 @@
             57,
             23
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              57,
+              12
+            ],
+            "end": [
+              57,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "b",
           "id": 2,
           "options": [],
@@ -258,7 +313,18 @@
             62,
             12
           ],
-          "fieldType": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName4",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              61,
+              12
+            ],
+            "end": [
+              61,
+              78
+            ],
+            "name": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName4"
+          },
           "name": "a",
           "id": 1,
           "options": [],
@@ -276,7 +342,18 @@
             63,
             23
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              63,
+              12
+            ],
+            "end": [
+              63,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "b",
           "id": 2,
           "options": [],
@@ -308,7 +385,18 @@
             68,
             12
           ],
-          "fieldType": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName1",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              67,
+              12
+            ],
+            "end": [
+              67,
+              78
+            ],
+            "name": "TestLooooooooooooooooooooooooooooooooooooooooooooooooooooooongName1"
+          },
           "name": "a",
           "id": 1,
           "options": [],
@@ -326,7 +414,18 @@
             69,
             23
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              69,
+              12
+            ],
+            "end": [
+              69,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "b",
           "id": 2,
           "options": [],

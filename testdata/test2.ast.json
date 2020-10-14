@@ -127,7 +127,18 @@
             41,
             30
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              41,
+              12
+            ],
+            "end": [
+              41,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "intfield",
           "id": 1,
           "options": [],
@@ -188,7 +199,18 @@
                 47,
                 46
               ],
-              "fieldType": "ExtensionMessage",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  47,
+                  14
+                ],
+                "end": [
+                  47,
+                  29
+                ],
+                "name": "ExtensionMessage"
+              },
               "name": "ext_field",
               "id": 100,
               "options": [],
@@ -208,7 +230,18 @@
             49,
             27
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              49,
+              12
+            ],
+            "end": [
+              49,
+              17
+            ],
+            "name": "string"
+          },
           "name": "ext1",
           "id": 1,
           "options": [],
@@ -240,7 +273,18 @@
             54,
             53
           ],
-          "fieldType": "ExtensionMessage",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              54,
+              12
+            ],
+            "end": [
+              54,
+              27
+            ],
+            "name": "ExtensionMessage"
+          },
           "name": "floating_msg_field",
           "id": 101,
           "options": [],
@@ -258,7 +302,18 @@
             55,
             43
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              55,
+              12
+            ],
+            "end": [
+              55,
+              17
+            ],
+            "name": "string"
+          },
           "name": "floating_str_field",
           "id": 102,
           "options": [],
@@ -290,7 +345,18 @@
             59,
             59
           ],
-          "fieldType": "Deeply.Nested.Message",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              59,
+              12
+            ],
+            "end": [
+              59,
+              32
+            ],
+            "name": "Deeply.Nested.Message"
+          },
           "name": "deeply_nested_message",
           "id": 1,
           "options": [],

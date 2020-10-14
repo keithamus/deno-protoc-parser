@@ -82,7 +82,18 @@
             37,
             17
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              37,
+              3
+            ],
+            "end": [
+              37,
+              8
+            ],
+            "name": "double"
+          },
           "name": "dub",
           "id": 1,
           "options": [],
@@ -114,7 +125,18 @@
             41,
             29
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              41,
+              12
+            ],
+            "end": [
+              41,
+              17
+            ],
+            "name": "string"
+          },
           "name": "slices",
           "id": 1,
           "options": [],
@@ -147,7 +169,18 @@
             33
           ],
           "keyType": "string",
-          "valueType": "string",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              45,
+              14
+            ],
+            "end": [
+              45,
+              19
+            ],
+            "name": "string"
+          },
           "name": "stringy",
           "id": 1
         }
@@ -175,7 +208,18 @@
             49,
             21
           ],
-          "fieldType": "Simple3",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              49,
+              3
+            ],
+            "end": [
+              49,
+              9
+            ],
+            "name": "Simple3"
+          },
           "name": "simple",
           "id": 1,
           "options": [],
@@ -261,7 +305,18 @@
             30
           ],
           "keyType": "int64",
-          "valueType": "int32",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              59,
+              14
+            ],
+            "end": [
+              59,
+              18
+            ],
+            "name": "int32"
+          },
           "name": "nummy",
           "id": 1
         },
@@ -276,7 +331,18 @@
             32
           ],
           "keyType": "string",
-          "valueType": "string",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              60,
+              15
+            ],
+            "end": [
+              60,
+              20
+            ],
+            "name": "string"
+          },
           "name": "strry",
           "id": 2
         },
@@ -291,7 +357,18 @@
             32
           ],
           "keyType": "int32",
-          "valueType": "Simple3",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              61,
+              14
+            ],
+            "end": [
+              61,
+              20
+            ],
+            "name": "Simple3"
+          },
           "name": "objjy",
           "id": 3
         },
@@ -306,7 +383,18 @@
             31
           ],
           "keyType": "int64",
-          "valueType": "string",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              62,
+              14
+            ],
+            "end": [
+              62,
+              19
+            ],
+            "name": "string"
+          },
           "name": "buggy",
           "id": 4
         },
@@ -321,7 +409,18 @@
             28
           ],
           "keyType": "bool",
-          "valueType": "bool",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              63,
+              13
+            ],
+            "end": [
+              63,
+              16
+            ],
+            "name": "bool"
+          },
           "name": "booly",
           "id": 5
         },
@@ -336,7 +435,18 @@
             33
           ],
           "keyType": "string",
-          "valueType": "Numeral",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              64,
+              15
+            ],
+            "end": [
+              64,
+              21
+            ],
+            "name": "Numeral"
+          },
           "name": "enumy",
           "id": 6
         },
@@ -351,7 +461,18 @@
             32
           ],
           "keyType": "int32",
-          "valueType": "bool",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              65,
+              14
+            ],
+            "end": [
+              65,
+              17
+            ],
+            "name": "bool"
+          },
           "name": "s32booly",
           "id": 7
         },
@@ -366,7 +487,18 @@
             32
           ],
           "keyType": "int64",
-          "valueType": "bool",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              66,
+              14
+            ],
+            "end": [
+              66,
+              17
+            ],
+            "name": "bool"
+          },
           "name": "s64booly",
           "id": 8
         },
@@ -381,7 +513,18 @@
             33
           ],
           "keyType": "uint32",
-          "valueType": "bool",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              67,
+              15
+            ],
+            "end": [
+              67,
+              18
+            ],
+            "name": "bool"
+          },
           "name": "u32booly",
           "id": 9
         },
@@ -396,7 +539,18 @@
             34
           ],
           "keyType": "uint64",
-          "valueType": "bool",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              68,
+              15
+            ],
+            "end": [
+              68,
+              18
+            ],
+            "name": "bool"
+          },
           "name": "u64booly",
           "id": 10
         }
