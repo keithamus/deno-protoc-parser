@@ -1,6 +1,7 @@
 import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
-import { Scanner } from "./deps.ts";
+import { Scanner, Token } from "./deps.ts";
+import { expectFullIdent } from "./util.ts";
 
 /**
  * Represents a Type.
@@ -43,5 +44,15 @@ export class Type extends ParseNode {
     visitor.visitType?.(this);
   }
 
-  static async parse(scanner: Scanner): Promise<Type>;
+  static async parse(scanner: Scanner): Promise<Type> {
+    if (scanner.currentToken !== Token.identifier && scanner.contents !== ".") {
+      await scanner.scan();
+    }
+    const start = scanner.startPos;
+    let name = scanner.contents;
+    if (name === ".") {
+      name += await expectFullIdent(scanner);
+    }
+    return new Type(name, start, scanner.endPos);
+  }
 }
