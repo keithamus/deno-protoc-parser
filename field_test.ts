@@ -12,7 +12,7 @@ Deno.test("Field", async () => {
         new Type(
           "float",
           [1, 10],
-          [1, 14]
+          [1, 14],
         ),
         "F_Ninf",
         16,
@@ -29,7 +29,7 @@ Deno.test("Field", async () => {
         new Type(
           ".Foo",
           [1, 1],
-          [1, 4]
+          [1, 4],
         ),
         "bar",
         1,
