@@ -187,7 +187,18 @@
             48,
             3
           ],
-          "name": "TestExtensionsMessage",
+          "name": {
+            "type": "Type",
+            "start": [
+              46,
+              10
+            ],
+            "end": [
+              46,
+              30
+            ],
+            "name": "TestExtensionsMessage"
+          },
           "body": [
             {
               "type": "Field",
@@ -261,7 +272,18 @@
         56,
         1
       ],
-      "name": "TestExtensionsMessage",
+      "name": {
+        "type": "Type",
+        "start": [
+          53,
+          8
+        ],
+        "end": [
+          53,
+          28
+        ],
+        "name": "TestExtensionsMessage"
+      },
       "body": [
         {
           "type": "Field",

@@ -5151,7 +5151,18 @@
             294,
             3
           ],
-          "name": "MyMessage",
+          "name": {
+            "type": "Type",
+            "start": [
+              290,
+              10
+            ],
+            "end": [
+              290,
+              18
+            ],
+            "name": "MyMessage"
+          },
           "body": [
             {
               "type": "Field",
@@ -5309,7 +5320,18 @@
         303,
         1
       ],
-      "name": "MyMessage",
+      "name": {
+        "type": "Type",
+        "start": [
+          300,
+          8
+        ],
+        "end": [
+          300,
+          16
+        ],
+        "name": "MyMessage"
+      },
       "body": [
         {
           "type": "Field",
@@ -5453,7 +5475,18 @@
         314,
         1
       ],
-      "name": "OtherMessage",
+      "name": {
+        "type": "Type",
+        "start": [
+          311,
+          8
+        ],
+        "end": [
+          311,
+          19
+        ],
+        "name": "OtherMessage"
+      },
       "body": [
         {
           "type": "Field",
@@ -5609,7 +5642,18 @@
         359,
         1
       ],
-      "name": "DefaultsMessage",
+      "name": {
+        "type": "Type",
+        "start": [
+          325,
+          8
+        ],
+        "end": [
+          325,
+          22
+        ],
+        "name": "DefaultsMessage"
+      },
       "body": [
         {
           "type": "Field",

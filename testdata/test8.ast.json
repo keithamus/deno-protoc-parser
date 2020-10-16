@@ -216,7 +216,18 @@
             49,
             3
           ],
-          "name": "TestNestedExtensionsMessage",
+          "name": {
+            "type": "Type",
+            "start": [
+              47,
+              10
+            ],
+            "end": [
+              47,
+              36
+            ],
+            "name": "TestNestedExtensionsMessage"
+          },
           "body": [
             {
               "type": "Field",

@@ -1177,7 +1177,18 @@
             121,
             3
           ],
-          "name": "HasExtensions",
+          "name": {
+            "type": "Type",
+            "start": [
+              119,
+              10
+            ],
+            "end": [
+              119,
+              22
+            ],
+            "name": "HasExtensions"
+          },
           "body": [
             {
               "type": "Field",
@@ -1249,7 +1260,18 @@
             127,
             3
           ],
-          "name": "google.protobuf.EnumOptions",
+          "name": {
+            "type": "Type",
+            "start": [
+              125,
+              10
+            ],
+            "end": [
+              125,
+              36
+            ],
+            "name": "google.protobuf.EnumOptions"
+          },
           "body": [
             {
               "type": "Field",
@@ -1306,7 +1328,18 @@
             136,
             3
           ],
-          "name": "HasExtensions",
+          "name": {
+            "type": "Type",
+            "start": [
+              131,
+              10
+            ],
+            "end": [
+              131,
+              22
+            ],
+            "name": "HasExtensions"
+          },
           "body": [
             {
               "type": "Field",
@@ -1438,7 +1471,18 @@
         141,
         1
       ],
-      "name": "HasExtensions",
+      "name": {
+        "type": "Type",
+        "start": [
+          139,
+          8
+        ],
+        "end": [
+          139,
+          20
+        ],
+        "name": "HasExtensions"
+      },
       "body": [
         {
           "type": "Field",
@@ -2543,7 +2587,18 @@
             187,
             3
           ],
-          "name": "TestClone",
+          "name": {
+            "type": "Type",
+            "start": [
+              185,
+              10
+            ],
+            "end": [
+              185,
+              18
+            ],
+            "name": "TestClone"
+          },
           "body": [
             {
               "type": "Field",
@@ -2629,7 +2684,18 @@
             194,
             3
           ],
-          "name": "TestClone",
+          "name": {
+            "type": "Type",
+            "start": [
+              192,
+              10
+            ],
+            "end": [
+              192,
+              18
+            ],
+            "name": "TestClone"
+          },
           "body": [
             {
               "type": "Field",
@@ -3089,7 +3155,18 @@
             226,
             3
           ],
-          "name": "TestReservedNames",
+          "name": {
+            "type": "Type",
+            "start": [
+              224,
+              10
+            ],
+            "end": [
+              224,
+              26
+            ],
+            "name": "TestReservedNames"
+          },
           "body": [
             {
               "type": "Field",
@@ -3686,7 +3763,18 @@
         269,
         1
       ],
-      "name": "TestLastFieldBeforePivot",
+      "name": {
+        "type": "Type",
+        "start": [
+          267,
+          8
+        ],
+        "end": [
+          267,
+          31
+        ],
+        "name": "TestLastFieldBeforePivot"
+      },
       "body": [
         {
           "type": "Field",

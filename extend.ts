@@ -2,6 +2,7 @@ import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
 import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
 import { Field } from "./field.ts";
+import { Type } from "./type.ts";
 
 /**
  * Represents a Extend definition.
@@ -15,7 +16,7 @@ export class Extend extends ParseNode {
     /**
      * The name of the message this definition is extending.
      */
-    public name: string,
+    public name: Type,
     /**
      * A collection of direct child nodes in the Extend definition.
      */
@@ -39,7 +40,7 @@ export class Extend extends ParseNode {
         this.body.map((node) => node.toProto(syntax)).join("\n  ")
       }\n`;
     }
-    return `extend ${this.name} {${body}}`;
+    return `extend ${this.name.toProto()} {${body}}`;
   }
 
   toJSON() {
@@ -47,7 +48,7 @@ export class Extend extends ParseNode {
       type: "Extend",
       start: this.start,
       end: this.end,
-      name: this.name,
+      name: this.name.toJSON(),
       body: this.body.map((node) => node.toJSON()),
     };
   }
@@ -55,6 +56,7 @@ export class Extend extends ParseNode {
   accept(visitor: Visitor) {
     visitor.visit?.(this);
     visitor.visitExtend?.(this);
+    this.name.accept(visitor);
     for (const node of this.body) node.accept(visitor);
   }
 
@@ -71,7 +73,7 @@ export class Extend extends ParseNode {
       );
     }
     const start = scanner.startPos;
-    const name = await nextTokenIs(scanner, Token.identifier);
+    const name = await Type.parse(scanner);
     const body: Field[] = [];
     await nextTokenIs(scanner, Token.token, "{");
     for await (const token of scanner) {
