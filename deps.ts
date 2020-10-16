@@ -5,4 +5,4 @@ export {
   scanComments,
   nextTokenIs,
   TokenError,
-} from "https://deno.land/x/scanner@v0.1.2/mod.ts";
+} from "https://deno.land/x/scanner@v0.2.0/mod.ts";

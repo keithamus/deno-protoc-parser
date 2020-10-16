@@ -152,7 +152,18 @@
             44,
             27
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              44,
+              12
+            ],
+            "end": [
+              44,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "o_bool",
           "id": 1,
           "options": [],
@@ -170,7 +181,18 @@
             45,
             29
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              45,
+              12
+            ],
+            "end": [
+              45,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "o_int32",
           "id": 2,
           "options": [],
@@ -188,7 +210,18 @@
             46,
             33
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              46,
+              12
+            ],
+            "end": [
+              46,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "o_int32_str",
           "id": 3,
           "options": [],
@@ -206,7 +239,18 @@
             47,
             29
           ],
-          "fieldType": "int64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              47,
+              12
+            ],
+            "end": [
+              47,
+              16
+            ],
+            "name": "int64"
+          },
           "name": "o_int64",
           "id": 4,
           "options": [],
@@ -224,7 +268,18 @@
             48,
             33
           ],
-          "fieldType": "int64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              48,
+              12
+            ],
+            "end": [
+              48,
+              16
+            ],
+            "name": "int64"
+          },
           "name": "o_int64_str",
           "id": 5,
           "options": [],
@@ -242,7 +297,18 @@
             49,
             31
           ],
-          "fieldType": "uint32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              49,
+              12
+            ],
+            "end": [
+              49,
+              17
+            ],
+            "name": "uint32"
+          },
           "name": "o_uint32",
           "id": 6,
           "options": [],
@@ -260,7 +326,18 @@
             50,
             35
           ],
-          "fieldType": "uint32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              50,
+              12
+            ],
+            "end": [
+              50,
+              17
+            ],
+            "name": "uint32"
+          },
           "name": "o_uint32_str",
           "id": 7,
           "options": [],
@@ -278,7 +355,18 @@
             51,
             31
           ],
-          "fieldType": "uint64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              51,
+              12
+            ],
+            "end": [
+              51,
+              17
+            ],
+            "name": "uint64"
+          },
           "name": "o_uint64",
           "id": 8,
           "options": [],
@@ -296,7 +384,18 @@
             52,
             35
           ],
-          "fieldType": "uint64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              52,
+              12
+            ],
+            "end": [
+              52,
+              17
+            ],
+            "name": "uint64"
+          },
           "name": "o_uint64_str",
           "id": 9,
           "options": [],
@@ -314,7 +413,18 @@
             53,
             32
           ],
-          "fieldType": "sint32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              53,
+              12
+            ],
+            "end": [
+              53,
+              17
+            ],
+            "name": "sint32"
+          },
           "name": "o_sint32",
           "id": 10,
           "options": [],
@@ -332,7 +442,18 @@
             54,
             36
           ],
-          "fieldType": "sint32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              54,
+              12
+            ],
+            "end": [
+              54,
+              17
+            ],
+            "name": "sint32"
+          },
           "name": "o_sint32_str",
           "id": 11,
           "options": [],
@@ -350,7 +471,18 @@
             55,
             32
           ],
-          "fieldType": "sint64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              55,
+              12
+            ],
+            "end": [
+              55,
+              17
+            ],
+            "name": "sint64"
+          },
           "name": "o_sint64",
           "id": 12,
           "options": [],
@@ -368,7 +500,18 @@
             56,
             36
           ],
-          "fieldType": "sint64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              56,
+              12
+            ],
+            "end": [
+              56,
+              17
+            ],
+            "name": "sint64"
+          },
           "name": "o_sint64_str",
           "id": 13,
           "options": [],
@@ -386,7 +529,18 @@
             57,
             30
           ],
-          "fieldType": "float",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              57,
+              12
+            ],
+            "end": [
+              57,
+              16
+            ],
+            "name": "float"
+          },
           "name": "o_float",
           "id": 14,
           "options": [],
@@ -404,7 +558,18 @@
             58,
             34
           ],
-          "fieldType": "float",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              58,
+              12
+            ],
+            "end": [
+              58,
+              16
+            ],
+            "name": "float"
+          },
           "name": "o_float_str",
           "id": 15,
           "options": [],
@@ -422,7 +587,18 @@
             59,
             32
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              59,
+              12
+            ],
+            "end": [
+              59,
+              17
+            ],
+            "name": "double"
+          },
           "name": "o_double",
           "id": 16,
           "options": [],
@@ -440,7 +616,18 @@
             60,
             36
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              60,
+              12
+            ],
+            "end": [
+              60,
+              17
+            ],
+            "name": "double"
+          },
           "name": "o_double_str",
           "id": 17,
           "options": [],
@@ -458,7 +645,18 @@
             61,
             32
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              61,
+              12
+            ],
+            "end": [
+              61,
+              17
+            ],
+            "name": "string"
+          },
           "name": "o_string",
           "id": 18,
           "options": [],
@@ -476,7 +674,18 @@
             62,
             30
           ],
-          "fieldType": "bytes",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              62,
+              12
+            ],
+            "end": [
+              62,
+              16
+            ],
+            "name": "bytes"
+          },
           "name": "o_bytes",
           "id": 19,
           "options": [],
@@ -508,7 +717,18 @@
             67,
             29
           ],
-          "fieldType": "float",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              67,
+              14
+            ],
+            "end": [
+              67,
+              18
+            ],
+            "name": "float"
+          },
           "name": "f_nan",
           "id": 1,
           "options": [],
@@ -526,7 +746,18 @@
             68,
             30
           ],
-          "fieldType": "float",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              68,
+              14
+            ],
+            "end": [
+              68,
+              18
+            ],
+            "name": "float"
+          },
           "name": "f_pinf",
           "id": 2,
           "options": [],
@@ -544,7 +775,18 @@
             69,
             30
           ],
-          "fieldType": "float",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              69,
+              14
+            ],
+            "end": [
+              69,
+              18
+            ],
+            "name": "float"
+          },
           "name": "f_ninf",
           "id": 3,
           "options": [],
@@ -562,7 +804,18 @@
             70,
             30
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              70,
+              14
+            ],
+            "end": [
+              70,
+              19
+            ],
+            "name": "double"
+          },
           "name": "d_nan",
           "id": 4,
           "options": [],
@@ -580,7 +833,18 @@
             71,
             31
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              71,
+              14
+            ],
+            "end": [
+              71,
+              19
+            ],
+            "name": "double"
+          },
           "name": "d_pinf",
           "id": 5,
           "options": [],
@@ -598,7 +862,18 @@
             72,
             31
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              72,
+              14
+            ],
+            "end": [
+              72,
+              19
+            ],
+            "name": "double"
+          },
           "name": "d_ninf",
           "id": 6,
           "options": [],
@@ -630,7 +905,18 @@
             77,
             27
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              77,
+              12
+            ],
+            "end": [
+              77,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "r_bool",
           "id": 1,
           "options": [],
@@ -648,7 +934,18 @@
             78,
             29
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              78,
+              12
+            ],
+            "end": [
+              78,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "r_int32",
           "id": 2,
           "options": [],
@@ -666,7 +963,18 @@
             79,
             29
           ],
-          "fieldType": "int64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              79,
+              12
+            ],
+            "end": [
+              79,
+              16
+            ],
+            "name": "int64"
+          },
           "name": "r_int64",
           "id": 3,
           "options": [],
@@ -684,7 +992,18 @@
             80,
             31
           ],
-          "fieldType": "uint32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              80,
+              12
+            ],
+            "end": [
+              80,
+              17
+            ],
+            "name": "uint32"
+          },
           "name": "r_uint32",
           "id": 4,
           "options": [],
@@ -702,7 +1021,18 @@
             81,
             31
           ],
-          "fieldType": "uint64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              81,
+              12
+            ],
+            "end": [
+              81,
+              17
+            ],
+            "name": "uint64"
+          },
           "name": "r_uint64",
           "id": 5,
           "options": [],
@@ -720,7 +1050,18 @@
             82,
             31
           ],
-          "fieldType": "sint32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              82,
+              12
+            ],
+            "end": [
+              82,
+              17
+            ],
+            "name": "sint32"
+          },
           "name": "r_sint32",
           "id": 6,
           "options": [],
@@ -738,7 +1079,18 @@
             83,
             31
           ],
-          "fieldType": "sint64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              83,
+              12
+            ],
+            "end": [
+              83,
+              17
+            ],
+            "name": "sint64"
+          },
           "name": "r_sint64",
           "id": 7,
           "options": [],
@@ -756,7 +1108,18 @@
             84,
             29
           ],
-          "fieldType": "float",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              84,
+              12
+            ],
+            "end": [
+              84,
+              16
+            ],
+            "name": "float"
+          },
           "name": "r_float",
           "id": 8,
           "options": [],
@@ -774,7 +1137,18 @@
             85,
             31
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              85,
+              12
+            ],
+            "end": [
+              85,
+              17
+            ],
+            "name": "double"
+          },
           "name": "r_double",
           "id": 9,
           "options": [],
@@ -792,7 +1166,18 @@
             86,
             32
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              86,
+              12
+            ],
+            "end": [
+              86,
+              17
+            ],
+            "name": "string"
+          },
           "name": "r_string",
           "id": 10,
           "options": [],
@@ -810,7 +1195,18 @@
             87,
             30
           ],
-          "fieldType": "bytes",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              87,
+              12
+            ],
+            "end": [
+              87,
+              16
+            ],
+            "name": "bytes"
+          },
           "name": "r_bytes",
           "id": 11,
           "options": [],
@@ -895,7 +1291,18 @@
             97,
             27
           ],
-          "fieldType": "Color",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              97,
+              12
+            ],
+            "end": [
+              97,
+              16
+            ],
+            "name": "Color"
+          },
           "name": "color",
           "id": 1,
           "options": [],
@@ -913,7 +1320,18 @@
             98,
             29
           ],
-          "fieldType": "Color",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              98,
+              12
+            ],
+            "end": [
+              98,
+              16
+            ],
+            "name": "Color"
+          },
           "name": "r_color",
           "id": 2,
           "options": [],
@@ -931,7 +1349,18 @@
             100,
             30
           ],
-          "fieldType": "Simple",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              100,
+              12
+            ],
+            "end": [
+              100,
+              17
+            ],
+            "name": "Simple"
+          },
           "name": "simple",
           "id": 10,
           "options": [],
@@ -949,7 +1378,18 @@
             101,
             32
           ],
-          "fieldType": "Simple",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              101,
+              12
+            ],
+            "end": [
+              101,
+              17
+            ],
+            "name": "Simple"
+          },
           "name": "r_simple",
           "id": 11,
           "options": [],
@@ -967,7 +1407,18 @@
             103,
             32
           ],
-          "fieldType": "Repeats",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              103,
+              12
+            ],
+            "end": [
+              103,
+              18
+            ],
+            "name": "Repeats"
+          },
           "name": "repeats",
           "id": 20,
           "options": [],
@@ -985,7 +1436,18 @@
             104,
             34
           ],
-          "fieldType": "Repeats",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              104,
+              12
+            ],
+            "end": [
+              104,
+              18
+            ],
+            "name": "Repeats"
+          },
           "name": "r_repeats",
           "id": 21,
           "options": [],
@@ -1018,7 +1480,18 @@
             37
           ],
           "keyType": "int64",
-          "valueType": "string",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              108,
+              14
+            ],
+            "end": [
+              108,
+              19
+            ],
+            "name": "string"
+          },
           "name": "m_int64_str",
           "id": 1
         },
@@ -1033,7 +1506,18 @@
             38
           ],
           "keyType": "bool",
-          "valueType": "Simple",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              109,
+              13
+            ],
+            "end": [
+              109,
+              18
+            ],
+            "name": "Simple"
+          },
           "name": "m_bool_simple",
           "id": 2
         }
@@ -1073,7 +1557,18 @@
                 114,
                 21
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  114,
+                  5
+                ],
+                "end": [
+                  114,
+                  10
+                ],
+                "name": "string"
+              },
               "name": "title",
               "id": 1,
               "options": [],
@@ -1091,7 +1586,18 @@
                 115,
                 21
               ],
-              "fieldType": "int64",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  115,
+                  5
+                ],
+                "end": [
+                  115,
+                  9
+                ],
+                "name": "int64"
+              },
               "name": "salary",
               "id": 2,
               "options": [],
@@ -1109,7 +1615,18 @@
                 116,
                 23
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  116,
+                  5
+                ],
+                "end": [
+                  116,
+                  10
+                ],
+                "name": "string"
+              },
               "name": "Country",
               "id": 3,
               "options": [],
@@ -1127,7 +1644,18 @@
                 117,
                 28
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  117,
+                  5
+                ],
+                "end": [
+                  117,
+                  10
+                ],
+                "name": "string"
+              },
               "name": "home_address",
               "id": 4,
               "options": [],
@@ -1145,7 +1673,18 @@
                 118,
                 42
               ],
-              "fieldType": "MsgWithRequired",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  118,
+                  5
+                ],
+                "end": [
+                  118,
+                  19
+                ],
+                "name": "MsgWithRequired"
+              },
               "name": "msg_with_required",
               "id": 5,
               "options": [],
@@ -1179,7 +1718,18 @@
             123,
             28
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              123,
+              12
+            ],
+            "end": [
+              123,
+              17
+            ],
+            "name": "double"
+          },
           "name": "value",
           "id": 1,
           "options": [],
@@ -1228,7 +1778,18 @@
             128,
             29
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              128,
+              12
+            ],
+            "end": [
+              128,
+              17
+            ],
+            "name": "string"
+          },
           "name": "name",
           "id": 124,
           "options": [],
@@ -1272,7 +1833,18 @@
                 133,
                 42
               ],
-              "fieldType": "Complex",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  133,
+                  14
+                ],
+                "end": [
+                  133,
+                  20
+                ],
+                "name": "Complex"
+              },
               "name": "real_extension",
               "id": 123,
               "options": [],
@@ -1292,7 +1864,18 @@
             135,
             32
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              135,
+              12
+            ],
+            "end": [
+              135,
+              17
+            ],
+            "name": "double"
+          },
           "name": "imaginary",
           "id": 1,
           "options": [],
@@ -1341,7 +1924,18 @@
             140,
             39
           ],
-          "fieldType": "google.protobuf.Any",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              140,
+              12
+            ],
+            "end": [
+              140,
+              30
+            ],
+            "name": "google.protobuf.Any"
+          },
           "name": "an",
           "id": 14,
           "options": [],
@@ -1359,7 +1953,18 @@
             141,
             44
           ],
-          "fieldType": "google.protobuf.Duration",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              141,
+              12
+            ],
+            "end": [
+              141,
+              35
+            ],
+            "name": "google.protobuf.Duration"
+          },
           "name": "dur",
           "id": 1,
           "options": [],
@@ -1377,7 +1982,18 @@
             142,
             42
           ],
-          "fieldType": "google.protobuf.Struct",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              142,
+              12
+            ],
+            "end": [
+              142,
+              33
+            ],
+            "name": "google.protobuf.Struct"
+          },
           "name": "st",
           "id": 12,
           "options": [],
@@ -1395,7 +2011,18 @@
             143,
             44
           ],
-          "fieldType": "google.protobuf.Timestamp",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              143,
+              12
+            ],
+            "end": [
+              143,
+              36
+            ],
+            "name": "google.protobuf.Timestamp"
+          },
           "name": "ts",
           "id": 2,
           "options": [],
@@ -1413,7 +2040,18 @@
             144,
             45
           ],
-          "fieldType": "google.protobuf.ListValue",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              144,
+              12
+            ],
+            "end": [
+              144,
+              36
+            ],
+            "name": "google.protobuf.ListValue"
+          },
           "name": "lv",
           "id": 15,
           "options": [],
@@ -1431,7 +2069,18 @@
             145,
             42
           ],
-          "fieldType": "google.protobuf.Value",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              145,
+              12
+            ],
+            "end": [
+              145,
+              32
+            ],
+            "name": "google.protobuf.Value"
+          },
           "name": "val",
           "id": 16,
           "options": [],
@@ -1449,7 +2098,18 @@
             147,
             47
           ],
-          "fieldType": "google.protobuf.DoubleValue",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              147,
+              12
+            ],
+            "end": [
+              147,
+              38
+            ],
+            "name": "google.protobuf.DoubleValue"
+          },
           "name": "dbl",
           "id": 3,
           "options": [],
@@ -1467,7 +2127,18 @@
             148,
             46
           ],
-          "fieldType": "google.protobuf.FloatValue",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              148,
+              12
+            ],
+            "end": [
+              148,
+              37
+            ],
+            "name": "google.protobuf.FloatValue"
+          },
           "name": "flt",
           "id": 4,
           "options": [],
@@ -1485,7 +2156,18 @@
             149,
             46
           ],
-          "fieldType": "google.protobuf.Int64Value",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              149,
+              12
+            ],
+            "end": [
+              149,
+              37
+            ],
+            "name": "google.protobuf.Int64Value"
+          },
           "name": "i64",
           "id": 5,
           "options": [],
@@ -1503,7 +2185,18 @@
             150,
             47
           ],
-          "fieldType": "google.protobuf.UInt64Value",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              150,
+              12
+            ],
+            "end": [
+              150,
+              38
+            ],
+            "name": "google.protobuf.UInt64Value"
+          },
           "name": "u64",
           "id": 6,
           "options": [],
@@ -1521,7 +2214,18 @@
             151,
             46
           ],
-          "fieldType": "google.protobuf.Int32Value",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              151,
+              12
+            ],
+            "end": [
+              151,
+              37
+            ],
+            "name": "google.protobuf.Int32Value"
+          },
           "name": "i32",
           "id": 7,
           "options": [],
@@ -1539,7 +2243,18 @@
             152,
             47
           ],
-          "fieldType": "google.protobuf.UInt32Value",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              152,
+              12
+            ],
+            "end": [
+              152,
+              38
+            ],
+            "name": "google.protobuf.UInt32Value"
+          },
           "name": "u32",
           "id": 8,
           "options": [],
@@ -1557,7 +2272,18 @@
             153,
             46
           ],
-          "fieldType": "google.protobuf.BoolValue",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              153,
+              12
+            ],
+            "end": [
+              153,
+              36
+            ],
+            "name": "google.protobuf.BoolValue"
+          },
           "name": "bool",
           "id": 9,
           "options": [],
@@ -1575,7 +2301,18 @@
             154,
             48
           ],
-          "fieldType": "google.protobuf.StringValue",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              154,
+              12
+            ],
+            "end": [
+              154,
+              38
+            ],
+            "name": "google.protobuf.StringValue"
+          },
           "name": "str",
           "id": 10,
           "options": [],
@@ -1593,7 +2330,18 @@
             155,
             49
           ],
-          "fieldType": "google.protobuf.BytesValue",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              155,
+              12
+            ],
+            "end": [
+              155,
+              37
+            ],
+            "name": "google.protobuf.BytesValue"
+          },
           "name": "bytes",
           "id": 11,
           "options": [],
@@ -1625,7 +2373,18 @@
             160,
             26
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              160,
+              12
+            ],
+            "end": [
+              160,
+              17
+            ],
+            "name": "string"
+          },
           "name": "str",
           "id": 1,
           "options": [],
@@ -1657,7 +2416,18 @@
             164,
             36
           ],
-          "fieldType": "MsgWithRequired",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              164,
+              12
+            ],
+            "end": [
+              164,
+              26
+            ],
+            "name": "MsgWithRequired"
+          },
           "name": "subm",
           "id": 1,
           "options": [],
@@ -1676,7 +2446,18 @@
             45
           ],
           "keyType": "string",
-          "valueType": "MsgWithRequired",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              165,
+              15
+            ],
+            "end": [
+              165,
+              29
+            ],
+            "name": "MsgWithRequired"
+          },
           "name": "map_field",
           "id": 2
         },
@@ -1690,7 +2471,18 @@
             166,
             43
           ],
-          "fieldType": "MsgWithRequired",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              166,
+              12
+            ],
+            "end": [
+              166,
+              26
+            ],
+            "name": "MsgWithRequired"
+          },
           "name": "slice_field",
           "id": 3,
           "options": [],
@@ -1722,7 +2514,18 @@
             170,
             26
           ],
-          "fieldType": "bytes",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              170,
+              12
+            ],
+            "end": [
+              170,
+              16
+            ],
+            "name": "bytes"
+          },
           "name": "byts",
           "id": 1,
           "options": [],
@@ -1754,7 +2557,18 @@
             174,
             47
           ],
-          "fieldType": "google.protobuf.StringValue",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              174,
+              12
+            ],
+            "end": [
+              174,
+              38
+            ],
+            "name": "google.protobuf.StringValue"
+          },
           "name": "str",
           "id": 1,
           "options": [],
@@ -1786,7 +2600,18 @@
             178,
             38
           ],
-          "fieldType": "MsgWithRequired",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              178,
+              12
+            ],
+            "end": [
+              178,
+              26
+            ],
+            "name": "MsgWithRequired"
+          },
           "name": "extm",
           "id": 125,
           "options": [],

@@ -69,7 +69,18 @@
             38,
             43
           ],
-          "fieldType": "jspb.exttest.strict.nine.Simple9",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              38,
+              5
+            ],
+            "end": [
+              38,
+              36
+            ],
+            "name": "jspb.exttest.strict.nine.Simple9"
+          },
           "name": "a",
           "id": 1,
           "options": [],

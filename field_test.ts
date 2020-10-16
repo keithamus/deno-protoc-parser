@@ -1,5 +1,6 @@
 import { assertNode, assertNodeThrows } from "./testutil.ts";
 import { Field } from "./field.ts";
+import { Type } from "./type.ts";
 import { FieldOption } from "./fieldoption.ts";
 import { Constant } from "./constant.ts";
 
@@ -8,7 +9,11 @@ Deno.test("Field", async () => {
     [
       `optional float F_Ninf = 16;`,
       new Field(
-        "float",
+        new Type(
+          "float",
+          [1, 10],
+          [1, 14],
+        ),
         "F_Ninf",
         16,
         { optional: true },
@@ -21,7 +26,11 @@ Deno.test("Field", async () => {
     [
       `.Foo bar = 1;`,
       new Field(
-        ".Foo",
+        new Type(
+          ".Foo",
+          [1, 1],
+          [1, 4],
+        ),
         "bar",
         1,
         {},
@@ -34,7 +43,11 @@ Deno.test("Field", async () => {
     [
       `foo.bar nested_message = 2;`,
       new Field(
-        "foo.bar",
+        new Type(
+          "foo.bar",
+          [1, 1],
+          [1, 7],
+        ),
         "nested_message",
         2,
         {},
@@ -47,7 +60,11 @@ Deno.test("Field", async () => {
     [
       `repeated int32 samples = 4 [packed = true];`,
       new Field(
-        "int32",
+        new Type(
+          "int32",
+          [1, 10],
+          [1, 14],
+        ),
         "samples",
         4,
         { repeated: true },
@@ -68,7 +85,11 @@ Deno.test("Field", async () => {
     [
       `repeated int32 samples = 4 [(some.nested).key = true];`,
       new Field(
-        "int32",
+        new Type(
+          "int32",
+          [1, 10],
+          [1, 14],
+        ),
         "samples",
         4,
         { repeated: true },

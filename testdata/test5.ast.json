@@ -144,7 +144,18 @@
             43,
             43
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              43,
+              12
+            ],
+            "end": [
+              43,
+              17
+            ],
+            "name": "string"
+          },
           "name": "floating_str_field",
           "id": 101,
           "options": [],

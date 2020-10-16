@@ -2,6 +2,7 @@ import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
 import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
 import { expectSimpleIdent, assignComments } from "./util.ts";
+import { Type } from "./type.ts";
 import { Option } from "./option.ts";
 import { Comment } from "./comment.ts";
 
@@ -20,12 +21,12 @@ export class RPC extends ParseNode {
      * The identifier of the Request object, and whether or not this is
      * streaming.
      */
-    public request: { name: string; streaming?: boolean },
+    public request: { name: Type; streaming?: boolean },
     /**
      * The identifier of the Resonse object, and whether or not this is
      * streaming.
      */
-    public response: { name: string; streaming?: boolean },
+    public response: { name: Type; streaming?: boolean },
     /**
      * A collection of direct child nodes in the RPC definition.
      */
@@ -62,11 +63,11 @@ export class RPC extends ParseNode {
       }\n}`;
     }
     const request = this.request.streaming
-      ? `stream ${this.request.name}`
-      : this.request.name;
+      ? `stream ${this.request.name.toProto()}`
+      : this.request.name.toProto();
     const response = this.response.streaming
-      ? `stream ${this.response.name}`
-      : this.response.name;
+      ? `stream ${this.response.name.toProto()}`
+      : this.response.name.toProto();
     return `${comments}rpc ${this.name} (${request}) returns (${response})${body}`;
   }
 
@@ -77,8 +78,14 @@ export class RPC extends ParseNode {
         start: this.start,
         end: this.end,
         name: this.name,
-        request: this.request,
-        response: this.response,
+        request: {
+          name: this.request.name.toJSON(),
+          streaming: this.request.streaming,
+        },
+        response: {
+          name: this.response.name.toJSON(),
+          streaming: this.response.streaming,
+        },
         body: this.body?.map((node) => node.toJSON()) || null,
       },
       this.comments.length
@@ -90,6 +97,8 @@ export class RPC extends ParseNode {
   accept(visitor: Visitor) {
     visitor.visit?.(this);
     visitor.visitRPC?.(this);
+    this.request.name.accept(visitor);
+    this.response.name.accept(visitor);
     for (const node of this.body || []) node.accept(visitor);
     for (const node of this.comments) node.accept(visitor);
   }
@@ -102,23 +111,23 @@ export class RPC extends ParseNode {
     const name = await expectSimpleIdent(scanner);
     await nextTokenIs(scanner, Token.token, "(");
     const request = {
-      name: await nextTokenIs(scanner, Token.identifier),
+      name: await Type.parse(scanner),
       streaming: false,
     };
-    if (request.name === "stream") {
+    if (request.name.name === "stream") {
       request.streaming = true;
-      request.name = await nextTokenIs(scanner, Token.identifier);
+      request.name = await Type.parse(scanner);
     }
     await nextTokenIs(scanner, Token.token, ")");
     await nextTokenIs(scanner, Token.keyword, "returns");
     await nextTokenIs(scanner, Token.token, "(");
     const response = {
-      name: await nextTokenIs(scanner, Token.identifier),
+      name: await Type.parse(scanner),
       streaming: false,
     };
-    if (response.name === "stream") {
+    if (response.name.name === "stream") {
       response.streaming = true;
-      response.name = await nextTokenIs(scanner, Token.identifier);
+      response.name = await Type.parse(scanner);
     }
     await nextTokenIs(scanner, Token.token, ")");
 

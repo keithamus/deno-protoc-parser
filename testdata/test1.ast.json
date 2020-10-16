@@ -180,7 +180,18 @@
             51,
             36
           ],
-          "fieldType": "OuterEnum",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              51,
+              12
+            ],
+            "end": [
+              51,
+              20
+            ],
+            "name": "OuterEnum"
+          },
           "name": "outer_enum",
           "id": 1,
           "options": [],
@@ -212,7 +223,18 @@
             55,
             31
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              55,
+              12
+            ],
+            "end": [
+              55,
+              17
+            ],
+            "name": "string"
+          },
           "name": "a_string",
           "id": 1,
           "options": [],
@@ -230,7 +252,18 @@
             56,
             40
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              56,
+              12
+            ],
+            "end": [
+              56,
+              17
+            ],
+            "name": "string"
+          },
           "name": "a_repeated_string",
           "id": 2,
           "options": [],
@@ -248,7 +281,18 @@
             57,
             30
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              57,
+              12
+            ],
+            "end": [
+              57,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "a_boolean",
           "id": 3,
           "options": [],
@@ -280,7 +324,18 @@
             62,
             31
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              62,
+              12
+            ],
+            "end": [
+              62,
+              17
+            ],
+            "name": "string"
+          },
           "name": "a_string",
           "id": 1,
           "options": [],
@@ -298,7 +353,18 @@
             63,
             40
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              63,
+              12
+            ],
+            "end": [
+              63,
+              17
+            ],
+            "name": "string"
+          },
           "name": "a_repeated_string",
           "id": 2,
           "options": [],
@@ -330,7 +396,18 @@
             67,
             29
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              67,
+              12
+            ],
+            "end": [
+              67,
+              17
+            ],
+            "name": "string"
+          },
           "name": "normal",
           "id": 1,
           "options": [],
@@ -348,7 +425,18 @@
             69,
             30
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              69,
+              12
+            ],
+            "end": [
+              69,
+              17
+            ],
+            "name": "string"
+          },
           "name": "default",
           "id": 2,
           "options": [],
@@ -366,7 +454,18 @@
             70,
             31
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              70,
+              12
+            ],
+            "end": [
+              70,
+              17
+            ],
+            "name": "string"
+          },
           "name": "function",
           "id": 3,
           "options": [],
@@ -384,7 +483,18 @@
             71,
             26
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              71,
+              12
+            ],
+            "end": [
+              71,
+              17
+            ],
+            "name": "string"
+          },
           "name": "var",
           "id": 4,
           "options": [],
@@ -428,7 +538,18 @@
                 76,
                 30
               ],
-              "fieldType": "int32",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  76,
+                  14
+                ],
+                "end": [
+                  76,
+                  18
+                ],
+                "name": "int32"
+              },
               "name": "an_int",
               "id": 1,
               "options": [],
@@ -448,7 +569,18 @@
             78,
             31
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              78,
+              12
+            ],
+            "end": [
+              78,
+              17
+            ],
+            "name": "string"
+          },
           "name": "a_string",
           "id": 1,
           "options": [],
@@ -466,7 +598,18 @@
             79,
             27
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              79,
+              12
+            ],
+            "end": [
+              79,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "a_bool",
           "id": 2,
           "options": [],
@@ -484,7 +627,18 @@
             80,
             39
           ],
-          "fieldType": "Nested",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              80,
+              12
+            ],
+            "end": [
+              80,
+              17
+            ],
+            "name": "Nested"
+          },
           "name": "a_nested_message",
           "id": 3,
           "options": [],
@@ -502,7 +656,18 @@
             81,
             41
           ],
-          "fieldType": "Nested",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              81,
+              12
+            ],
+            "end": [
+              81,
+              17
+            ],
+            "name": "Nested"
+          },
           "name": "a_repeated_message",
           "id": 4,
           "options": [],
@@ -520,7 +685,18 @@
             82,
             40
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              82,
+              12
+            ],
+            "end": [
+              82,
+              17
+            ],
+            "name": "string"
+          },
           "name": "a_repeated_string",
           "id": 5,
           "options": [],
@@ -552,7 +728,18 @@
             86,
             27
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              86,
+              12
+            ],
+            "end": [
+              86,
+              17
+            ],
+            "name": "string"
+          },
           "name": "str1",
           "id": 1,
           "options": [],
@@ -570,7 +757,18 @@
             87,
             27
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              87,
+              12
+            ],
+            "end": [
+              87,
+              17
+            ],
+            "name": "string"
+          },
           "name": "str2",
           "id": 2,
           "options": [],
@@ -588,7 +786,18 @@
             88,
             27
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              88,
+              12
+            ],
+            "end": [
+              88,
+              17
+            ],
+            "name": "string"
+          },
           "name": "str3",
           "id": 3,
           "options": [],
@@ -649,7 +858,18 @@
                 94,
                 30
               ],
-              "fieldType": "int32",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  94,
+                  14
+                ],
+                "end": [
+                  94,
+                  18
+                ],
+                "name": "int32"
+              },
               "name": "an_int",
               "id": 2,
               "options": [],
@@ -669,7 +889,18 @@
             96,
             31
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              96,
+              12
+            ],
+            "end": [
+              96,
+              17
+            ],
+            "name": "string"
+          },
           "name": "a_string",
           "id": 1,
           "options": [],
@@ -687,7 +918,18 @@
             97,
             41
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              97,
+              12
+            ],
+            "end": [
+              97,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "an_out_of_order_bool",
           "id": 9,
           "options": [],
@@ -705,7 +947,18 @@
             98,
             39
           ],
-          "fieldType": "Nested",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              98,
+              12
+            ],
+            "end": [
+              98,
+              17
+            ],
+            "name": "Nested"
+          },
           "name": "a_nested_message",
           "id": 4,
           "options": [],
@@ -723,7 +976,18 @@
             99,
             41
           ],
-          "fieldType": "Nested",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              99,
+              12
+            ],
+            "end": [
+              99,
+              17
+            ],
+            "name": "Nested"
+          },
           "name": "a_repeated_message",
           "id": 5,
           "options": [],
@@ -741,7 +1005,18 @@
             100,
             40
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              100,
+              12
+            ],
+            "end": [
+              100,
+              17
+            ],
+            "name": "string"
+          },
           "name": "a_repeated_string",
           "id": 7,
           "options": [],
@@ -759,7 +1034,18 @@
             101,
             46
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              101,
+              12
+            ],
+            "end": [
+              101,
+              17
+            ],
+            "name": "double"
+          },
           "name": "a_floating_point_field",
           "id": 10,
           "options": [],
@@ -803,7 +1089,18 @@
                 107,
                 43
               ],
-              "fieldType": "int32",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  107,
+                  14
+                ],
+                "end": [
+                  107,
+                  18
+                ],
+                "name": "int32"
+              },
               "name": "inner_complex_field",
               "id": 1,
               "options": [],
@@ -837,7 +1134,18 @@
             115,
             29
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              115,
+              12
+            ],
+            "end": [
+              115,
+              17
+            ],
+            "name": "string"
+          },
           "name": "cookie",
           "id": 1,
           "options": [],
@@ -881,7 +1189,18 @@
                 120,
                 41
               ],
-              "fieldType": "IsExtension",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  120,
+                  14
+                ],
+                "end": [
+                  120,
+                  24
+                ],
+                "name": "IsExtension"
+              },
               "name": "ext_field",
               "id": 100,
               "options": [],
@@ -901,7 +1220,18 @@
             122,
             27
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              122,
+              12
+            ],
+            "end": [
+              122,
+              17
+            ],
+            "name": "string"
+          },
           "name": "ext1",
           "id": 1,
           "options": [],
@@ -931,7 +1261,18 @@
                 126,
                 45
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  126,
+                  14
+                ],
+                "end": [
+                  126,
+                  19
+                ],
+                "name": "string"
+              },
               "name": "simple_option",
               "id": 42113038,
               "options": [],
@@ -977,7 +1318,18 @@
                 132,
                 34
               ],
-              "fieldType": "Simple1",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  132,
+                  14
+                ],
+                "end": [
+                  132,
+                  20
+                ],
+                "name": "Simple1"
+              },
               "name": "simple",
               "id": 101,
               "options": [],
@@ -995,7 +1347,18 @@
                 133,
                 30
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  133,
+                  14
+                ],
+                "end": [
+                  133,
+                  19
+                ],
+                "name": "string"
+              },
               "name": "str",
               "id": 102,
               "options": [],
@@ -1013,7 +1376,18 @@
                 134,
                 39
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  134,
+                  14
+                ],
+                "end": [
+                  134,
+                  19
+                ],
+                "name": "string"
+              },
               "name": "repeated_str",
               "id": 103,
               "options": [],
@@ -1031,7 +1405,18 @@
                 135,
                 43
               ],
-              "fieldType": "Simple1",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  135,
+                  14
+                ],
+                "end": [
+                  135,
+                  20
+                ],
+                "name": "Simple1"
+              },
               "name": "repeated_simple",
               "id": 104,
               "options": [],
@@ -1065,7 +1450,18 @@
             140,
             33
           ],
-          "fieldType": "Simple1",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              140,
+              12
+            ],
+            "end": [
+              140,
+              18
+            ],
+            "name": "Simple1"
+          },
           "name": "simple1",
           "id": 105,
           "options": [],
@@ -1137,7 +1533,18 @@
             148,
             66
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              148,
+              12
+            ],
+            "end": [
+              148,
+              17
+            ],
+            "name": "string"
+          },
           "name": "string_field",
           "id": 1,
           "options": [
@@ -1185,7 +1592,18 @@
             149,
             48
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              149,
+              12
+            ],
+            "end": [
+              149,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "bool_field",
           "id": 2,
           "options": [
@@ -1233,7 +1651,18 @@
             150,
             46
           ],
-          "fieldType": "int64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              150,
+              12
+            ],
+            "end": [
+              150,
+              16
+            ],
+            "name": "int64"
+          },
           "name": "int_field",
           "id": 3,
           "options": [
@@ -1281,7 +1710,18 @@
             151,
             46
           ],
-          "fieldType": "Enum",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              151,
+              12
+            ],
+            "end": [
+              151,
+              15
+            ],
+            "name": "Enum"
+          },
           "name": "enum_field",
           "id": 4,
           "options": [
@@ -1329,7 +1769,18 @@
             152,
             49
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              152,
+              12
+            ],
+            "end": [
+              152,
+              17
+            ],
+            "name": "string"
+          },
           "name": "empty_field",
           "id": 6,
           "options": [
@@ -1377,7 +1828,18 @@
             154,
             24
           ],
-          "fieldType": "bytes",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              153,
+              12
+            ],
+            "end": [
+              153,
+              16
+            ],
+            "name": "bytes"
+          },
           "name": "bytes_field",
           "id": 8,
           "options": [
@@ -1439,7 +1901,18 @@
             158,
             42
           ],
-          "fieldType": "float",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              158,
+              12
+            ],
+            "end": [
+              158,
+              16
+            ],
+            "name": "float"
+          },
           "name": "optional_float_field",
           "id": 1,
           "options": [],
@@ -1457,7 +1930,18 @@
             159,
             42
           ],
-          "fieldType": "float",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              159,
+              12
+            ],
+            "end": [
+              159,
+              16
+            ],
+            "name": "float"
+          },
           "name": "required_float_field",
           "id": 2,
           "options": [],
@@ -1475,7 +1959,18 @@
             160,
             42
           ],
-          "fieldType": "float",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              160,
+              12
+            ],
+            "end": [
+              160,
+              16
+            ],
+            "name": "float"
+          },
           "name": "repeated_float_field",
           "id": 3,
           "options": [],
@@ -1493,7 +1988,18 @@
             161,
             57
           ],
-          "fieldType": "float",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              161,
+              12
+            ],
+            "end": [
+              161,
+              16
+            ],
+            "name": "float"
+          },
           "name": "default_float_field",
           "id": 4,
           "options": [
@@ -1541,7 +2047,18 @@
             162,
             44
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              162,
+              12
+            ],
+            "end": [
+              162,
+              17
+            ],
+            "name": "double"
+          },
           "name": "optional_double_field",
           "id": 5,
           "options": [],
@@ -1559,7 +2076,18 @@
             163,
             44
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              163,
+              12
+            ],
+            "end": [
+              163,
+              17
+            ],
+            "name": "double"
+          },
           "name": "required_double_field",
           "id": 6,
           "options": [],
@@ -1577,7 +2105,18 @@
             164,
             44
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              164,
+              12
+            ],
+            "end": [
+              164,
+              17
+            ],
+            "name": "double"
+          },
           "name": "repeated_double_field",
           "id": 7,
           "options": [],
@@ -1595,7 +2134,18 @@
             165,
             59
           ],
-          "fieldType": "double",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              165,
+              12
+            ],
+            "end": [
+              165,
+              17
+            ],
+            "name": "double"
+          },
           "name": "default_double_field",
           "id": 8,
           "options": [
@@ -1657,7 +2207,18 @@
             169,
             43
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              169,
+              12
+            ],
+            "end": [
+              169,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "optional_boolean_field",
           "id": 1,
           "options": [],
@@ -1675,7 +2236,18 @@
             170,
             43
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              170,
+              12
+            ],
+            "end": [
+              170,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "required_boolean_field",
           "id": 2,
           "options": [],
@@ -1693,7 +2265,18 @@
             171,
             43
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              171,
+              12
+            ],
+            "end": [
+              171,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "repeated_boolean_field",
           "id": 3,
           "options": [],
@@ -1711,7 +2294,18 @@
             172,
             59
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              172,
+              12
+            ],
+            "end": [
+              172,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "default_boolean_field",
           "id": 4,
           "options": [
@@ -1773,7 +2367,18 @@
             176,
             26
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              176,
+              12
+            ],
+            "end": [
+              176,
+              17
+            ],
+            "name": "string"
+          },
           "name": "str",
           "id": 1,
           "options": [],
@@ -1791,7 +2396,18 @@
             177,
             31
           ],
-          "fieldType": "Simple1",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              177,
+              12
+            ],
+            "end": [
+              177,
+              18
+            ],
+            "name": "Simple1"
+          },
           "name": "simple1",
           "id": 3,
           "options": [],
@@ -1809,7 +2425,18 @@
             178,
             31
           ],
-          "fieldType": "Simple1",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              178,
+              12
+            ],
+            "end": [
+              178,
+              18
+            ],
+            "name": "Simple1"
+          },
           "name": "simple2",
           "id": 5,
           "options": [],
@@ -1827,7 +2454,18 @@
             179,
             33
           ],
-          "fieldType": "bytes",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              179,
+              12
+            ],
+            "end": [
+              179,
+              16
+            ],
+            "name": "bytes"
+          },
           "name": "bytes_field",
           "id": 6,
           "options": [],
@@ -1845,7 +2483,18 @@
             180,
             29
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              180,
+              12
+            ],
+            "end": [
+              180,
+              17
+            ],
+            "name": "string"
+          },
           "name": "unused",
           "id": 7,
           "options": [],
@@ -1906,7 +2555,18 @@
                 186,
                 45
               ],
-              "fieldType": "TestCloneExtension",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  186,
+                  14
+                ],
+                "end": [
+                  186,
+                  31
+                ],
+                "name": "TestCloneExtension"
+              },
               "name": "low_ext",
               "id": 11,
               "options": [],
@@ -1926,7 +2586,18 @@
             188,
             23
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              188,
+              12
+            ],
+            "end": [
+              188,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "f",
           "id": 1,
           "options": [],
@@ -1970,7 +2641,18 @@
                 193,
                 44
               ],
-              "fieldType": "CloneExtension",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  193,
+                  14
+                ],
+                "end": [
+                  193,
+                  27
+                ],
+                "name": "CloneExtension"
+              },
               "name": "ext_field",
               "id": 100,
               "options": [],
@@ -1990,7 +2672,18 @@
             195,
             26
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              195,
+              12
+            ],
+            "end": [
+              195,
+              17
+            ],
+            "name": "string"
+          },
           "name": "ext",
           "id": 2,
           "options": [],
@@ -2038,7 +2731,18 @@
                 200,
                 27
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  200,
+                  14
+                ],
+                "end": [
+                  200,
+                  19
+                ],
+                "name": "string"
+              },
               "name": "id",
               "id": 1,
               "options": [],
@@ -2056,7 +2760,18 @@
                 201,
                 32
               ],
-              "fieldType": "bool",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  201,
+                  14
+                ],
+                "end": [
+                  201,
+                  17
+                ],
+                "name": "bool"
+              },
               "name": "some_bool",
               "id": 2,
               "options": [],
@@ -2092,7 +2807,18 @@
                 204,
                 27
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  204,
+                  14
+                ],
+                "end": [
+                  204,
+                  19
+                ],
+                "name": "string"
+              },
               "name": "id",
               "id": 1,
               "options": [],
@@ -2128,7 +2854,18 @@
                 207,
                 27
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  207,
+                  14
+                ],
+                "end": [
+                  207,
+                  19
+                ],
+                "name": "string"
+              },
               "name": "id",
               "id": 1,
               "options": [],
@@ -2148,7 +2885,18 @@
             209,
             25
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              209,
+              12
+            ],
+            "end": [
+              209,
+              17
+            ],
+            "name": "string"
+          },
           "name": "id",
           "id": 4,
           "options": [],
@@ -2166,7 +2914,18 @@
             210,
             39
           ],
-          "fieldType": "Simple2",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              210,
+              12
+            ],
+            "end": [
+              210,
+              18
+            ],
+            "name": "Simple2"
+          },
           "name": "required_simple",
           "id": 5,
           "options": [],
@@ -2184,7 +2943,18 @@
             211,
             39
           ],
-          "fieldType": "Simple2",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              211,
+              12
+            ],
+            "end": [
+              211,
+              18
+            ],
+            "name": "Simple2"
+          },
           "name": "optional_simple",
           "id": 6,
           "options": [],
@@ -2216,7 +2986,18 @@
             215,
             45
           ],
-          "fieldType": "TestGroup.RepeatedGroup",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              215,
+              12
+            ],
+            "end": [
+              215,
+              34
+            ],
+            "name": "TestGroup.RepeatedGroup"
+          },
           "name": "group",
           "id": 1,
           "options": [],
@@ -2248,7 +3029,18 @@
             219,
             31
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              219,
+              12
+            ],
+            "end": [
+              219,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "extension",
           "id": 1,
           "options": [],
@@ -2309,7 +3101,18 @@
                 225,
                 28
               ],
-              "fieldType": "int32",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  225,
+                  14
+                ],
+                "end": [
+                  225,
+                  18
+                ],
+                "name": "int32"
+              },
               "name": "foo",
               "id": 10,
               "options": [],
@@ -2355,7 +3158,18 @@
                 232,
                 20
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  232,
+                  5
+                ],
+                "end": [
+                  232,
+                  10
+                ],
+                "name": "string"
+              },
               "name": "pone",
               "id": 3,
               "options": [],
@@ -2373,7 +3187,18 @@
                 233,
                 22
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  233,
+                  5
+                ],
+                "end": [
+                  233,
+                  10
+                ],
+                "name": "string"
+              },
               "name": "pthree",
               "id": 5,
               "options": [],
@@ -2405,7 +3230,18 @@
                 237,
                 34
               ],
-              "fieldType": "TestMessageWithOneof",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  237,
+                  5
+                ],
+                "end": [
+                  237,
+                  24
+                ],
+                "name": "TestMessageWithOneof"
+              },
               "name": "rone",
               "id": 6,
               "options": [],
@@ -2423,7 +3259,18 @@
                 238,
                 20
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  238,
+                  5
+                ],
+                "end": [
+                  238,
+                  10
+                ],
+                "name": "string"
+              },
               "name": "rtwo",
               "id": 7,
               "options": [],
@@ -2443,7 +3290,18 @@
             241,
             33
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              241,
+              12
+            ],
+            "end": [
+              241,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "normal_field",
           "id": 8,
           "options": [],
@@ -2461,7 +3319,18 @@
             242,
             37
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              242,
+              12
+            ],
+            "end": [
+              242,
+              17
+            ],
+            "name": "string"
+          },
           "name": "repeated_field",
           "id": 9,
           "options": [],
@@ -2491,7 +3360,18 @@
                 245,
                 37
               ],
-              "fieldType": "int32",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  245,
+                  5
+                ],
+                "end": [
+                  245,
+                  9
+                ],
+                "name": "int32"
+              },
               "name": "aone",
               "id": 10,
               "options": [
@@ -2539,7 +3419,18 @@
                 246,
                 20
               ],
-              "fieldType": "int32",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  246,
+                  5
+                ],
+                "end": [
+                  246,
+                  9
+                ],
+                "name": "int32"
+              },
               "name": "atwo",
               "id": 11,
               "options": [],
@@ -2571,7 +3462,18 @@
                 250,
                 20
               ],
-              "fieldType": "int32",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  250,
+                  5
+                ],
+                "end": [
+                  250,
+                  9
+                ],
+                "name": "int32"
+              },
               "name": "bone",
               "id": 12,
               "options": [],
@@ -2589,7 +3491,18 @@
                 251,
                 37
               ],
-              "fieldType": "int32",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  251,
+                  5
+                ],
+                "end": [
+                  251,
+                  9
+                ],
+                "name": "int32"
+              },
               "name": "btwo",
               "id": 13,
               "options": [
@@ -2653,7 +3566,18 @@
             256,
             27
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              256,
+              12
+            ],
+            "end": [
+              256,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "value",
           "id": 1,
           "options": [],
@@ -2671,7 +3595,18 @@
             257,
             26
           ],
-          "fieldType": "bytes",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              257,
+              12
+            ],
+            "end": [
+              257,
+              16
+            ],
+            "name": "bytes"
+          },
           "name": "data",
           "id": 2,
           "options": [],
@@ -2703,7 +3638,18 @@
             263,
             45
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              263,
+              12
+            ],
+            "end": [
+              263,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "last_field_before_pivot",
           "id": 1,
           "options": [],
@@ -2752,7 +3698,18 @@
             268,
             65
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              268,
+              12
+            ],
+            "end": [
+              268,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "extend_test_last_field_before_pivot_field",
           "id": 101,
           "options": [],
@@ -2784,7 +3741,18 @@
             273,
             55
           ],
-          "fieldType": "int64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              273,
+              12
+            ],
+            "end": [
+              273,
+              16
+            ],
+            "name": "int64"
+          },
           "name": "int64_normal",
           "id": 1,
           "options": [
@@ -2832,7 +3800,18 @@
             274,
             56
           ],
-          "fieldType": "sint64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              274,
+              12
+            ],
+            "end": [
+              274,
+              17
+            ],
+            "name": "sint64"
+          },
           "name": "int64_string",
           "id": 2,
           "options": [
@@ -2880,7 +3859,18 @@
             275,
             56
           ],
-          "fieldType": "uint64",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              275,
+              12
+            ],
+            "end": [
+              275,
+              17
+            ],
+            "name": "uint64"
+          },
           "name": "int64_number",
           "id": 3,
           "options": [
@@ -2943,7 +3933,18 @@
             44
           ],
           "keyType": "string",
-          "valueType": "string",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              280,
+              15
+            ],
+            "end": [
+              280,
+              20
+            ],
+            "name": "string"
+          },
           "name": "map_string_string",
           "id": 1
         },
@@ -2958,7 +3959,18 @@
             42
           ],
           "keyType": "string",
-          "valueType": "int32",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              281,
+              15
+            ],
+            "end": [
+              281,
+              19
+            ],
+            "name": "int32"
+          },
           "name": "map_string_int32",
           "id": 2
         },
@@ -2973,7 +3985,18 @@
             42
           ],
           "keyType": "string",
-          "valueType": "int64",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              282,
+              15
+            ],
+            "end": [
+              282,
+              19
+            ],
+            "name": "int64"
+          },
           "name": "map_string_int64",
           "id": 3
         },
@@ -2988,7 +4011,18 @@
             40
           ],
           "keyType": "string",
-          "valueType": "bool",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              283,
+              15
+            ],
+            "end": [
+              283,
+              18
+            ],
+            "name": "bool"
+          },
           "name": "map_string_bool",
           "id": 4
         },
@@ -3003,7 +4037,18 @@
             44
           ],
           "keyType": "string",
-          "valueType": "double",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              284,
+              15
+            ],
+            "end": [
+              284,
+              20
+            ],
+            "name": "double"
+          },
           "name": "map_string_double",
           "id": 5
         },
@@ -3018,7 +4063,18 @@
             56
           ],
           "keyType": "string",
-          "valueType": "MapValueEnumNoBinary",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              285,
+              15
+            ],
+            "end": [
+              285,
+              34
+            ],
+            "name": "MapValueEnumNoBinary"
+          },
           "name": "map_string_enum",
           "id": 6
         },
@@ -3033,7 +4089,18 @@
             58
           ],
           "keyType": "string",
-          "valueType": "MapValueMessageNoBinary",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              286,
+              15
+            ],
+            "end": [
+              286,
+              37
+            ],
+            "name": "MapValueMessageNoBinary"
+          },
           "name": "map_string_msg",
           "id": 7
         },
@@ -3048,7 +4115,18 @@
             42
           ],
           "keyType": "int32",
-          "valueType": "string",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              288,
+              14
+            ],
+            "end": [
+              288,
+              19
+            ],
+            "name": "string"
+          },
           "name": "map_int32_string",
           "id": 8
         },
@@ -3063,7 +4141,18 @@
             42
           ],
           "keyType": "int64",
-          "valueType": "string",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              289,
+              14
+            ],
+            "end": [
+              289,
+              19
+            ],
+            "name": "string"
+          },
           "name": "map_int64_string",
           "id": 9
         },
@@ -3078,7 +4167,18 @@
             41
           ],
           "keyType": "bool",
-          "valueType": "string",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              290,
+              13
+            ],
+            "end": [
+              290,
+              18
+            ],
+            "name": "string"
+          },
           "name": "map_bool_string",
           "id": 10
         },
@@ -3092,7 +4192,18 @@
             292,
             54
           ],
-          "fieldType": "TestMapFieldsNoBinary",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              292,
+              12
+            ],
+            "end": [
+              292,
+              32
+            ],
+            "name": "TestMapFieldsNoBinary"
+          },
           "name": "test_map_fields",
           "id": 11,
           "options": [],
@@ -3111,7 +4222,18 @@
             67
           ],
           "keyType": "string",
-          "valueType": "TestMapFieldsNoBinary",
+          "valueType": {
+            "type": "Type",
+            "start": [
+              293,
+              15
+            ],
+            "end": [
+              293,
+              35
+            ],
+            "name": "TestMapFieldsNoBinary"
+          },
           "name": "map_string_testmapfields",
           "id": 12
         }
@@ -3192,7 +4314,18 @@
             303,
             25
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              303,
+              12
+            ],
+            "end": [
+              303,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "foo",
           "id": 1,
           "options": [],
@@ -3248,7 +4381,18 @@
                     309,
                     31
                   ],
-                  "fieldType": "int32",
+                  "fieldType": {
+                    "type": "Type",
+                    "start": [
+                      309,
+                      16
+                    ],
+                    "end": [
+                      309,
+                      20
+                    ],
+                    "name": "int32"
+                  },
                   "name": "count",
                   "id": 1,
                   "options": [],

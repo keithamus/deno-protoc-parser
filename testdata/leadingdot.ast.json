@@ -56,7 +56,18 @@
             5,
             30
           ],
-          "fieldType": ".Foo.Bar",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              5,
+              12
+            ],
+            "end": [
+              5,
+              19
+            ],
+            "name": ".Foo.Bar"
+          },
           "name": "thing",
           "id": 1,
           "options": [],

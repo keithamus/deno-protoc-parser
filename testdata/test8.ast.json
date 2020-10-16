@@ -113,7 +113,18 @@
             39,
             30
           ],
-          "fieldType": "int32",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              39,
+              12
+            ],
+            "end": [
+              39,
+              16
+            ],
+            "name": "int32"
+          },
           "name": "intfield",
           "id": 1,
           "options": [],
@@ -174,7 +185,18 @@
                 45,
                 29
               ],
-              "fieldType": "string",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  45,
+                  14
+                ],
+                "end": [
+                  45,
+                  19
+                ],
+                "name": "string"
+              },
               "name": "ext1",
               "id": 1,
               "options": [],
@@ -206,7 +228,18 @@
                 48,
                 58
               ],
-              "fieldType": "NestedExtensionMessage",
+              "fieldType": {
+                "type": "Type",
+                "start": [
+                  48,
+                  14
+                ],
+                "end": [
+                  48,
+                  35
+                ],
+                "name": "NestedExtensionMessage"
+              },
               "name": "inner_extension",
               "id": 100,
               "options": [],

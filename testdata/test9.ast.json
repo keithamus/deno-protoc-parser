@@ -55,7 +55,18 @@
             36,
             31
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              36,
+              12
+            ],
+            "end": [
+              36,
+              17
+            ],
+            "name": "string"
+          },
           "name": "a_string",
           "id": 1,
           "options": [],
@@ -73,7 +84,18 @@
             37,
             40
           ],
-          "fieldType": "string",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              37,
+              12
+            ],
+            "end": [
+              37,
+              17
+            ],
+            "name": "string"
+          },
           "name": "a_repeated_string",
           "id": 2,
           "options": [],
@@ -91,7 +113,18 @@
             38,
             30
           ],
-          "fieldType": "bool",
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              38,
+              12
+            ],
+            "end": [
+              38,
+              15
+            ],
+            "name": "bool"
+          },
           "name": "a_boolean",
           "id": 3,
           "options": [],
