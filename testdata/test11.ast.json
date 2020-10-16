@@ -55,7 +55,18 @@
             38,
             3
           ],
-          "name": "TestExtensionReverseOrderMessage2",
+          "name": {
+            "type": "Type",
+            "start": [
+              36,
+              10
+            ],
+            "end": [
+              36,
+              42
+            ],
+            "name": "TestExtensionReverseOrderMessage2"
+          },
           "body": [
             {
               "type": "Field",
@@ -110,7 +121,18 @@
                 42,
                 5
               ],
-              "name": "TestExtensionReverseOrderMessage2",
+              "name": {
+                "type": "Type",
+                "start": [
+                  40,
+                  12
+                ],
+                "end": [
+                  40,
+                  44
+                ],
+                "name": "TestExtensionReverseOrderMessage2"
+              },
               "body": [
                 {
                   "type": "Field",
@@ -157,7 +179,18 @@
         48,
         1
       ],
-      "name": "TestExtensionReverseOrderMessage2",
+      "name": {
+        "type": "Type",
+        "start": [
+          46,
+          8
+        ],
+        "end": [
+          46,
+          40
+        ],
+        "name": "TestExtensionReverseOrderMessage2"
+      },
       "body": [
         {
           "type": "Field",

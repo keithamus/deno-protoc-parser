@@ -915,7 +915,18 @@
             102,
             3
           ],
-          "name": "ExtensionContainingType1",
+          "name": {
+            "type": "Type",
+            "start": [
+              100,
+              10
+            ],
+            "end": [
+              100,
+              33
+            ],
+            "name": "ExtensionContainingType1"
+          },
           "body": [
             {
               "type": "Field",
@@ -1073,7 +1084,18 @@
             114,
             3
           ],
-          "name": "ExtensionField3",
+          "name": {
+            "type": "Type",
+            "start": [
+              112,
+              10
+            ],
+            "end": [
+              112,
+              24
+            ],
+            "name": "ExtensionField3"
+          },
           "body": [
             {
               "type": "Field",

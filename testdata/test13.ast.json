@@ -74,7 +74,18 @@
         41,
         1
       ],
-      "name": "TestMessage",
+      "name": {
+        "type": "Type",
+        "start": [
+          39,
+          8
+        ],
+        "end": [
+          39,
+          18
+        ],
+        "name": "TestMessage"
+      },
       "body": [
         {
           "type": "Field",
