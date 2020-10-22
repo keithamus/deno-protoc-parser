@@ -5,7 +5,7 @@
     1
   ],
   "end": [
-    7,
+    8,
     0
   ],
   "body": [
@@ -28,7 +28,7 @@
         1
       ],
       "end": [
-        6,
+        7,
         1
       ],
       "name": "Foo",
@@ -50,26 +50,55 @@
           "type": "Field",
           "start": [
             5,
-            12
+            3
           ],
           "end": [
             5,
-            30
+            21
           ],
           "fieldType": {
             "type": "Type",
             "start": [
               5,
-              12
+              3
             ],
             "end": [
               5,
-              19
+              10
             ],
             "name": ".Foo.Bar"
           },
           "name": "thing",
           "id": 1,
+          "options": [],
+          "repeated": false,
+          "optional": false,
+          "required": false
+        },
+        {
+          "type": "Field",
+          "start": [
+            6,
+            12
+          ],
+          "end": [
+            6,
+            31
+          ],
+          "fieldType": {
+            "type": "Type",
+            "start": [
+              6,
+              12
+            ],
+            "end": [
+              6,
+              19
+            ],
+            "name": ".Foo.Bar"
+          },
+          "name": "things",
+          "id": 2,
           "options": [],
           "repeated": true,
           "optional": false,

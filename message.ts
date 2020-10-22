@@ -166,7 +166,7 @@ export class Message extends ParseNode {
           node.required = true;
           body.push(node);
         }
-      } else if (token === Token.identifier && str !== "oneof") {
+      } else if (token === Token.identifier && str !== "oneof" || str === ".") {
         body.push(await Field.parse(scanner, syntax));
       } else if (token === Token.keyword && str === "enum") {
         body.push(await Enum.parse(scanner));
