@@ -1,5 +1,5 @@
 export { Proto } from "./proto.ts";
-export { Visitor } from "./visitor.ts";
+export type { Visitor } from "./visitor.ts";
 export { Message } from "./message.ts";
 export { Constant } from "./constant.ts";
 export { Enum } from "./enum.ts";
