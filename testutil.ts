@@ -2,8 +2,8 @@ import {
   assertEquals,
   assertThrowsAsync,
 } from "https://deno.land/std@0.64.0/testing/asserts.ts";
-import {StringReader} from "https://deno.land/std@0.64.0/io/readers.ts";
-import {ParseNode, ParseNodeJSON} from "./parsenode.ts";
+import { StringReader } from "https://deno.land/std@0.64.0/io/readers.ts";
+import { ParseNode, ParseNodeJSON } from "./parsenode.ts";
 import { Scanner } from "./deps.ts";
 import { protoScanner } from "./protoscanner.ts";
 import { Proto } from "./proto.ts";
@@ -69,20 +69,20 @@ export async function assertNodeThrows(
   );
 }
 
-type jsonable = {toJSON: () => unknown};
+type jsonable = { toJSON: () => unknown };
 
 function stripPositionalData(ast: ParseNode | ParseNodeJSON): ParseNodeJSON {
   if (ast && typeof ast.toJSON === "function") {
     return stripPositionalData(ast.toJSON());
   }
-  ast = (ast as ParseNodeJSON)
-  const newAst: ParseNodeJSON = {type: '', start: [0, 0], end: [0, 0]};
+  ast = (ast as ParseNodeJSON);
+  const newAst: ParseNodeJSON = { type: "", start: [0, 0], end: [0, 0] };
   for (const v in ast) {
-    if (v === "start" || v === "end") continue
+    if (v === "start" || v === "end") continue;
     if (typeof ast[v] === "object") {
       newAst[v] = stripPositionalData(ast[v] as ParseNodeJSON);
     } else {
-      newAst[v] = ast[v]
+      newAst[v] = ast[v];
     }
   }
   return newAst;
@@ -102,7 +102,7 @@ export function testFile(
       let proto: Proto = new Proto([]);
       let ast: ParseNodeJSON;
       try {
-        proto = await Proto.parse(protoScanner(file, {comments}));
+        proto = await Proto.parse(protoScanner(file, { comments }));
         ast = JSON.parse(await Deno.readTextFile(astFile)) as ParseNodeJSON;
         assertEquals(
           stripPositionalData(proto.toJSON()),
