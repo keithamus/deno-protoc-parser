@@ -27,7 +27,7 @@ import { Proto } from "./proto.ts";
 /**
  * Parse the contents of a Reader, returning a `Proto` AST node.
  */
-export async function parse (
+export async function parse(
   reader: Deno.Reader,
   init: ProtoScannerInit,
 ): Promise<Proto> {
