@@ -1,4 +1,4 @@
-import { Scanner, defaultTokens, scanComments } from "./deps.ts";
+import { defaultTokens, scanComments, Scanner } from "./deps.ts";
 
 const keywords = new Set(
   [

@@ -3,7 +3,7 @@ import { Visitor } from "./visitor.ts";
 import { Type } from "./type.ts";
 import { FieldOption } from "./fieldoption.ts";
 import { Comment } from "./comment.ts";
-import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
+import { nextTokenIs, Scanner, Token, TokenError } from "./deps.ts";
 import { expectSimpleIdent } from "./util.ts";
 
 /**

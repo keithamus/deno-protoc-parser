@@ -1,6 +1,6 @@
 import { ParseNode, ParseNodeJSON } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
-import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
+import { nextTokenIs, Scanner, Token, TokenError } from "./deps.ts";
 import { Field } from "./field.ts";
 import { Group } from "./group.ts";
 import { Enum } from "./enum.ts";
@@ -11,7 +11,7 @@ import { Oneof } from "./oneof.ts";
 import { MapField } from "./mapfield.ts";
 import { Reserved } from "./reserved.ts";
 import { Comment } from "./comment.ts";
-import { expectFullIdent, assignComments, indent } from "./util.ts";
+import { assignComments, expectFullIdent, indent } from "./util.ts";
 
 type MessageStatement =
   | Field

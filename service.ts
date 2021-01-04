@@ -1,5 +1,5 @@
-import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
-import { expectSimpleIdent, assignComments, indent } from "./util.ts";
+import { nextTokenIs, Scanner, Token, TokenError } from "./deps.ts";
+import { assignComments, expectSimpleIdent, indent } from "./util.ts";
 import { Option } from "./option.ts";
 import { RPC } from "./rpc.ts";
 import { Comment } from "./comment.ts";

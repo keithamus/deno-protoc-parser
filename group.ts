@@ -1,6 +1,6 @@
 import { ParseNode, ParseNodeJSON } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
-import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
+import { nextTokenIs, Scanner, Token, TokenError } from "./deps.ts";
 import { Field } from "./field.ts";
 import { Enum } from "./enum.ts";
 import { Message } from "./message.ts";

@@ -1,6 +1,6 @@
 import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
-import { Scanner, Token, nextTokenIs } from "./deps.ts";
+import { nextTokenIs, Scanner, Token } from "./deps.ts";
 
 /**
  * Represents an EnumField - the keys/values that an Enum is composed of.

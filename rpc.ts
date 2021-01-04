@@ -1,7 +1,7 @@
 import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
-import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
-import { expectSimpleIdent, assignComments } from "./util.ts";
+import { nextTokenIs, Scanner, Token, TokenError } from "./deps.ts";
+import { assignComments, expectSimpleIdent } from "./util.ts";
 import { Type } from "./type.ts";
 import { Option } from "./option.ts";
 import { Comment } from "./comment.ts";

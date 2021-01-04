@@ -1,4 +1,4 @@
-import { Scanner, Token, nextTokenIs, TokenError } from "./deps.ts";
+import { nextTokenIs, Scanner, Token, TokenError } from "./deps.ts";
 import { ParseNode } from "./parsenode.ts";
 import { Visitor } from "./visitor.ts";
 
