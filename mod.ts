@@ -19,7 +19,7 @@ export { Reserved } from "./reserved.ts";
 export { Service } from "./service.ts";
 export { Syntax } from "./syntax.ts";
 export { Comment } from "./comment.ts";
-export { ProtoScannerInit } from "./protoscanner.ts";
+export type { ProtoScannerInit } from "./protoscanner.ts";
 
 import { protoScanner, ProtoScannerInit } from "./protoscanner.ts";
 import { Proto } from "./proto.ts";
