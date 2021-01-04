@@ -73,7 +73,7 @@ export class Option extends ParseNode {
       await nextTokenIs(scanner, Token.keyword, "option");
     }
     const start = scanner.startPos;
-    let token = await scanner.scan();
+    const token = await scanner.scan();
     let contents = scanner.contents;
     const key = [];
     let isExtension = false;

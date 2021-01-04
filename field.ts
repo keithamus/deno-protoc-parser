@@ -82,7 +82,7 @@ export class Field extends ParseNode {
     if (this.comments.length) {
       comments = this.comments.map((node) => node.toProto()).join("\n") + "\n";
     }
-    let str: string[] = [];
+    const str: string[] = [];
     if (this.required && syntax === 3) {
       throw new Error("required fields are not allowed in Proto3");
     }

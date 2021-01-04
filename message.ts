@@ -102,7 +102,7 @@ export class Message extends ParseNode {
     const start = scanner.startPos;
     const name = await expectFullIdent(scanner);
     const body: MessageStatement[] = [];
-    let comments: Comment[] = [];
+    const comments: Comment[] = [];
     await nextTokenIs(scanner, Token.token, "{");
     for await (const token of scanner) {
       const str = scanner.contents;
