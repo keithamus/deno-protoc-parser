@@ -1,5 +1,5 @@
 export { Proto } from "./proto.ts";
-export { Visitor } from "./visitor.ts";
+export type { Visitor } from "./visitor.ts";
 export { Message } from "./message.ts";
 export { Constant } from "./constant.ts";
 export { Enum } from "./enum.ts";
@@ -19,7 +19,7 @@ export { Reserved } from "./reserved.ts";
 export { Service } from "./service.ts";
 export { Syntax } from "./syntax.ts";
 export { Comment } from "./comment.ts";
-export { ProtoScannerInit } from "./protoscanner.ts";
+export type { ProtoScannerInit } from "./protoscanner.ts";
 
 import { protoScanner, ProtoScannerInit } from "./protoscanner.ts";
 import { Proto } from "./proto.ts";
