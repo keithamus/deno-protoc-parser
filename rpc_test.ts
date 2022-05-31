@@ -26,6 +26,28 @@ Deno.test("RPC", async () => {
         [1, 28],
       ),
     ],
+    [
+      `rpc Foo (stream Req) returns (Res);`,
+      new RPC(
+        "Foo",
+        { name: new Type("Req", [1, 17], [1, 19]), streaming: true },
+        { name: new Type("Res", [1, 31], [1, 33]) },
+        null,
+        [1, 1],
+        [1, 35],
+      ),
+    ],
+    [
+      `rpc Foo (Req) returns (stream Res);`,
+      new RPC(
+        "Foo",
+        { name: new Type("Req", [1, 10], [1, 12]) },
+        { name: new Type("Res", [1, 31], [1, 33]), streaming: true },
+        null,
+        [1, 1],
+        [1, 35],
+      ),
+    ],
   ];
   for (const t of tt) await assertNode(RPC, ...t);
 });
