@@ -115,6 +115,7 @@ export class RPC extends ParseNode {
       streaming: false,
     };
     if (request.name.name === "stream") {
+      await nextTokenIs(scanner, Token.identifier);
       request.streaming = true;
       request.name = await Type.parse(scanner);
     }
@@ -126,6 +127,7 @@ export class RPC extends ParseNode {
       streaming: false,
     };
     if (response.name.name === "stream") {
+      await nextTokenIs(scanner, Token.identifier);
       response.streaming = true;
       response.name = await Type.parse(scanner);
     }
