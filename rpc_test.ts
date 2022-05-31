@@ -35,7 +35,7 @@ Deno.test("RPC", async () => {
         null,
         [1, 1],
         [1, 35],
-      )
+      ),
     ],
     [
       `rpc Foo (Req) returns (stream Res);`,
@@ -46,8 +46,8 @@ Deno.test("RPC", async () => {
         null,
         [1, 1],
         [1, 35],
-      )
-    ]
+      ),
+    ],
   ];
   for (const t of tt) await assertNode(RPC, ...t);
 });
